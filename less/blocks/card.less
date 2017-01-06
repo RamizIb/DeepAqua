@@ -1,0 +1,57 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  transition: box-shadow .25s;
+  border-radius: 2px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.card-image {
+  margin-bottom: 20px;
+}
+
+.card-image img {
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 2px 2px 0 0;
+  width: 100%;
+}
+
+.card-content {
+  margin-bottom: 20px;
+  border-radius: 0 0 2px 2px;
+}
+
+.card-action {
+  margin-bottom: 20px;
+}
+
+.card-action a {
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+
+  border: 1px solid;
+  border-radius: 24px;
+
+  color: #77cde3;
+  text-decoration: none;
+
+  &:hover {
+    color: #fff;
+    background-color: #77cde3;
+  }
+
+  &:active {
+    background-color: #ccc;
+  }
+}
