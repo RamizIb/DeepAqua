@@ -6,3 +6,20 @@
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+.hover:hover {
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pulse {
+  animation: pulse_9880 15s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes pulse_9880 {
+  0% { transform: scale(1.1) }
+  25% { transform: scale(0.8) }
+  50% { transform: scale(1.1) }
+  100% { transform: scale(1.1) }
+}

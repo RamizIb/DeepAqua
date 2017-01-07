@@ -3,5 +3,23 @@
 }
 
 .blog-preview__title {
+  margin-bottom: 20px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+
+  .blog-preview {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .blog-preview__title {
+    width: 100%;
+  }
+
+  .blog-preview__item {
+    width: 30%;
+  }
 }

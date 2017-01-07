@@ -2,34 +2,110 @@
 
 }
 
-.footer__logo {
+.footer__links {
+  padding-top: 20px;
+  padding-bottom: 20px;
 
+  background-color: #f0f0f0;
+  text-align: center;
 }
 
-.footer__links {
+.footer__links-title {
+  margin-bottom: 20px;
+}
 
+.footer__links ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__links a {
+  text-decoration: none;
+}
+
+.footer__text {
+  margin-bottom: 20px;
+}
+
+.footer__text a {
+  text-decoration: none;
 }
 
 .footer__copyright {
+  fill: red;
 
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .footer__social {
+  padding-top: 20px;
+  padding-bottom: 20px;
 
+  background-color: #f5f5f5;
+  text-align: center;
 }
 
 .footer__social-title {
-
+  margin-bottom: 20px;
 }
 
 .footer__social-bar {
 
 }
 
-.social__icon {
+.social__icon:not(:last-child) {
+  margin-right: 10px;
+}
 
+.social__icon {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  fill: #77cde3;
+}
+
+.social__icon:hover,
+.social__icon:active {
+  fill: #36b8d9;
+  text-decoration: none;
 }
 
 .footer__payment {
+  padding-top: 20px;
+  padding-bottom: 20px;
 
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.footer__payment-title {
+  margin-bottom: 20px;
+}
+
+.footer__payment-icon {
+  fill: #2071e6;
+}
+
+.footer__payment-icon span:first-child {
+  margin-right: 20px;
+}
+
+.footer__payment-partner img {
+  width: 200px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+
+  .footer .container-article {
+    display: flex;
+  }
+
+  .footer__social,
+  .footer__links,
+  .footer__payment {
+    width: 33.33333%;
+  }
 }
