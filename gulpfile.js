@@ -58,11 +58,28 @@ gulp.task("copy", function() {
   .pipe(gulp.dest("build"));
 });
 
+gulp.task("style-build", function() {
+  gulp.src("less/style.less")
+    .pipe(plumber())
+    .pipe(less())
+    .pipe(postcss([
+       autoprefixer({browsers: [
+         "last 2 versions",
+         "last 2 Chrome versions",
+         "last 2 Firefox versions",
+         "last 2 Opera versions",
+         "last 2 Edge versions"
+        ]})
+    ]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+
 gulp.task("build", function(fn) {
   run(
     "clean",
     "copy",
-    "style",
+    "style-build",
     fn
   );
 });
