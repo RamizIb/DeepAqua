@@ -40,7 +40,7 @@ gulp.task("serve", ["style"], function() {
 });
 
 gulp.task("clean", function() {
-  return del("build");
+  return del("docs");
 });
 
 gulp.task("copy", function() {
@@ -53,7 +53,7 @@ gulp.task("copy", function() {
     ], {
       base: "."
     })
-  .pipe(gulp.dest("build"));
+  .pipe(gulp.dest("docs"));
 });
 
 gulp.task("style-build", function() {
@@ -69,7 +69,7 @@ gulp.task("style-build", function() {
          "last 2 Edge versions"
         ]})
     ]))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("docs/css"));
 });
 
 gulp.task("build", function(fn) {
