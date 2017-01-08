@@ -6,6 +6,7 @@
 *.psd
 *.sublime*
 public/
+build/
 img/icon/
 css/*.css
 node_modules/
