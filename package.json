@@ -4,29 +4,27 @@
   "private": true,
   "description": "Интернет магазин компании Айнова",
   "author": "Ramiz Ibragimov",
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RamizIb/DeepAqua.git"
   },
-
   "bugs": {
     "url": "https://github.com/RamizIb/DeepAqua/issues"
   },
-
   "homepage": "https://github.com/RamizIb/DeepAqua#readme",
-
   "devDependencies": {
     "autoprefixer": "^6.6.0",
     "browser-sync": "^2.18.5",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-less": "^3.3.0",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.2.0",
-    "less": "^2.7.1"
+    "less": "^2.7.1",
+    "run-sequence": "^1.2.2"
   },
-
   "scripts": {
-  "start": "gulp serve"
+    "start": "gulp serve",
+    "build": "gulp build"
   }
 }

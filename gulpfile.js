@@ -45,6 +45,7 @@ gulp.task("clean", function() {
 
 gulp.task("copy", function() {
   return gulp.src([
+    "css/bootstrap.css",
     "fonts/**/**",
     "img/**",
     "js/**",
@@ -68,8 +69,7 @@ gulp.task("style-build", function() {
          "last 2 Edge versions"
         ]})
     ]))
-    .pipe(gulp.dest("build/css"))
-    .pipe(server.stream());
+    .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("build", function(fn) {
