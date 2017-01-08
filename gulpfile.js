@@ -39,9 +39,6 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("*.html").on("change", server.reload);
 });
 
-
-
-
 gulp.task("clean", function() {
   return del("build");
 });
