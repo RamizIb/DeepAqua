@@ -1,4 +1,5 @@
 .advice {
+  padding-top: 20px;
   padding-right: 10px;
   padding-bottom: 20px;
   padding-left: 10px;
@@ -23,17 +24,54 @@
 
 }
 
+.form-group {
+
+}
+
+.label-first, .label-two {
+  display: none;
+}
+
+.form-control {
+  display: block;
+  height: 45px;
+  width: 80%;
+
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 10px;
+
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #77cde3;
+  background-color: transparent;
+
+  box-shadow: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
 @media (min-width: 768px) {
 
   .advice {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: baseline;
+  }
+
+  .advice .container-article {
+    width: 35%;
   }
 
   .advice .button-wrapper {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .form-control {
+
   }
 }

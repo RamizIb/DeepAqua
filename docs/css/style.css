@@ -1,12 +1,17 @@
 .advice {
   padding-right: 10px;
+  padding-bottom: 20px;
   padding-left: 10px;
   background-color: #f5f5f5;
+}
+.advice .container-article {
+  margin: 0;
 }
 .advice__title {
   text-align: center;
 }
 .advice__content {
+  color: #999;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -15,6 +20,8 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-align: baseline;
         align-items: baseline;
   }
@@ -34,15 +41,11 @@
     opacity: 1;
   }
 }
-.hover:hover {
-  transition: box-shadow 0.25s;
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.pulse {
-  animation: pulse_9880 15s linear infinite;
+.animation-pulse {
+  animation: pulse 15s linear infinite;
   transform-origin: 50% 50%;
 }
-@keyframes pulse_9880 {
+@keyframes pulse {
   0% {
     transform: scale(1.1);
   }
@@ -55,6 +58,24 @@
   100% {
     transform: scale(1.1);
   }
+}
+.animation-rotation {
+  animation-name: rotation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate 0deg;
+  }
+  100% {
+    transform: rotate 360deg;
+  }
+}
+.hover:hover {
+  transition: box-shadow 0.25s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* @font-face {
   font-family: "Roboto";
@@ -89,6 +110,10 @@ h2 {
 }
 label {
   font-weight: normal;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 /* * {
   outline: 1px solid black;
@@ -258,6 +283,61 @@ label {
   overflow: hidden;
   background-color: #e0e0e0;
 }
+.feature .container-article {
+  padding-bottom: 0;
+}
+.feature-item {
+  position: relative;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+.feature-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+.feature-item:last-child:after {
+  display: none;
+}
+.feature-item:hover .feature-item__icon {
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+.feature-item__icon {
+  font-size: 40px;
+  color: #00ced1;
+  transform: scale(1);
+  transition: all 0.4s;
+}
+.feature-item__title {
+  margin-bottom: 20px;
+}
+.feature-item__desc {
+  color: #999;
+}
+@media (min-width: 768px) {
+  .feature .container-article {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .feature-item {
+    width: 30%;
+  }
+  .feature-item:after {
+    display: none;
+  }
+}
 .promo-video {
   display: -ms-flexbox;
   display: flex;
@@ -281,6 +361,60 @@ label {
     width: 80%;
   }
 }
+.shop-showcase {
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+.shop-showcase a {
+  text-decoration: none;
+}
+.shop-showcase .container-article {
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f0f8ff;
+}
+.shop-showcase .container-article .shop-showcase__thumb {
+  transform: scale(1);
+  transition: all 0.4s;
+}
+.shop-showcase .container-article:hover .shop-showcase__thumb {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+.shop-showcase__price {
+  color: #999;
+}
+.shop-showcase__thumb {
+  margin: 0 auto;
+  max-width: 400px;
+}
+@media (min-width: 768px) {
+  .shop-showcase {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  .shop-showcase .container-article {
+    width: 48%;
+  }
+  .shop-showcase .container-article a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .shop-showcase__desc {
+    width: 35%;
+  }
+  .shop-showcase__thumb {
+    width: 55%;
+  }
+}
 .showcase {
   text-align: center;
 }
@@ -294,7 +428,7 @@ label {
   color: #999;
 }
 .showcase__item-thumbnail {
-  background-color: aliceblue;
+  background-color: #f0f8ff;
 }
 .showcase__item-thumbnail img {
   display: block;
