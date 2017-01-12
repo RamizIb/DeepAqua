@@ -10,6 +10,10 @@
   border-color: transparent;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: @style-color;
+}
+
 .navbar-fixed-top {
   position: fixed;
 
@@ -17,6 +21,18 @@
   max-width: 1600px;
 }
 
-.navbar-brand {
+.navbar-default .navbar-brand {
   font-size: 26px;
+  color: @style-color;
+
+  &:hover {
+    color: @style-color-darken;
+  }
+}
+
+.navbar-default .navbar-nav > li {
+
+  &:hover {
+    border-bottom: 1px solid @style-color;
+  }
 }
