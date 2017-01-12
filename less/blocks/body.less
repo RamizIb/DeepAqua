@@ -10,11 +10,23 @@
   font-weight: bold;
 } */
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
 
   line-height: 30px;
+  overflow-x: hidden;
   /* font-family: "Roboto", Arial, sans-serif; */
 }
 
@@ -47,8 +59,21 @@ img {
   height: auto;
 }
 
-a:hover {
-  text-decoration: none;
+a {
+  color: @style-color;
+
+  &:hover {
+    color: @style-color-darken;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: @style-color-lighten;
+  }
+}
+
+.active-nav {
+  border-bottom: 1px solid @style-color;
 }
 
 /* * {

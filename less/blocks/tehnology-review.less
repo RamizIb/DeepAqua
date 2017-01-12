@@ -3,7 +3,7 @@
 }
 
 .tehnology-review .container-article {
-  width: 80%;
+  width: 85%;
 }
 
 .tehnology-review__title {
@@ -26,9 +26,9 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  outline: 1px solid #77cde3;
+  outline: 1px solid @style-color;
 
-  border-color: #77cde3;
+  border-color: @style-color;
   background-color: #f5f5f5;
   font-weight: bold;
   font-style: italic;
@@ -53,4 +53,11 @@
 
 .tehnology-review__list {
   margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+
+  .tehnology-review .container-article {
+    width: 70%;
+  }
 }

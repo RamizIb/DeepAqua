@@ -32,23 +32,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.html">Главная</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Магазин<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li role="separator" class="divider"></li>
-                    <li><a href="shop.html">Продукция</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="aquel-tehnology.html">Технологии</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Оплата и доставка</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Гарантия и обслуживание</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Сертификаты качества</a></li>
-                  </ul>
-                </li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li class="active-nav"><a href="aquel-tehnology.html">Технологии</a></li>
+                <li><a href="#">О Нас</a></li>
                 <li><a href="#">Блог</a></li>
-                <li><a href="#">О Нас<span class="sr-only">(current)</span></a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
 
@@ -61,7 +48,7 @@
         <div class="introduction introduction--tehnology">
           <div class="container-article animation-fadeIn">
             <h1 class="introduction__title">Инновационные технологии</h1>
-             <span class="aquel-title">Aquel</span>
+             <span class="introduction__aquel-title">Aquel</span>
             <div class="introduction__reading-time">Время чтения: 8 минут. <span class="reading-time">Важность - высокая.</span>
             </div>
           </div>
@@ -83,7 +70,7 @@
 
             <p class="tehnology-review__content">Современных систем фильтрации воды немало. Одной из тех, что в последнее время стала использоваться особенно активно, является так называемый обратный осмос. Эта технология представлена в водоочистительных системах чешской компании <strong>Aquel</strong>. Вода проходит грубую очистку (два предварительных фильтра) и глубокую качественную.</p>
 
-            <blockquote><p class="tehnology-review__blockquote">За счет этого получается добиться бактериальной очистки, органической, химической и радиологической.</p></blockquote>
+            <blockquote class="block-shadows"><p class="tehnology-review__blockquote">За счет этого получается добиться бактериальной очистки, органической, химической и радиологической.</p></blockquote>
             <h3>В целом, процесс фильтрации жидкости выглядит так:</h3>
 
             <ul class="tehnology-review__list">
@@ -94,7 +81,7 @@
 
             <p class="tehnology-review__content">Такая технология позволяет избавиться от большинства вредных примесей, присутствующих в воде. На выходе получается жидкость, лишенная крупных молекул загрязнителей. Под ними понимаются различные минеральные вещества, микроорганизмы, сульфаты, нитраты.</p>
 
-            <blockquote><p class="tehnology-review__blockquote" id="aquel-advantage">Таким образом, обратный осмос позволяет снизить опасность заражения холерой, гепатитом и другими заболеваниями, возбудители которых могут находиться в воде.</p></blockquote>
+            <blockquote class="block-shadows"><p class="tehnology-review__blockquote" id="aquel-advantage">Таким образом, обратный осмос позволяет снизить опасность заражения холерой, гепатитом и другими заболеваниями, возбудители которых могут находиться в воде.</p></blockquote>
 
             <h3>В чем же преимущество фильтров Aquel:</h3>
 
@@ -110,7 +97,7 @@
               <li>На выходе из энерджи фильтра вода поступает в колбу ультрафиолетовой лампы, которая служит главным образом барьером для проникновения бактерий и вирусов извне через основной кран. После этого вода, проходя основной кран, выходит из системы.</li>
             </ul>
 
-            <blockquote><p class="tehnology-review__blockquote" id="cleaning-detail">Таким образом, фильтрующие системы Aquel состоят из семи ступеней очистки и обогащения воды. Вода не только очищается от всех возможных примесей и микробов, но и обогащается необходимыми минералами, умягчается и "ощелачивается".</p></blockquote>
+            <blockquote class="block-shadows"><p class="tehnology-review__blockquote" id="cleaning-detail">Таким образом, фильтрующие системы Aquel состоят из семи ступеней очистки и обогащения воды. Вода не только очищается от всех возможных примесей и микробов, но и обогащается необходимыми минералами, умягчается и "ощелачивается".</p></blockquote>
 
             <h3>Подробно об этапах очистки воды:</h3>
 
@@ -138,17 +125,17 @@
 
             <p class="tehnology-review__content"><strong>*2-ходовой клапан</strong> - перекрывает подачу воды для того, чтобы вода при наполненном емкостном баке не поступала в мембрану и не сливалась постоянно в канализацию. Благодаря этому мембрана сохраняет свой ресурс службы на долгое время.</p>
 
-            <div class="infobar">
-              <ul class="infobar__list">
-                <li class="infobar__list-item"><a href="">Узнайте о доставке</a></li>
-                <li class="infobar__list-item"><a href="shop.html">Посетите магазин</a></li>
-                <li class="infobar__list-item"><a href="">Узнайте о гарантии</a></li>
-              </ul>
-            </div>
-
           </div><!-- /.container-article -->
 
         </div><!-- /.tehnology-review -->
+
+        <div class="infobar">
+          <ul class="infobar__list">
+            <li class="infobar__list-item"><a href="">Узнайте о доставке</a></li>
+            <li class="infobar__list-item"><a href="shop.html">Посетите магазин</a></li>
+            <li class="infobar__list-item"><a href="">Узнайте о гарантии</a></li>
+          </ul>
+        </div>
 
       </section><!-- /.main -->
 
@@ -182,11 +169,9 @@
           <div class="footer__links">
             <h4 class="footer__links-title">Важная информация</h4>
             <ul>
-              <li><a href="#">Text</a></li>
-              <li><a href="#">Text</a></li>
-              <li><a href="#">Text</a></li>
-              <li><a href="#">Text</a></li>
-              <li><a href="#">Text</a></li>
+              <li><a href="#">Договор оферта</a></li>
+              <li><a href="#">Сертификаты качества</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
             </ul>
           </div>
 

@@ -1,19 +1,59 @@
-/*$( document ).ready(function(){
-  $(".button-collapse").sideNav;
-})*/
+/*ViewportChecker*/
+(function($){
+    $.fn.viewportChecker = function(useroptions){
+        // Define options and extend with user
+        var options = {
+            classToAdd: 'visible',
+            offset: 100,
+            callbackFunction: function(elem){}
+        };
+        $.extend(options, useroptions);
 
-$(document).ready(function(){
-  $("content-navigation__item").on("click","a", function (event) {
-    //отменяем стандартную обработку нажатия по ссылке
-    event.preventDefault();
+        // Cache the given element and height of the browser
+        var $elem = this,
+            windowHeight = $(window).height();
 
-    //забираем идентификатор блока с атрибута href
-    var id  = $(this).attr('href'),
+        this.checkElements = function(){
+            // Set some vars to check with
+            var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html'),
+                viewportTop = $(scrollElem).scrollTop(),
+                viewportBottom = (viewportTop + windowHeight);
 
-    //узнаем высоту от начала страницы до блока на который ссылается якорь
-      top = $(id).offset().top;
+            $elem.each(function(){
+                var $obj = $(this);
+                // If class already exists; quit
+                if ($obj.hasClass(options.classToAdd)){
+                    return;
+                }
 
-    //анимируем переход на расстояние - top за 1500 мс
-    $('body,html').animate({scrollTop: top}, 1500);
-  });
+                // define the top position of the element and include the offset which makes is appear earlier or later
+                var elemTop = Math.round( $obj.offset().top ) + options.offset,
+                    elemBottom = elemTop + ($obj.height());
+
+                // Add class if in viewport
+                if ((elemTop < viewportBottom) && (elemBottom > viewportTop)){
+                    $obj.addClass(options.classToAdd);
+
+                    // Do the callback function. Callback wil send the jQuery object as parameter
+                    options.callbackFunction($obj);
+                }
+            });
+        };
+
+        // Run checkelements on load and scroll
+        $(window).scroll(this.checkElements);
+        this.checkElements();
+
+        // On resize change the height var
+        $(window).resize(function(e){
+            windowHeight = e.currentTarget.innerHeight;
+        });
+    };
+})(jQuery);
+
+jQuery(document).ready(function() {
+    jQuery('.fadein-post').addClass("block-hidden").viewportChecker({
+        classToAdd: 'block-visible animation-fadeIn',
+        offset: 100
+       });
 });
