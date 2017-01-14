@@ -11,7 +11,9 @@
   height: 90vh;
   max-height: 1000px;
 
-  background-color: #f0f8ff;
+  background-color: @bg-color-aqua;
+
+  box-sizing: content-box;
 }
 
 .single-product__title {
@@ -28,27 +30,29 @@
 }
 
 .single-product__img {
-  text-align: center;
-}
-
-.single-product__img img {
-  width: 320px;
+  width: 100%;
+  height: 40%;
+  background-image: url("../../img/small-aquel-1000.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 @media (min-width: 768px) {
 
   .single-product__img {
-    margin: 0;
+    width: 50%;
+    height: 50%;
   }
 
   .single-product__img img {
-    width: 450px;
+
   }
 }
 
 @media (min-width: 1100px) {
 
   .single-product__img img {
-    width: 550px;
+
   }
 }
