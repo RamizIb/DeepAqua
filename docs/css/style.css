@@ -581,6 +581,16 @@ a:active {
   height: auto;
   margin: 0 auto;
 }
+.footer__social a,
+.footer__links a,
+.footer__payment a {
+  color: #666;
+}
+.footer__social a:hover,
+.footer__links a:hover,
+.footer__payment a:hover {
+  text-decoration: underline;
+}
 @media (min-width: 768px) {
   .footer .container-article {
     display: -ms-flexbox;
@@ -597,6 +607,9 @@ a:active {
 }
 .infobar {
   padding-top: 25px;
+}
+.infobar a {
+  color: #777777;
 }
 .infobar__list {
   margin: 0;
@@ -619,15 +632,9 @@ a:active {
 .infobar__list-item:last-child {
   margin-bottom: 0;
 }
-.infobar__list-item:nth-of-type(2) {
-  font-size: 18px;
-}
 .infobar__list-item:hover {
   font-size: 18px;
   transition: all 0.5s;
-}
-.infobar__list-item:hover:nth-of-type(2) {
-  font-size: 20px;
 }
 .infobar__list-item a {
   display: block;
