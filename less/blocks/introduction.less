@@ -18,7 +18,7 @@
 }
 
 .introduction__aquel-title {
-  font-size: 70px;
+  font-size: 80px;
   color: @style-color;
 }
 
@@ -48,4 +48,16 @@
 .introduction--about-us {
   height: 50vh;
   text-align: center;
+}
+
+.introduction--about-us .introduction__aquel-title svg {
+  fill: @style-color;
+}
+
+@media (min-width: 768px) {
+
+  .introduction--about-us .introduction__aquel-title svg {
+    width: 120px;
+    height: auto;
+  }
 }
