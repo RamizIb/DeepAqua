@@ -1,9 +1,97 @@
+.about {
+  padding-top: 20px;
+}
+.about .container-article {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 85%;
+}
+.about__card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 90%;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff1de;
+  box-sizing: border-box;
+  text-align: center;
+}
+.about__card:nth-of-type(5) {
+  text-align: left;
+}
+.about__title {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+.about__content {
+  font-size: 16px;
+}
+.about__contact {
+  padding-left: 0;
+  list-style: none;
+}
+.about__details {
+  padding-left: 0;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .about__card {
+    width: 45%;
+  }
+  .about__card:first-child {
+    width: 95%;
+  }
+}
+.advantages {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.advantages .container-article {
+  width: 85%;
+  padding: 20px;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: #f5fdf1;
+}
+.nav-tabs {
+  border-color: #1eb1fc;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border-color: #1eb1fc;
+  border-bottom-color: transparent;
+  color: #1eb1fc;
+}
+.nav-tabs > li > a {
+  color: #666;
+}
+.nav-tabs > li > a:active {
+  color: #1eb1fc;
+}
+@media (min-width: 768px) {
+  .advantages .container-article {
+    width: 70%;
+  }
+}
 .advice {
   padding-top: 20px;
   padding-right: 10px;
   padding-bottom: 20px;
   padding-left: 10px;
-  background-color: #fff1de;
+  background-color: #fceffc;
 }
 .advice .container-article {
   margin: 0;
@@ -217,6 +305,7 @@ body {
   padding: 0;
   line-height: 30px;
   overflow-x: hidden;
+  font-size: 16px;
   /* font-family: "Roboto", Arial, sans-serif; */
 }
 h1,
@@ -372,12 +461,6 @@ a:active {
   background-color: #1eb1fc;
   border-color: #1eb1fc;
 }
-@media (min-width: 768px) {
-  .button-wrapper {
-    margin: 0;
-    width: 40%;
-  }
-}
 .card {
   display: -ms-flexbox;
   display: flex;
@@ -386,8 +469,8 @@ a:active {
   margin-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  transition: box-shadow 0.25s;
   border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .card-title {
   font-size: 24px;
@@ -427,6 +510,15 @@ a:active {
 .card-action a:active {
   background-color: #ccc;
 }
+.card blockquote {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  outline: 1px solid #1eb1fc;
+  border-color: #1eb1fc;
+  background-color: #f0f8ff;
+  font-weight: bold;
+}
 .main-container {
   min-width: 320px;
   max-width: 1600px;
@@ -457,6 +549,12 @@ a:active {
   height: 1px;
   overflow: hidden;
   background-color: #e0e0e0;
+}
+.divider-main--card {
+  margin-bottom: 20px;
+}
+.divider-main--about {
+  margin-top: 20px;
 }
 .feature .container-article {
   padding-bottom: 0;
@@ -714,7 +812,7 @@ a:active {
   text-align: center;
 }
 .introduction__aquel-title {
-  font-size: 70px;
+  font-size: 80px;
   color: #1eb1fc;
 }
 .introduction__img {
@@ -738,6 +836,15 @@ a:active {
 .introduction--about-us {
   height: 50vh;
   text-align: center;
+}
+.introduction--about-us .introduction__aquel-title svg {
+  fill: #1eb1fc;
+}
+@media (min-width: 768px) {
+  .introduction--about-us .introduction__aquel-title svg {
+    width: 120px;
+    height: auto;
+  }
 }
 .navbar-default {
   margin-bottom: 0;
@@ -959,47 +1066,67 @@ a:active {
 .single-product .container-article {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  height: 90vh;
-  max-height: 1000px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #e9f7f8;
-  box-sizing: content-box;
 }
 .single-product__title {
-  width: 100%;
+  text-align: center;
+}
+.single-product__sub-title {
   margin-bottom: 20px;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
 }
 .single-product__content {
-  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
   text-align: center;
 }
-.single-product__img {
-  width: 100%;
-  height: 40%;
-  background-image: url("../../img/small-aquel-1000.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+.single-product__button-wrapper {
+  text-align: center;
 }
 @media (min-width: 768px) {
-  .single-product__img {
-    width: 50%;
-    height: 50%;
+  .single-product .container-article {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
+  .single-product__content-block {
+    width: 45%;
+  }
+  .single-product__img-block {
+    width: 45%;
+    height: auto;
+  }
+  .single-product__button-wrapper {
+    width: 100%;
+  }
+  .single-product__sub-title {
+    font-size: 60px;
+  }
+}
+.tab-pane p {
+  margin-top: 20px;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background-color: #f5fdf1;
 }
 .tehnology-review .container-article {
   width: 85%;
 }
 .tehnology-review__content {
   margin-bottom: 20px;
-  text-indent: 10px;
+  /* text-indent: 10px; */
   text-align: justify;
   font-size: 18px;
 }
@@ -1053,10 +1180,9 @@ a:active {
 }
 .welcome-to-shop__title {
   font-size: 40px;
+  text-align: center;
 }
 .welcome-to-shop__subtitle {
   font-size: 20px;
   margin-bottom: 7%;
 }
-/* @bg-color-cerrot
-@bg-color-aqua-light */
