@@ -1,15 +1,15 @@
-.about {
-  padding-top: 20px;
+.payment-and-shipping {
+
 }
 
-.about .container-article {
+.payment-and-shipping .container-article {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   width: 90%;
 }
 
-.about__card {
+.payment-and-shipping-card {
   display: flex;
   flex-direction: column;
 
@@ -26,8 +26,6 @@
 
   box-sizing: border-box;
 
-  text-align: center;
-
   transition: all 0.5s;
 
   &:hover {
@@ -36,45 +34,23 @@
   }
 }
 
-.about__card:nth-of-type(5) {
-  text-align: left;
-}
-
-.about__title {
+.payment-and-shipping__title {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
 }
 
-.about__content {
+.payment-and-shipping__content {
   font-size: 16px;
 }
 
-.about__contact {
-  padding-left: 0;
-  list-style: none;
-}
+.payment-and-shipping__details {
 
-.about__details {
-  padding-left: 0;
-  list-style: none;
 }
 
 @media (min-width: 768px) {
 
-  .about .container-article {
+  .payment-and-shipping .container-article {
     width: 85%;
-  }
-
-  .about__card {
-    width: 45%;
-  }
-
-  .about__card:first-child {
-    width: 95%;
-  }
-
-  .about__card:nth-of-type(2) {
-
   }
 }
