@@ -36,6 +36,7 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("less/**/*.less", ["style"]);
+  gulp.watch("catalog/*.html").on("change", server.reload);
   gulp.watch("*.html").on("change", server.reload);
 });
 
@@ -47,6 +48,7 @@ gulp.task("copy", function() {
   return gulp.src([
     "css/bootstrap.css",
     "fonts/**/**",
+    "catalog/**",
     "img/**",
     "js/**",
     "*.html"

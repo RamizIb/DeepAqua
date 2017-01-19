@@ -27,12 +27,23 @@
   color: @style-color;
 }
 
+
 .nav-tabs > li > a {
   color: #666;
+
+  &:hover {
+    color: @style-color-darken;
+    border-color: transparent;
+    background-color: transparent;
+  }
 
   &:active {
     color: @style-color;
   }
+}
+
+.advantages .tab-content li {
+  margin-bottom: 5px;
 }
 
 .advantages__delivery-content {
