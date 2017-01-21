@@ -8,7 +8,7 @@
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 85%;
+  width: 90%;
 }
 .about__card {
   display: -ms-flexbox;
@@ -22,17 +22,21 @@
   padding-bottom: 20px;
   padding-left: 20px;
   border-radius: 2px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   background-color: #fff1de;
   box-sizing: border-box;
   text-align: center;
+  transition: all 0.5s;
+}
+.about__card:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.5s;
 }
 .about__card:nth-of-type(5) {
   text-align: left;
 }
 .about__title {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 600;
   text-align: center;
 }
 .about__content {
@@ -47,6 +51,9 @@
   list-style: none;
 }
 @media (min-width: 768px) {
+  .about .container-article {
+    width: 80%;
+  }
   .about__card {
     width: 45%;
   }
@@ -78,8 +85,16 @@
 .nav-tabs > li > a {
   color: #666;
 }
+.nav-tabs > li > a:hover {
+  color: #0398e4;
+  border-color: transparent;
+  background-color: transparent;
+}
 .nav-tabs > li > a:active {
   color: #1eb1fc;
+}
+.advantages .tab-content li {
+  margin-bottom: 5px;
 }
 @media (min-width: 768px) {
   .advantages .container-article {
@@ -201,85 +216,125 @@
 .fadein-post {
   /* post checker */
 }
-.blog-preview__title {
+.blog .container-article {
+  width: 90%;
+}
+.blog-teaser {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.blog-teaser__card {
   margin-bottom: 20px;
-  text-align: center;
+  width: 100%;
+  border-radius: 2px;
+  transition: all 0.5s;
+  background-color: #fff1de;
+  box-sizing: border-box;
+}
+.blog-teaser__card:hover {
+  transition: all 0.5s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.blog-teaser__action {
+  display: block;
+}
+.blog-teaser__card:hover .blog-teaser__image {
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+.blog-teaser__image {
+  margin: 0 auto;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.blog-time-reading-wrapper {
+  position: relative;
+}
+.blog-time__reading {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  padding-left: 20px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.blog-teaser__content-wrapper {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.blog-teaser__content {
+  margin-top: 20px;
+}
+.blog-single .container-article {
+  width: 90%;
+}
+.blog-single__card {
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 2px;
+  transition: all 0.5s;
+  background-color: #fff1de;
+  box-sizing: border-box;
+}
+.blog-single__card:hover {
+  transition: all 0.5s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.blog-single__image-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-single__image {
+  width: 45%;
+}
+.blog-single__image img {
+  margin: 0 auto;
+}
+.blog-single__card blockquote {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  outline: 1px solid #1eb1fc;
+  border-color: #1eb1fc;
+  background-color: #f0f8ff;
+  font-weight: bold;
+  font-style: italic;
+}
+.blog-single__list li {
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  .blog-preview {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .blog .container-article {
+    width: 80%;
   }
-  .blog-preview__title {
-    width: 100%;
+  .blog-teaser__card {
+    width: 45%;
   }
-  .blog-preview__item {
-    width: 30%;
+  .blog-teaser__card--full {
+    width: 95%;
+  }
+  .blog-single .container-article {
+    width: 80%;
   }
 }
-/*  Section blog
-
-<div class="blog-preview">
-
-          <h2 class="blog-preview__title">Блог</h2>
-
-          <div class="blog-preview__item">
-            <div class="card hover">
-              <div class="card-image">
-                <img src="https://placehold.it/260x200">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="blog-preview__item">
-
-            <div class="card hover">
-              <div class="card-image">
-                <img src="https://placehold.it/260x200">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="blog-preview__item">
-
-            <div class="card hover">
-              <div class="card-image">
-                <img src="https://placehold.it/260x200">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-
-          </div>
-
-        </div><!-- /.blog-preview --> */
 /* @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Black.ttf");
@@ -461,54 +516,107 @@ a:active {
   background-color: #1eb1fc;
   border-color: #1eb1fc;
 }
+.card-block .divider-main--card {
+  margin: 0 auto;
+  width: 70%;
+}
+.card-block__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.card-block .container-article {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+}
 .card {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   margin-bottom: 10px;
+  padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 2px;
+  transition: all 0.5s;
+  background-color: #fff1de;
+}
+.card:hover {
+  transition: all 0.5s;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-.card-title {
+.card img {
+  transition: all 1s;
+}
+.card:hover img {
+  transform: scale(1.08);
+  transition: all 1s;
+}
+.card__title {
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
 }
-.card-image {
+.card__content {
+  margin-bottom: 20px;
+  border-radius: 0 0 2px 2px;
+  text-align: center;
+}
+.card__image {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.card-image img {
+.card__image img {
   display: block;
   margin-bottom: 20px;
   border-radius: 2px 2px 0 0;
   width: 100%;
 }
-.card-content {
+.card__action {
   margin-bottom: 20px;
-  border-radius: 0 0 2px 2px;
+  text-align: center;
 }
-.card-action {
-  margin-bottom: 20px;
-}
-.card-action a {
+.card__action a {
   padding-top: 15px;
   padding-right: 25px;
   padding-bottom: 15px;
   padding-left: 25px;
+  width: 200px;
+  background-color: transparent;
+  color: #1eb1fc;
   border: 1px solid;
-  border-radius: 24px;
-  color: #77cde3;
-  text-decoration: none;
+  border-color: #1eb1fc;
+  border-radius: 15px;
+  transition: all 0.8s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-.card-action a:hover {
+.card__action a:hover {
   color: #fff;
-  background-color: #77cde3;
+  background-color: #1eb1fc;
+  border-color: #1eb1fc;
+  transition: all 0.8s;
 }
-.card-action a:active {
-  background-color: #ccc;
+.card__action a:focus {
+  color: #fff;
+  background-color: #1eb1fc;
+  border-color: #1eb1fc;
+}
+.card__action a:active {
+  color: #fff !important;
+  background-color: #1eb1fc;
+  border-color: #1eb1fc;
+}
+.card__action a:active:hover {
+  color: #fff !important;
+  background-color: #1eb1fc;
+  border-color: #1eb1fc;
 }
 .card blockquote {
   margin-bottom: 30px;
@@ -518,6 +626,52 @@ a:active {
   border-color: #1eb1fc;
   background-color: #f0f8ff;
   font-weight: bold;
+}
+@media (min-width: 900px) {
+  .card-block .container-article {
+    width: 85%;
+  }
+  .card {
+    width: 30%;
+  }
+}
+.certificate .container-article {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 90%;
+}
+.certificate-card {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 2px;
+  background-color: #fff1de;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.certificate-card:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.5s;
+}
+.certificate__title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .certificate .container-article {
+    width: 85%;
+  }
 }
 .main-container {
   min-width: 320px;
@@ -555,6 +709,9 @@ a:active {
 }
 .divider-main--about {
   margin-top: 20px;
+}
+.divider-main--blog-single {
+  margin-bottom: 20px;
 }
 .feature .container-article {
   padding-bottom: 0;
@@ -611,7 +768,7 @@ a:active {
 .footer__links {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #f0f0f0;
+  background-color: #f7f5f5;
   text-align: center;
 }
 .footer__links-title {
@@ -639,7 +796,7 @@ a:active {
 .footer__social {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #f5f5f5;
+  background-color: #f7f5f5;
   text-align: center;
 }
 .footer__social-title {
@@ -662,7 +819,7 @@ a:active {
 .footer__payment {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #f5f5f5;
+  background-color: #f7f5f5;
   text-align: center;
 }
 .footer__payment-title {
@@ -719,7 +876,7 @@ a:active {
   margin-bottom: 20px;
   padding: 20px;
   font-size: 16px;
-  background-color: #f5f5f5;
+  background-color: #e9f7f8;
   transition: all 0.5s;
   overflow: hidden;
 }
@@ -828,7 +985,10 @@ a:active {
 }
 .introduction--tehnology .introduction__aquel-title {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+}
+.introduction__reading-time {
+  margin-bottom: 20px;
 }
 .reading-time {
   color: #999;
@@ -840,10 +1000,67 @@ a:active {
 .introduction--about-us .introduction__aquel-title svg {
   fill: #1eb1fc;
 }
+.introduction--payment-and-shipping {
+  height: 50vh;
+  text-align: center;
+}
+.introduction--payment-and-shipping .introduction__title {
+  margin-bottom: 20px;
+}
+.introduction--payment-and-shipping .introduction__aquel-title svg {
+  margin-top: 10px;
+  fill: #1eb1fc;
+}
+.introduction__content .introduction__content--payment-and-shipping {
+  text-align: center;
+}
+.introduction--privacy-police {
+  height: 50vh;
+  text-align: center;
+}
+.introduction--privacy-police .introduction__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.introduction--privacy-police .introduction__aquel-title svg {
+  fill: #1eb1fc;
+}
+.introduction--warranty-and-service {
+  height: 50vh;
+  text-align: center;
+}
+.introduction--warranty-and-service .introduction__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.introduction--warranty-and-service .introduction__aquel-title svg {
+  fill: #1eb1fc;
+}
+.introduction--blog {
+  height: 50vh;
+}
+.introduction--blog .introduction__title {
+  margin-bottom: 20px;
+}
+.introduction--blog .introduction__aquel-title svg {
+  margin-bottom: 20px;
+  fill: #1eb1fc;
+}
+.introduction--blog-single {
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.introduction--blog-single .introduction__title {
+  margin-bottom: 30px;
+}
 @media (min-width: 768px) {
   .introduction--about-us .introduction__aquel-title svg {
     width: 120px;
     height: auto;
+  }
+  .introduction--privacy-police .introduction__title {
+    font-size: 40px;
   }
 }
 .navbar-default {
@@ -875,6 +1092,92 @@ a:active {
 }
 .navbar-default .navbar-nav a {
   font-size: 16px;
+}
+.payment-and-shipping .container-article {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+}
+.payment-and-shipping-card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 90%;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 2px;
+  background-color: #fff1de;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.payment-and-shipping-card:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.5s;
+}
+.payment-and-shipping__title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.payment-and-shipping__content {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .payment-and-shipping .container-article {
+    width: 80%;
+  }
+}
+.privacy-police .container-article {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+}
+.privacy-police-card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 90%;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 2px;
+  background-color: #fff1de;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.privacy-police-card:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.5s;
+}
+.privacy-police__title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.privacy-police__content {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .privacy-police .container-article {
+    width: 80%;
+  }
 }
 .promo-video {
   display: -ms-flexbox;
@@ -1087,6 +1390,25 @@ a:active {
   padding-left: 10px;
   text-align: center;
 }
+.single-product__pre-order-content {
+  margin-bottom: 20px;
+}
+.single-product__form-pre-order input {
+  height: 45px;
+  margin-bottom: 15px;
+  padding: 0;
+  padding-left: 10px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #77cde3;
+  background-color: transparent;
+  box-shadow: none;
+}
+.single-product__form-pre-order input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #66afe9;
+}
 .single-product__button-wrapper {
   text-align: center;
 }
@@ -1112,6 +1434,9 @@ a:active {
   .single-product__sub-title {
     font-size: 60px;
   }
+  .single-product__form-pre-order input {
+    margin-right: 20px;
+  }
 }
 .tab-pane p {
   margin-top: 20px;
@@ -1122,7 +1447,26 @@ a:active {
   background-color: #f5fdf1;
 }
 .tehnology-review .container-article {
-  width: 85%;
+  width: 90%;
+}
+.tehnology-review-card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 2px;
+  background-color: #fff1de;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.tehnology-review-card:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.5s;
 }
 .tehnology-review__content {
   margin-bottom: 20px;
@@ -1159,7 +1503,45 @@ a:active {
 }
 @media (min-width: 768px) {
   .tehnology-review .container-article {
-    width: 70%;
+    width: 75%;
+  }
+}
+.warranty-and-service .container-article {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+}
+.warranty-and-service-card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 2px;
+  transition: all 0.5s;
+  background-color: #fff1de;
+}
+.warranty-and-service-card:hover {
+  transition: all 0.5s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.warranty-and-service__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .warranty-and-service .container-article {
+    width: 80%;
   }
 }
 .welcome-to-shop {
