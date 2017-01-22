@@ -1,10 +1,28 @@
 .infographics {
   text-align: center;
+
+  background-color: @bg-color-aqua-light;
 }
 
 .infographics__title {
 
 }
+
+.infographics-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.infographics-item {
+  width: 100%;
+}
+
 
 .infographics__item-title {
   margin-bottom: 20px;
@@ -46,11 +64,11 @@
 
 @media (min-width: 768px) {
 
-  .infographics {
-    display: flex;
-    justify-content: space-around;
+  .infographics-wrapper {
+    width: 90%;
+  }
 
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .infographics-item {
+    width: 33%;
   }
 }
