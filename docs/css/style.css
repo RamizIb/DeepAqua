@@ -909,6 +909,21 @@ a:active {
 }
 .infographics {
   text-align: center;
+  background-color: #f5fdf1;
+}
+.infographics-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.infographics-item {
+  width: 100%;
 }
 .infographics__item-title {
   margin-bottom: 20px;
@@ -941,13 +956,11 @@ a:active {
   color: #1eb1fc;
 }
 @media (min-width: 768px) {
-  .infographics {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .infographics-wrapper {
+    width: 90%;
+  }
+  .infographics-item {
+    width: 33%;
   }
 }
 .introduction {
