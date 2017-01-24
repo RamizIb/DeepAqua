@@ -978,6 +978,9 @@ a:active {
   margin-right: 15px;
   fill: #1eb1fc;
 }
+.infographics-first-block__question-list-one {
+  font-size: 18px;
+}
 .infographics-first-block__question-list-one li {
   margin-bottom: 10px;
 }
@@ -991,6 +994,9 @@ a:active {
   margin-right: 15px;
   fill: #1eb1fc;
 }
+.infographics-first-block__question-list-two {
+  font-size: 18px;
+}
 .infographics-first-block__question-list-two li {
   margin-bottom: 10px;
 }
@@ -1003,6 +1009,9 @@ a:active {
 .question-content-three__title svg {
   margin-right: 15px;
   fill: #1eb1fc;
+}
+.infographics-first-block__question-list-three {
+  font-size: 18px;
 }
 .infographics-first-block__question-list-three li {
   margin-bottom: 10px;
@@ -1048,6 +1057,7 @@ a:active {
   border-right: 3px solid #1eb1fc;
   border-left: 3px solid #1eb1fc;
   border-radius: 15px;
+  font-size: 18px;
 }
 .infographics-second-block__list li {
   margin-bottom: 10px;
@@ -1093,6 +1103,7 @@ a:active {
   border-top: 2px solid #1eb1fc;
   border-bottom: 2px solid #1eb1fc;
   border-radius: 15px;
+  font-size: 18px;
 }
 .infographics-third-block__feature-item-one {
   font-size: 26px;
@@ -1111,6 +1122,7 @@ a:active {
 }
 .infographics-third-block__content {
   text-align: center;
+  font-size: 20px;
 }
 @media (min-width: 768px) {
   .question-content-one__title {
