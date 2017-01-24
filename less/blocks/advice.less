@@ -1,14 +1,14 @@
 .advice {
   padding-top: 20px;
-  padding-right: 10px;
+  padding-right: 20px;
   padding-bottom: 20px;
-  padding-left: 10px;
+  padding-left: 20px;
 
   background-color: @bg-color-pink-light;
 }
 
 .advice .container-article {
-  margin: 0;
+
 }
 
 .advice__title {
@@ -57,17 +57,29 @@
 @media (min-width: 768px) {
 
   .advice {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
   }
 
-  .advice .container-article {
-    width: 35%;
+  .advice__title {
+    font-size: 30px;
+  }
+
+  .advice__content {
+    font-size: 24px;
+  }
+
+  .container-article.container-article--form {
+    width: 40%;
+
+    padding-bottom: 35px;
+
+    background-color: #fff;
+    border: 1px solid @style-color;
+    border-radius: 15px;
   }
 
   .advice .button-wrapper {
-    width: 100%;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 
