@@ -115,44 +115,12 @@
   color: #999;
   text-align: center;
 }
-.label-first,
-.label-two {
-  display: none;
-}
-.form-control {
-  display: block;
-  height: 45px;
-  width: 80%;
-  margin: 0 auto;
-  padding: 0;
-  padding-left: 10px;
-  border: none;
-  border-radius: 0;
-  border-bottom: 3px solid #77cde3;
-  background-color: transparent;
-  box-shadow: none;
-}
-.form-control:focus {
-  outline: none;
-  box-shadow: none;
-}
 @media (min-width: 768px) {
   .advice__title {
     font-size: 30px;
   }
   .advice__content {
     font-size: 24px;
-  }
-  .advice .container-article--form {
-    width: 50%;
-    padding-bottom: 35px;
-    background-color: transparent;
-    border: 1px solid #1eb1fc;
-    border-radius: 15px;
-  }
-  .advice .button-wrapper {
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
 }
 .animation-fadeIn {
@@ -968,6 +936,21 @@ a:active {
   padding-left: 20px;
   background-color: #f5fdf1;
 }
+.infographics-first-block__slider {
+  width: 100%;
+}
+.carousel-indicators {
+  bottom: 0;
+}
+.carousel-indicators li {
+  background-color: #50c2fd;
+}
+.carousel-indicators .active {
+  background-color: #1eb1fc;
+}
+.infographics-first-block__content {
+  width: 100%;
+}
 .question-content-one__title {
   margin-bottom: 20px;
   font-size: 20px;
@@ -1021,7 +1004,7 @@ a:active {
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  background-color: #fce7e3;
+  background-color: #fff;
 }
 .infographics-second-block__title {
   max-width: 580px;
@@ -1050,12 +1033,11 @@ a:active {
 }
 .infographics-second-block__list {
   margin-bottom: 25px;
-  padding-top: 25px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
   list-style: none;
-  border-right: 3px solid #1eb1fc;
-  border-left: 3px solid #1eb1fc;
   border-radius: 15px;
   font-size: 18px;
 }
@@ -1081,6 +1063,7 @@ a:active {
   font-size: 18px;
   text-align: center;
   font-weight: 600;
+  color: red;
 }
 .infographics-third-block__list-wrapper {
   display: -ms-flexbox;
@@ -1103,7 +1086,7 @@ a:active {
   border-top: 2px solid #1eb1fc;
   border-bottom: 2px solid #1eb1fc;
   border-radius: 15px;
-  font-size: 18px;
+  font-size: 20px;
 }
 .infographics-third-block__feature-item-one {
   font-size: 26px;
@@ -1120,11 +1103,17 @@ a:active {
   font-weight: 600;
   color: #0398e4;
 }
+.infographics-third-block__divider {
+  margin-bottom: 20px;
+}
+.infographics-third-block__divider img {
+  margin: 0 auto;
+}
 .infographics-third-block__content {
   text-align: center;
   font-size: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 850px) {
   .question-content-one__title {
     text-align: left;
   }
@@ -1133,6 +1122,12 @@ a:active {
   }
   .question-content-three__title {
     text-align: left;
+  }
+  .infographics-first-block__slider {
+    width: 45%;
+  }
+  .infographics-first-block__content {
+    width: 40%;
   }
 }
 .introduction {

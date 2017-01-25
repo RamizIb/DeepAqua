@@ -4,6 +4,7 @@
 *.log
 *.pdf
 *.psd
+*.htaccess
 *.sublime*
 less/
 node_modules/
