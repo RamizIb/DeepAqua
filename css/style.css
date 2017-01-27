@@ -61,6 +61,45 @@
     width: 95%;
   }
 }
+.acquired .container-article {
+  width: 90%;
+}
+.acquired__card {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 2px;
+  background-color: #fff1de;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.acquired__card:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.5s;
+}
+.acquired__title {
+  text-align: center;
+}
+.acquired__card--video {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.acquired__card--video:hover {
+  box-shadow: none;
+  transition: none;
+}
+@media (min-width: 768px) {
+  .acquired .container-article {
+    width: 75%;
+  }
+  .acquired__card--video {
+    width: 90%;
+  }
+}
 .advantages {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1140,6 +1179,14 @@ a:active {
 .introduction--blog-single .introduction__title {
   margin-bottom: 30px;
 }
+.introduction--acquired {
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.introduction--acquired .introduction__aquel-title svg {
+  fill: #1eb1fc;
+}
 @media (min-width: 768px) {
   .introduction--about-us .introduction__aquel-title svg {
     width: 120px;
@@ -1276,17 +1323,18 @@ a:active {
   padding-bottom: 20px;
   background-color: #ffffff;
 }
-.promo-video__title {
+.promo__video-title {
   margin-bottom: 20px;
   text-align: center;
+  font-size: 30px;
 }
 .promo__video {
   text-align: center;
-  width: 100%;
+  width: 90%;
 }
 @media (min-width: 768px) {
   .promo__video {
-    width: 80%;
+    width: 75%;
   }
 }
 .shop-showcase {
