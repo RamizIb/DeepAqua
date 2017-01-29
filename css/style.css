@@ -996,6 +996,30 @@ a:active {
 .carousel-indicators .active {
   background-color: #0398e4;
 }
+.infographics__slider-one img {
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+.infographics__slider-one:hover img {
+  opacity: 1;
+  transition: all 0.5s;
+}
+.infographics__slider-two img {
+  opacity: 0.85;
+  transition: all 0.5s;
+}
+.infographics__slider-two:hover img {
+  opacity: 1;
+  transition: all 0.5s;
+}
+.infographics__slider-three img {
+  opacity: 0.85;
+  transition: all 0.5s;
+}
+.infographics__slider-three:hover img {
+  opacity: 1;
+  transition: all 0.5s;
+}
 .infographics-first-block__content {
   width: 100%;
 }
