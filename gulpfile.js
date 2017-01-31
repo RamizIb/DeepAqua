@@ -51,6 +51,7 @@ gulp.task("copy", function() {
     "fonts/**/**",
     "catalog/**",
     "blog/**/**",
+    "video/**",
     "img/**",
     "js/**",
     "*.html"

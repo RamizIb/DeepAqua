@@ -155,12 +155,19 @@
   font-size: 18px;
   text-align: center;
 }
+.advice__content--small {
+  font-size: 12px;
+  text-align: center;
+}
 @media (min-width: 768px) {
   .advice__title {
     font-size: 28px;
   }
   .advice__content {
     font-size: 20px;
+  }
+  .advice__content--small {
+    font-size: 14px;
   }
   .advice .container-article--form {
     width: 50%;
@@ -1559,22 +1566,7 @@ a:active {
 }
 .single-product__pre-order-content {
   margin-bottom: 20px;
-}
-.single-product__form-pre-order input {
-  height: 45px;
-  margin-bottom: 15px;
-  padding: 0;
-  padding-left: 10px;
-  border: none;
-  border-radius: 0;
-  border-bottom: 3px solid #77cde3;
-  background-color: transparent;
-  box-shadow: none;
-}
-.single-product__form-pre-order input:focus {
-  outline: none;
-  box-shadow: none;
-  border-color: #66afe9;
+  text-align: center;
 }
 .single-product__button-wrapper {
   text-align: center;
@@ -1600,9 +1592,6 @@ a:active {
   }
   .single-product__sub-title {
     font-size: 60px;
-  }
-  .single-product__form-pre-order input {
-    margin-right: 20px;
   }
 }
 .tab-pane p {
