@@ -542,6 +542,7 @@ a:active {
   border-color: #1eb1fc;
 }
 .btn--buy {
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-right: 25px;
   padding-bottom: 15px;
@@ -1603,6 +1604,7 @@ a:active {
   text-align: center;
 }
 .single-product__button-wrapper {
+  width: 80%;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -1695,6 +1697,122 @@ a:active {
   .tehnology-review .container-article {
     width: 75%;
   }
+}
+.tinkoffPayRow {
+  display: block;
+}
+.collapse input,
+.collapse select,
+.collapse label {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.collapsing {
+  transition-duration: 0.25s;
+}
+.well {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  border: none;
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  transition: all 2s;
+}
+.well:hover {
+  background-color: #eef8fc;
+  transition: all 0.5s;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.tinkoffPayRow--sum {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1eb1fc;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  text-align: center;
+}
+.tinkoffPayRow--city {
+  color: #777777;
+}
+.tinkoffPayRow--desc {
+  height: 40px;
+  padding-left: 5px;
+  border: 1px solid;
+  border-color: #1eb1fc;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+.tinkoffPayRow--desc:focus {
+  border: 2px solid;
+  border-color: #1eb1fc;
+}
+.tinkoffPayRow--tel {
+  height: 40px;
+  padding-left: 5px;
+  border: 1px solid;
+  border-color: #1eb1fc;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+.tinkoffPayRow--tel:focus {
+  border: 2px solid;
+  border-color: #1eb1fc;
+}
+.collapse .tinkoffPayRow--tel-label {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 295px;
+  line-height: 18px;
+  font-size: 13px;
+  color: #777777;
+}
+input.tinkoffPayRow--button-pay {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  width: 150px;
+  font-size: 14px;
+  background-color: transparent;
+  color: #1eb1fc;
+  border: 1px solid;
+  border-color: #1eb1fc;
+  border-radius: 15px;
+  transition: all 0.8s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+input.tinkoffPayRow--button-pay:hover {
+  color: #fff;
+  background-color: #1eb1fc;
+  border-color: #1eb1fc;
+  transition: all 0.8s;
+}
+input.tinkoffPayRow--button-pay:focus {
+  color: #fff;
+  background-color: #1eb1fc;
+  border-color: #1eb1fc;
+}
+input.tinkoffPayRow--button-pay:active {
+  color: #fff !important;
+  background-color: #1eb1fc;
+  border-color: #1eb1fc;
+}
+input.tinkoffPayRow--button-pay:active:hover {
+  color: #fff !important;
+  background-color: #1eb1fc;
+  border-color: #1eb1fc;
 }
 .warranty-and-service .container-article {
   display: -ms-flexbox;

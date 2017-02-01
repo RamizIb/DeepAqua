@@ -19,6 +19,21 @@
 
     </script>
 
+    <script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff.js"></script>
+        <script type="text/javascript">
+            function makePayment(amount, orderId, description, name, email, phone) {
+                var params = {
+                    TerminalKey: "1481788451003DEMO",
+                    Amount: amount,
+                    OrderId: orderId,
+                    Description: description,
+                    DATA: "Email=" + email + "|Phone=" + phone + "|Name=" + name,
+                    Frame: true
+                };
+                doPay(params);
+            }
+        </script>
+
     <meta name="description" content="Фильтр Aquel 200 в комплекте с ультрафиолетовой лампой и уникальным картриджем из 26 сортов керамических пород максимально очистит воду и обогатит ее полезными минералами. Идеально для дома и квартиры.">
 
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
@@ -77,7 +92,68 @@
               <img class="single-product__img" src="../img/small-aquel-200.png" alt="">
             </div>
             <div class="single-product__button-wrapper">
-              <a href="" class="btn btn-default btn--buy">ОФОРМИТЬ</a>
+              <a href="#collapsePayment" class="btn btn-default btn--buy" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapsePayment">ОФОРМИТЬ</a>
+              <div class="collapse" id="collapsePayment">
+                <div class="well">
+
+                  <form name="TinkoffPayForm">
+                  <input class="tinkoffPayRow tinkoffPayRow--sum" type="text" placeholder="Сумма заказа" name="paySum" value="46700" readonly>
+                    <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="payOrder">
+                    <label class="tinkoffPayRow tinkoffPayRow--city">Ваш город:</label>
+                    <select class="tinkoffPayRow tinkoffPayRow--desc" type="text" name="payDesc">
+                      <option value="Moscow">Москва</option>
+                      <option value="Saint-Petersburg">Санкт-Петербург</option>
+                      <option value="Veliky-Novgorod">Великий Новгород</option>
+                      <option value="Vladimir">Владимир</option>
+                      <option value="Ekaterinburg">Екатеринбург</option>
+                      <option value="Ivanovo">Иваново</option>
+                      <option value="Izhevsk">Ижевск</option>
+                      <option value="Yoshkar-Ola">Йошкар-Ола</option>
+                      <option value="Kazan">Казань</option>
+                      <option value="Kaliningrad">Калининград</option>
+                      <option value="Kaluga">Калуга</option>
+                      <option value="Kirov">Киров</option>
+                      <option value="Kostroma">Кострома</option>
+                      <option value="Krasnodar-region">Краснодарский край</option>
+                      <option value="Makhachkala">Махачкала</option>
+                      <option value="Naberezhnye-Chelny">Набережные Челны</option>
+                      <option value="Omsk">Омск</option>
+                      <option value="Perm">Пермь</option>
+                      <option value="Rybinsk">Рыбинск</option>
+                      <option value="Samara">Самара</option>
+                      <option value="Saratov">Саратов</option>
+                      <option value="Stavropol-region">Ставропольский край</option>
+                      <option value="Surgut">Сургут</option>
+                      <option value="Syktyvkar">Сыктывкар</option>
+                      <option value="Tver">Тверь</option>
+                      <option value="Tolyatti">Тольятти</option>
+                      <option value="Tomsk">Томск</option>
+                      <option value="Tula">Тула</option>
+                      <option value="Ufa">Уфа</option>
+                      <option value="Ukhta-(Komi-Republic)">Ухта (Республика Коми)</option>
+                      <option value="Tchaikovsky">Чайковский</option>
+                      <option value="Cheboksary">Чебоксары</option>
+                    </select>
+                  <input class="tinkoffPayRow" type="hidden" placeholder="ФИО плательщика" name="payName" required>
+                  <label class="tinkoffPayRow tinkoffPayRow--city">E-mail:</label>
+                  <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="E-mail" name="payEmail" required>
+                  <label class="tinkoffPayRow tinkoffPayRow--city">Телефон:</label>
+                  <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="Контактный телефон 7 -"
+                  name="payPhone" required>
+                  <label class="tinkoffPayRow tinkoffPayRow--tel-label">*Обязательно укажите телефон, по нему с Вами будет согласована доставка и монтаж.</label>
+                  <input class="tinkoffPayRow tinkoffPayRow--button-pay" type="button"
+                  onclick="makePayment(
+                    document.TinkoffPayForm.paySum.value.replace(/,/ig,'.') * 100,
+                    document.TinkoffPayForm.payOrder.value,
+                    document.TinkoffPayForm.payDesc.value,
+                    document.TinkoffPayForm.payName.value,
+                    document.TinkoffPayForm.payEmail.value,
+                    document.TinkoffPayForm.payPhone.value)"
+                    value="ОПЛАТИТЬ">
+                  </form>
+
+                </div>
+              </div>
             </div>
 
           </div>

@@ -54,6 +54,8 @@ gulp.task("copy", function() {
     "video/**",
     "img/**",
     "js/**",
+    ".htaccess",
+    "robots.txt",
     "*.html"
     ], {
       base: "."
