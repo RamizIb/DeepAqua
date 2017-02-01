@@ -241,6 +241,40 @@
 .fadein-post {
   /* post checker */
 }
+.answer-main .container-article {
+  width: 90%;
+}
+.answer-main__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.panel-default > .panel-heading {
+  background-color: #f5fdf1;
+}
+.panel-title a {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.panel-title a:focus {
+  color: #1eb1fc;
+  outline: none;
+  text-decoration: none;
+}
+.panel-title a:active {
+  color: #1eb1fc;
+}
+.panel-body {
+  background-color: #fff1de;
+}
+.panel-body li {
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .answer-main .container-article {
+    width: 75%;
+  }
+}
 .blog .container-article {
   width: 90%;
 }
