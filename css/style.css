@@ -1481,6 +1481,9 @@ a:active {
   text-align: center;
   width: 90%;
 }
+.promo__video video {
+  width: 100%;
+}
 @media (min-width: 768px) {
   .promo__video {
     width: 75%;
