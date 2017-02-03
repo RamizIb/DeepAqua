@@ -147,6 +147,9 @@
   padding-left: 20px;
   background-color: #fceffc;
 }
+.advice--single-product {
+  background-color: #fff;
+}
 .advice__title {
   text-align: center;
 }
@@ -247,6 +250,9 @@
 .answer-main__title {
   text-align: center;
   margin-bottom: 20px;
+}
+.answer-main__item-weight {
+  font-weight: 600;
 }
 .panel-default > .panel-heading {
   background-color: #f5fdf1;
@@ -485,6 +491,11 @@ a:active {
   padding-bottom: 20px;
   padding-left: 20px;
   background-color: #fff1de;
+  transition: all 0.5s;
+}
+.brand-aquel__card--list:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.5s;
 }
 .brand-aquel__card {
   width: 100%;
@@ -496,6 +507,7 @@ a:active {
   text-align: center;
 }
 .brand-aquel__sub-title {
+  font-weight: 600;
   text-align: center;
 }
 .brand-aquel__title--full {
@@ -524,6 +536,10 @@ a:active {
   }
   .brand-aquel__card--intro {
     width: 50%;
+  }
+  .brand-aquel__card--achievements {
+    width: 95%;
+    background-color: #fff;
   }
 }
 .button-wrapper {
@@ -682,10 +698,15 @@ a:active {
   font-weight: 300;
   text-align: center;
 }
+.card:hover .card__content {
+  color: #1eb1fc;
+  transition: all 0.5s;
+}
 .card__content {
   margin-bottom: 20px;
   border-radius: 0 0 2px 2px;
   text-align: center;
+  transition: all 0.5s;
 }
 .card__image {
   margin-top: 10px;
@@ -928,6 +949,9 @@ a:active {
   background-color: #f7f5f5;
   text-align: center;
 }
+.footer__links li {
+  font-size: 14px;
+}
 .footer__links ul {
   padding: 0;
   margin: 0;
@@ -1063,7 +1087,7 @@ a:active {
   padding-top: 50px;
 }
 .infographics__title {
-  max-width: 450px;
+  max-width: 480px;
   margin: 0 auto;
   margin-bottom: 50px;
   font-size: 35px;
@@ -1770,6 +1794,7 @@ a:active {
   transition-duration: 0.25s;
 }
 .well {
+  position: relative;
   max-width: 500px;
   margin: 0 auto;
   padding-top: 20px;
@@ -1784,8 +1809,32 @@ a:active {
 }
 .well:hover {
   background-color: #eef8fc;
-  transition: all 0.5s;
+  transition: all 2s;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.well:hover .well__secure-pay {
+  opacity: 0.8;
+  transition: all 2s;
+}
+.well:hover .well__secure-img {
+  opacity: 0.8;
+  transition: all 2s;
+}
+.well__secure-img {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  opacity: 0;
+  transition: all 2s;
+}
+.well__secure-pay {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 13px;
+  color: #777777;
+  opacity: 0;
+  transition: all 2s;
 }
 .tinkoffPayRow--sum {
   font-size: 18px;
