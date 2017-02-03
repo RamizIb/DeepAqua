@@ -468,6 +468,64 @@ a:active {
   outline: 1px solid black;
 }
  */
+.brand-aquel .container-article {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 90%;
+}
+.brand-aquel__card--list {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-color: #fff1de;
+}
+.brand-aquel__card {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.brand-aquel__title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.brand-aquel__sub-title {
+  text-align: center;
+}
+.brand-aquel__title--full {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.brand-aquel__content {
+  font-size: 16px;
+}
+.brand-aquel__list {
+  padding-left: 0;
+  list-style: none;
+}
+.brand-aquel__year {
+  font-weight: 600;
+}
+@media (min-width: 880px) {
+  .brand-aquel .container-article {
+    width: 80%;
+  }
+  .brand-aquel__card {
+    width: 45%;
+  }
+  .brand-aquel__card--person {
+    width: 40%;
+  }
+  .brand-aquel__card--intro {
+    width: 50%;
+  }
+}
 .button-wrapper {
   margin: 0 auto;
   text-align: center;
@@ -870,9 +928,6 @@ a:active {
   background-color: #f7f5f5;
   text-align: center;
 }
-.footer__links-title {
-  margin-bottom: 20px;
-}
 .footer__links ul {
   padding: 0;
   margin: 0;
@@ -1252,6 +1307,10 @@ a:active {
 }
 .introduction--acquired .introduction__aquel-title svg {
   fill: #1eb1fc;
+}
+.introduction--brand-aquel {
+  height: 50vh;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .introduction--about-us .introduction__aquel-title svg {
@@ -1873,4 +1932,15 @@ input.tinkoffPayRow--button-pay:active:hover {
 .welcome-to-shop__subtitle {
   font-size: 20px;
   margin-bottom: 50px;
+}
+.welcome-to-shop__subtitle--success {
+  width: 85%;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .welcome-to-shop__subtitle--success {
+    width: 60%;
+  }
 }

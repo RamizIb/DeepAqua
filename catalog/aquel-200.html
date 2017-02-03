@@ -134,13 +134,12 @@
                       <option value="Tchaikovsky">Чайковский</option>
                       <option value="Cheboksary">Чебоксары</option>
                     </select>
-                  <input class="tinkoffPayRow" type="hidden" placeholder="ФИО плательщика" name="payName" required>
+                  <input class="tinkoffPayRow" type="hidden" placeholder="ФИО плательщика" name="payName">
                   <label class="tinkoffPayRow tinkoffPayRow--city">E-mail:</label>
-                  <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="E-mail" name="payEmail" required>
+                  <input class="tinkoffPayRow tinkoffPayRow--tel" type="email" placeholder="E-mail" name="payEmail" required>
                   <label class="tinkoffPayRow tinkoffPayRow--city">Телефон:</label>
-                  <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="Контактный телефон 7 -"
-                  name="payPhone" required>
-                  <label class="tinkoffPayRow tinkoffPayRow--tel-label">*Обязательно укажите телефон, по нему с Вами будет согласована доставка и монтаж.</label>
+                  <input class="tinkoffPayRow tinkoffPayRow--tel" type="tel" placeholder="Контактный телефон 7 -" name="payPhone" required>
+                  <label class="tinkoffPayRow tinkoffPayRow--tel-label">*Обязательно <b>укажите телефон</b>, по нему с Вами будет согласована доставка.</label>
                   <input class="tinkoffPayRow tinkoffPayRow--button-pay" type="button"
                   onclick="makePayment(
                     document.TinkoffPayForm.paySum.value.replace(/,/ig,'.') * 100,
@@ -330,6 +329,7 @@
           <div class="footer__links">
             <h4 class="footer__links-title">Важная информация</h4>
             <ul>
+              <li><a href="../brand-aquel.html">Бренд Aquel</a></li>
               <li><a href="../contract-offer.html">Договор оферта</a></li>
               <li><a href="../certificate-of-quality.html">Сертификаты качества</a></li>
               <li><a href="../privacy-policy.html">Политика конфиденциальности</a></li>
