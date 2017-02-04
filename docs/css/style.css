@@ -1229,6 +1229,7 @@ a:active {
       justify-content: center;
   height: auto;
   max-height: 1000px;
+  padding-bottom: 30px;
   background-color: #e9f7f8;
 }
 .introduction__title {
@@ -1985,6 +1986,7 @@ input.tinkoffPayRow--button-pay:active:hover {
   height: auto;
   max-height: 1000px;
   margin: 0 auto;
+  padding-bottom: 30px;
   background-color: #f5fdf1;
 }
 .welcome-to-shop__title {
