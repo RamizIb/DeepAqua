@@ -650,10 +650,6 @@ a:active {
   background-color: #1eb1fc;
   border-color: #1eb1fc;
 }
-a.callbackkiller.cbk-phone.cbk-phone-xs {
-  right: 1% !important;
-  bottom: 1% !important;
-}
 .card-block .divider-main--card {
   margin: 0 auto;
   width: 70%;
@@ -1304,7 +1300,8 @@ a.callbackkiller.cbk-phone.cbk-phone-xs {
   fill: #1eb1fc;
 }
 .introduction--warranty-and-service {
-  height: 50vh;
+  height: auto;
+  padding-top: 30px;
   text-align: center;
 }
 .introduction--warranty-and-service .introduction__title {
