@@ -164,7 +164,7 @@
 }
 @media (min-width: 768px) {
   .advice__title {
-    font-size: 28px;
+    font-size: 30px;
   }
   .advice__content {
     font-size: 20px;
@@ -1227,7 +1227,7 @@ a:active {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  height: 90vh;
+  height: auto;
   max-height: 1000px;
   background-color: #e9f7f8;
 }
@@ -1344,6 +1344,9 @@ a:active {
   text-align: center;
 }
 @media (min-width: 768px) {
+  .introduction {
+    height: 90vh;
+  }
   .introduction--about-us .introduction__aquel-title svg {
     width: 120px;
     height: auto;
@@ -1979,7 +1982,7 @@ input.tinkoffPayRow--button-pay:active:hover {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  height: 90vh;
+  height: auto;
   max-height: 1000px;
   margin: 0 auto;
   background-color: #f5fdf1;
@@ -1999,6 +2002,9 @@ input.tinkoffPayRow--button-pay:active:hover {
   text-align: center;
 }
 @media (min-width: 768px) {
+  .welcome-to-shop {
+    height: 90vh;
+  }
   .welcome-to-shop__subtitle--success {
     width: 60%;
   }
