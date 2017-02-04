@@ -650,6 +650,10 @@ a:active {
   background-color: #1eb1fc;
   border-color: #1eb1fc;
 }
+a.callbackkiller.cbk-phone.cbk-phone-xs {
+  right: 1% !important;
+  bottom: 1% !important;
+}
 .card-block .divider-main--card {
   margin: 0 auto;
   width: 70%;
@@ -1246,7 +1250,8 @@ a:active {
   max-width: 100%;
 }
 .introduction--tehnology {
-  height: 50vh;
+  height: auto;
+  padding-top: 30px;
   text-align: center;
 }
 .introduction--tehnology .introduction__title {
@@ -1264,14 +1269,16 @@ a:active {
   color: #999;
 }
 .introduction--about-us {
-  height: 50vh;
+  height: auto;
+  padding-top: 30px;
   text-align: center;
 }
 .introduction--about-us .introduction__aquel-title svg {
   fill: #1eb1fc;
 }
 .introduction--payment-and-shipping {
-  height: 50vh;
+  height: auto;
+  padding-top: 30px;
   text-align: center;
 }
 .introduction--payment-and-shipping .introduction__title {
@@ -1285,7 +1292,8 @@ a:active {
   text-align: center;
 }
 .introduction--privacy-police {
-  height: 50vh;
+  height: auto;
+  padding-top: 30px;
   text-align: center;
 }
 .introduction--privacy-police .introduction__title {
@@ -1307,7 +1315,8 @@ a:active {
   fill: #1eb1fc;
 }
 .introduction--blog {
-  height: 50vh;
+  height: auto;
+  padding-top: 30px;
 }
 .introduction--blog .introduction__title {
   margin-bottom: 20px;
@@ -1333,7 +1342,8 @@ a:active {
   fill: #1eb1fc;
 }
 .introduction--brand-aquel {
-  height: 50vh;
+  height: auto;
+  padding-top: 30px;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -1480,6 +1490,9 @@ a:active {
 .promo__video {
   text-align: center;
   width: 90%;
+}
+.promo__video video {
+  width: 100%;
 }
 @media (min-width: 768px) {
   .promo__video {
