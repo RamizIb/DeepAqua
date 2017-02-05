@@ -23,7 +23,7 @@
         <script type="text/javascript">
             function makePayment(amount, orderId, description, name, email, phone) {
                 var params = {
-                    TerminalKey: "1481788451003DEMO",
+                    TerminalKey: "1486204979296DEMO",
                     Amount: amount,
                     OrderId: orderId,
                     Description: description,
@@ -97,7 +97,7 @@
                 <div class="well">
 
                   <form name="TinkoffPayForm">
-                  <input class="tinkoffPayRow tinkoffPayRow--sum" type="text" placeholder="Сумма заказа" name="paySum" value="49400" readonly>
+                  <input class="tinkoffPayRow tinkoffPayRow--sum" type="hidden" placeholder="Сумма заказа" name="paySum" value="49400" readonly>
                     <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="payOrder">
                     <label class="tinkoffPayRow tinkoffPayRow--city">Ваш город:</label>
                     <select class="tinkoffPayRow tinkoffPayRow--desc" type="text" name="payDesc">
@@ -136,9 +136,9 @@
                     </select>
                   <input class="tinkoffPayRow" type="hidden" placeholder="ФИО плательщика" name="payName">
                   <label class="tinkoffPayRow tinkoffPayRow--city">E-mail:</label>
-                  <input class="tinkoffPayRow tinkoffPayRow--tel" type="email" placeholder="E-mail" name="payEmail" required>
+                  <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="E-mail" name="payEmail" required>
                   <label class="tinkoffPayRow tinkoffPayRow--city">Телефон:</label>
-                  <input class="tinkoffPayRow tinkoffPayRow--tel" type="tel" placeholder="Контактный телефон 7 -" name="payPhone" required>
+                  <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="Контактный телефон +7" name="payPhone" pattern="7[0-9]{10}" required>
                   <label class="tinkoffPayRow tinkoffPayRow--tel-label">*Обязательно <b>укажите телефон</b>, по нему с Вами будет согласована доставка.</label>
                   <input class="tinkoffPayRow tinkoffPayRow--button-pay" type="button"
                   onclick="makePayment(
