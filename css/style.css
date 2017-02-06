@@ -145,7 +145,7 @@
   padding-right: 20px;
   padding-bottom: 30px;
   padding-left: 20px;
-  background-color: #fceffc;
+  background-color: #fff;
 }
 .advice--single-product {
   background-color: #fff;
@@ -1347,6 +1347,33 @@ a:active {
 @media (min-width: 768px) {
   .introduction {
     height: 90vh;
+  }
+  .introduction--about-us {
+    height: auto;
+  }
+  .introduction--tehnology {
+    height: auto;
+  }
+  .introduction--payment-and-shipping {
+    height: auto;
+  }
+  .introduction--privacy-police {
+    height: auto;
+  }
+  .introduction--warranty-and-service {
+    height: auto;
+  }
+  .introduction--blog {
+    height: auto;
+  }
+  .introduction--blog-single {
+    height: auto;
+  }
+  .introduction--acquired {
+    height: auto;
+  }
+  .introduction--brand-aquel {
+    height: auto;
   }
   .introduction--about-us .introduction__aquel-title svg {
     width: 120px;

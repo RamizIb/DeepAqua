@@ -1,1 +1,2 @@
 User-agent: *
+Host: https://aquel-shop.ru
