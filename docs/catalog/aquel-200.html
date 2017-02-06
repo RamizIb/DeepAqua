@@ -96,7 +96,13 @@
               <div class="collapse" id="collapsePayment">
                 <div class="well">
 
-                  <form name="TinkoffPayForm">
+                  <form name="TinkoffPayForm" onsubmit="makePayment(
+                    document.TinkoffPayForm.paySum.value.replace(/,/ig,'.') * 100,
+                    document.TinkoffPayForm.payOrder.value,
+                    document.TinkoffPayForm.payDesc.value,
+                    document.TinkoffPayForm.payName.value,
+                    document.TinkoffPayForm.payEmail.value,
+                    document.TinkoffPayForm.payPhone.value); return false;">
                   <input class="tinkoffPayRow tinkoffPayRow--sum" type="hidden" placeholder="Сумма заказа" name="paySum" value="46700" readonly>
                     <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="payOrder">
                     <label class="tinkoffPayRow tinkoffPayRow--city">Ваш город:</label>
@@ -139,16 +145,8 @@
                   <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="E-mail" name="payEmail" required>
                   <label class="tinkoffPayRow tinkoffPayRow--city">Телефон:</label>
                   <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="Контактный телефон +7" name="payPhone" pattern="7[0-9]{10}" required>
-                  <label class="tinkoffPayRow tinkoffPayRow--tel-label">*Обязательно <b>укажите телефон</b>, по нему с Вами будет согласована доставка.</label>
-                  <input class="tinkoffPayRow tinkoffPayRow--button-pay" type="button"
-                  onclick="makePayment(
-                    document.TinkoffPayForm.paySum.value.replace(/,/ig,'.') * 100,
-                    document.TinkoffPayForm.payOrder.value,
-                    document.TinkoffPayForm.payDesc.value,
-                    document.TinkoffPayForm.payName.value,
-                    document.TinkoffPayForm.payEmail.value,
-                    document.TinkoffPayForm.payPhone.value)"
-                    value="ОПЛАТИТЬ">
+                  <label class="tinkoffPayRow tinkoffPayRow--tel-label">*Обязательно <b>укажите телефон</b> вида <b>71234567890</b>, по нему с Вами будет согласована доставка.</label>
+                  <input class="tinkoffPayButton tinkoffPayRow--button-pay" type="submit" value="Оплатить">
                   </form>
                   <img class="well__secure-img" width="90" src="../img/visa-mastercard-logo-small.png" alt="Защищенные платежи">
                   <span class="well__secure-pay">*Secure Payment</span>
