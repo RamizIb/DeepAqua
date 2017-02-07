@@ -92,6 +92,9 @@
   box-shadow: none;
   transition: none;
 }
+.acquired__video {
+  width: 100%;
+}
 @media (min-width: 768px) {
   .acquired .container-article {
     width: 75%;
@@ -248,8 +251,8 @@
   width: 90%;
 }
 .answer-main__title {
-  text-align: center;
   margin-bottom: 20px;
+  text-align: center;
 }
 .answer-main__item-weight {
   font-weight: 600;
@@ -1242,6 +1245,7 @@ a:active {
   margin-bottom: 70px;
   font-size: 80px;
   color: #1eb1fc;
+  text-align: center;
 }
 .introduction__img {
   max-width: 100%;
@@ -2023,6 +2027,7 @@ input.tinkoffPayRow--button-pay:active:hover {
 .welcome-to-shop__subtitle {
   font-size: 20px;
   margin-bottom: 50px;
+  text-align: center;
 }
 .welcome-to-shop__subtitle--success {
   width: 85%;
