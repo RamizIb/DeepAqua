@@ -25,38 +25,172 @@
   <body>
     <div class="main-container">
       <section class="header">
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand animation-pulse" href="index.html">AQUEL</a>
+
+        <div class="header__contact-list">
+
+          <div class="contact-list-wrapper">
+            <div class="header__logo">
+              <a class="header__img" href="index.html">
+                <img src="img/header-logo.png" width="60" height="60" alt="Логотип">
+              </a>
+              <a class="header__name" href="index.html">A<img src="img/logo-name-letter-Q.png" alt="Логотип">UEL</a>
             </div>
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="aquel-tehnology.html">Технологии</a></li>
-                <li><a href="about.html">О Нас</a></li>
-                <li><a href="blog.html">Блог</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
+            <div class="header__tel">
+              <svg x="0px" y="0px" width="18" height="18" viewBox="0 0 348.077 348.077" xml:space="preserve">
+                <path d="M340.273,275.083l-53.755-53.761c-10.707-10.664-28.438-10.34-39.518,0.744l-27.082,27.076
+                c-1.711-0.943-3.482-1.928-5.344-2.973c-17.102-9.476-40.509-22.464-65.14-47.113c-24.704-24.701-37.704-48.144-47.209-65.257
+                c-1.003-1.813-1.964-3.561-2.913-5.221l18.176-18.149l8.936-8.947c11.097-11.1,11.403-28.826,0.721-39.521L73.39,8.194
+                C62.708-2.486,44.969-2.162,33.872,8.938l-15.15,15.237l0.414,0.411c-5.08,6.482-9.325,13.958-12.484,22.02
+                C3.74,54.28,1.927,61.603,1.098,68.941C-6,127.785,20.89,181.564,93.866,254.541c100.875,100.868,182.167,93.248,185.674,92.876
+                c7.638-0.913,14.958-2.738,22.397-5.627c7.992-3.122,15.463-7.361,21.941-12.43l0.331,0.294l15.348-15.029
+                C350.631,303.527,350.95,285.795,340.273,275.083z"/>
+              </svg>
+              <span><a href="tel:+79040459393">+7 904 045 93 93</a></span>
+            </div>
+
+            <div class="header__email">
+              <svg x="0px" y="0px" width="20" height="20" viewBox="0 0 31.012 31.012" xml:space="preserve">
+                <g>
+                  <path d="M28.512,26.529H2.5c-1.378,0-2.5-1.121-2.5-2.5V6.982c0-1.379,1.122-2.5,2.5-2.5h26.012c1.378,0,2.5,1.121,2.5,2.5v17.047
+                  C31.012,25.408,29.89,26.529,28.512,26.529z M2.5,5.482c-0.827,0-1.5,0.673-1.5,1.5v17.047c0,0.827,0.673,1.5,1.5,1.5h26.012
+                  c0.827,0,1.5-0.673,1.5-1.5V6.982c0-0.827-0.673-1.5-1.5-1.5H2.5z"/>
+                  <path d="M15.506,18.018c-0.665,0-1.33-0.221-1.836-0.662L0.891,6.219c-0.208-0.182-0.23-0.497-0.048-0.705
+                  c0.182-0.21,0.498-0.23,0.706-0.049l12.778,11.137c0.64,0.557,1.72,0.556,2.358,0L29.46,5.466c0.207-0.183,0.522-0.162,0.706,0.049
+                  c0.182,0.208,0.16,0.523-0.048,0.705L17.342,17.355C16.836,17.797,16.171,18.018,15.506,18.018z"/>
+                </g>
+              </svg>
+              <span><a href="mailto:support@aquel-shop.ru">Support@aquel-shop.ru</a></span>
+            </div>
+
+            <div class="header__social">
+              <span>Аккаунты в сетях:</span>
+              <a href="https://vk.com/aquel_shop" target="_blank">
+                <svg class="vk-icon" width="28" height="28" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.581 15.997c.304 0 .429-.204.425-.458-.016-.958.356-1.474 1.03-.802.744.744.896 1.26 1.801 1.26h1.601c.403 0 .562-.13.562-.334 0-.432-.711-1.194-1.312-1.752-.844-.783-.882-.802-.156-1.744.9-1.169 2.079-2.667 1.037-2.667h-1.991c-.387 0-.414.217-.551.542-.498 1.173-1.443 2.693-1.803 2.461-.377-.243-.204-1.203-.175-2.63.008-.377.006-.636-.571-.77-.314-.073-.621-.103-.903-.103-1.137 0-1.922.477-1.477.56.785.146.711 1.846.527 2.58-.319 1.278-1.518-1.012-2.018-2.152-.12-.275-.155-.488-.586-.488h-1.627c-.247 0-.394.08-.394.258 0 .301 1.479 3.36 2.892 4.885 1.379 1.487 2.742 1.354 3.689 1.354z"/>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/aquelofficial/" target="_blank">
+                <svg class="instagram-icon" width="28" height="28" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.615 6h-9.23c-.766 0-1.385.62-1.385 1.384v9.23c0 .766.619 1.386 1.385 1.386h9.23c.766 0 1.385-.62 1.385-1.385v-9.23c0-.765-.619-1.385-1.385-1.385zm-4.615 3.693c1.274 0 2.309 1.032 2.309 2.307s-1.035 2.307-2.309 2.307-2.307-1.033-2.307-2.307 1.033-2.307 2.307-2.307zm4.5 6.346c0 .255-.207.461-.461.461h-8.078c-.254 0-.461-.207-.461-.461v-5.039h.949c-.045.158-.078.32-.102.486-.023.168-.038.339-.038.514 0 2.04 1.652 3.693 3.691 3.693s3.691-1.653 3.691-3.693c0-.174-.015-.346-.039-.514-.023-.166-.058-.328-.102-.486h.95v5.039zm0-6.991c0 .255-.207.462-.461.462h-1.088c-.256 0-.461-.208-.461-.462v-1.087c0-.255.205-.461.461-.461h1.088c.254 0 .461.207.461.461v1.087z"/></svg>
+              </a>
+              <a href="https://ok.ru/group/53534045896769" target="_blank">
+                <svg class="od-icon" width="28" height="28" viewBox="0 0 50 50">
+                  <g>
+                    <path d="M32,25c-1,0-3,2-7,2s-6-2-7-2c-1.1,0-2,0.9-2,2c0,1,0.6,1.5,1,1.7c1.2,0.7,5,2.3,5,2.3l-4.3,5.4 c0,0-0.8,0.9-0.8,1.6c0,1.1,0.9,2,2,2c1,0,1.5-0.7,1.5-0.7S25,34,25,34c0,0,4.5,5.3,4.5,5.3S30,40,31,40c1.1,0,2-0.9,2-2 c0-0.6-0.8-1.6-0.8-1.6L28,31c0,0,3.8-1.6,5-2.3c0.4-0.3,1-0.7,1-1.7C34,25.9,33.1,25,32,25z"/>
+                    <path d="M25,10c-3.9,0-7,3.1-7,7s3.1,7,7,7c3.9,0,7-3.1,7-7S28.9,10,25,10z M25,20.5 c-1.9,0-3.5-1.6-3.5-3.5c0-1.9,1.6-3.5,3.5-3.5c1.9,0,3.5,1.6,3.5,3.5C28.5,18.9,26.9,20.5,25,20.5z"/>
+                  </g>
+                  <path d="M25,1C11.7,1,1,11.7,1,25s10.7,24,24,24s24-10.7,24-24S38.3,1,25,1z M25,44C14.5,44,6,35.5,6,25S14.5,6,25,6 s19,8.5,19,19S35.5,44,25,44z"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="header__callback">
+              <a class="btn btn-default btn--callback" href="#" role="button">ОБРАТНЫЙ ЗВОНОК</a>
+            </div>
+
+          </div><!-- /.contact-list-wrapper -->
+
+        </div><!-- /.header__contact-list -->
+
+        <div class="navbar-wrapper">
+
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Фильтр Aquel 200</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Фильтр Aquel 1000</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Фильтр Aquel Zero</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="aquel-tehnology.html">Технологии</a></li>
+                  <li><a href="payment-and-shipping.html">Оплата и доставка</a></li>
+                  <li><a href="warranty-and-service.html">Гарантия и обслуживание</a></li>
+                  <li><a href="certificate-of-quality.html">Сертификаты</a></li>
+                  <li><a href="brand-aquel.html">Бренд Аквел</a></li>
+                  <li><a href="about.html">О Нас</a></li>
+                  <li><a href="blog.html">Блог</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+
+        </div><!-- /.navbar-wrapper -->
+
       </section><!-- /.header -->
 
       <section class="main">
 
         <div class="welcome-to-shop">
-          <h1 class="welcome-to-shop__title animation-fadeIn">Добро пожаловать!</h1>
+
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <h1 class="welcome-to-shop__title">Продажа фильтров для очистки воды</h1>
+                <h2 class="welcome-to-shop__subtitle">Проточный фильтр под мойку для дома</h2>
+                <div class="button-wrapper">
+                <a class="btn btn-default btn--welcome-to-shop" href="catalog/aquel-200.html" role="button">AQUEL 200</a>
+                </div>
+              </div>
+
+              <div class="item">
+                <h2 class="item__title">Фильтр для воды в офис</h2>
+                <h2 class="item__subtitle">Отличный дизайн и современные технологии</h2>
+                <div class="button-wrapper">
+                <a class="btn btn-default btn--welcome-to-shop" href="catalog/aquel-1000.html" role="button">AQUEL 1000</a>
+                </div>
+              </div>
+
+              <div class="item">
+                <h2 class="item__title">Питьевая вода, доступная Вам где угодно</h2>
+                <h2 class="item__subtitle">Компактный фильтр, не требующий монтажа</h2>
+                <div class="button-wrapper">
+                <a class="btn btn-default btn--welcome-to-shop" href="catalog/aquel-zero.html" role="button">AQUEL ZERO</a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          <!-- <h1 class="welcome-to-shop__title animation-fadeIn">Добро пожаловать!</h1>
           <p class="welcome-to-shop__subtitle animation-fadeIn">В мир чистой питьевой воды</p>
           <div class="button-wrapper">
             <a class="btn btn-default btn--welcome-to-shop animation-fadeIn" href="catalog.html" role="button">КАТАЛОГ</a>
-          </div>
+          </div> -->
+
         </div>
 
         <div class="introduction">
