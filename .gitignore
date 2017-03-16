@@ -7,6 +7,5 @@
 *.htaccess
 *.sublime*
 video/
-less/
 node_modules/
 Thumbs.db

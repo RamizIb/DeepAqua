@@ -1,0 +1,157 @@
+.product-aquel-1000 {
+
+}
+
+.product-aquel-1000__title {
+  width: 100%;
+
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+
+  background-color: @main-color;
+
+  text-align: center;
+}
+
+.aquel-1000-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.aquel-1000__list {
+  width: 100%;
+  padding: 15px;
+}
+
+.aquel-1000__list ul {
+  list-style: none;
+}
+
+.aquel-1000__list li {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 50px;
+  font-weight: 600;
+}
+
+.aquel-1000__list .aquel-1000__list-item::before {
+  display: block;
+  content: " ";
+  position: absolute;
+
+  width: 40px;
+  height: 2px;
+
+  top: 15px;
+  left: -20px;
+
+  background-color: @text-color;
+}
+
+.aquel-1000__list .aquel-1000__advatnages-one,
+.aquel-1000__list .aquel-1000__advatnages-two,
+.aquel-1000__list .aquel-1000__advatnages-three {
+  position: relative;
+
+  margin-top: 25px;
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-left: 50px;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: @main-color;
+
+  box-shadow: 1px 0px 10px 0px rgba(0,163,236,1);
+}
+
+.aquel-1000__advatnages-one::before {
+  display: block;
+  content: " ";
+  position: absolute;
+
+  width: 70px;
+  height: 70px;
+
+  top: 0;
+  left: -40px;
+
+  background-color: #fff;
+  background-image: url(../../img/icon/like.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+
+  box-shadow: 1px 0px 10px 0px rgba(0,163,236,1);
+  border-radius: 50%;
+}
+
+.aquel-1000__advatnages-two::before {
+  display: block;
+  content: " ";
+  position: absolute;
+
+  width: 70px;
+  height: 70px;
+
+  top: 0;
+  left: -40px;
+
+  background-color: #fff;
+  background-image: url(../../img/icon/good-price.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+
+  box-shadow: 1px 0px 10px 0px rgba(0,163,236,1);
+  border-radius: 50%;
+}
+
+.aquel-1000__advatnages-three::before {
+  display: block;
+  content: " ";
+  position: absolute;
+
+  width: 70px;
+  height: 70px;
+
+  top: 0;
+  left: -40px;
+
+  background-color: #fff;
+  background-image: url(../../img/icon/easy-shopping.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+
+  box-shadow: 1px 0px 10px 0px rgba(0,163,236,1);
+  border-radius: 50%;
+}
+.aquel-1000__img {
+  width: 100%;
+  padding: 15px;
+}
+
+@media (min-width: 940px) {
+
+  .aquel-1000__list {
+    width: 48%;
+  }
+
+  .aquel-1000__img {
+    width: 48%;
+  }
+}

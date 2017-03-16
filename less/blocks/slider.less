@@ -1,0 +1,91 @@
+.carousel {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.carusel-wrapper {
+  width: 100%;
+
+  border-top: 2px solid @main-color;
+  border-bottom: 2px solid @main-color;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-inner {
+  max-width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.carousel-indicators {
+  display: none;
+  margin-left: 0;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  display: none;
+  background-image: none;
+}
+
+.item {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.carousel-control .glyphicon-menu-right,
+.carousel-control .glyphicon-menu-left {
+  top: 50%;
+}
+
+.glyphicon.glyphicon-menu-left,
+.glyphicon.glyphicon-menu-right {
+  color: @main-color;
+  padding: 12px;
+  padding-right: 14px;
+  padding-left: 12px;
+  border: 2px solid @main-color;
+  border-radius: 50%;
+
+  transition: all 0.5s;
+  z-index: 10;
+}
+
+.glyphicon.glyphicon-menu-right:hover,
+.glyphicon.glyphicon-menu-left:hover {
+  transition: all 0.5s;
+  color: #fff;
+  background-color: @main-color;
+}
+
+.carousel-indicators li {
+  background-color: @style-color;
+}
+
+.carousel-indicators .active {
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: @style-color-darken;
+}
+
+@media (min-width: 550px) {
+
+  .carousel-control.left,
+  .carousel-control.right {
+    display: block;
+    background-image: none;
+  }
+
+  .carousel-indicators {
+    display: block;
+  }
+
+  .carousel-inner {
+    height: auto;
+  }
+
+}

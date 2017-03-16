@@ -1,0 +1,77 @@
+.navbar-wrapper {
+  background-color: @main-color;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-default {
+  margin-bottom: 0;
+
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  width: 30px;
+  background-color: #fff;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 5px;
+}
+
+.navbar-nav > li {
+  margin-right: 5px;
+}
+
+.navbar-nav > li:last-child {
+  margin-right: 0;
+}
+
+.navbar-default .navbar-nav a {
+  font-size: 14px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav .dropdown {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-default .navbar-nav .dropdown a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  color: #000;
+  background-color: #fff;
+
+  &:hover {
+    color: @main-color;
+    background-color: #fff;
+  }
+}
+
+.navbar-default .navbar-nav .dropdown .caret {
+  margin-left: 100px;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: darken(@main-color, 10%);
+}
+
+@media (min-width: 900px) {
+
+}
+

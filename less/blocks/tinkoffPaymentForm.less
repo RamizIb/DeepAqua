@@ -1,0 +1,185 @@
+.tinkoffPayRow {
+  display: block;
+}
+
+.collapse input,
+.collapse select,
+.collapse label {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.collapsing {
+  transition-duration: 0.25s;
+}
+
+.well {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+
+  border: none;
+  border-color: transparent;
+  background-color: transparent;
+
+  box-shadow: none;
+
+  transition: all 2s;
+}
+
+.well:hover {
+  background-color: #eef8fc;
+
+  transition: all 2s;
+  box-shadow:  0 2px 2px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.12);
+}
+
+.well:hover .well__secure-pay {
+  opacity: 0.8;
+  transition: all 2s;
+}
+
+.well:hover .well__secure-img {
+  opacity: 0.8;
+  transition: all 2s;
+}
+
+.well__secure-img {
+  position: absolute;
+
+  left: 10px;
+  bottom: 10px;
+
+  opacity: 0;
+  transition: all 2s;
+}
+
+.well__secure-pay  {
+  position: absolute;
+
+  right: 10px;
+  bottom: 10px;
+
+  font-size: 13px;
+  color: #777777;
+
+  opacity: 0;
+  transition: all 2s;
+}
+
+
+
+.tinkoffPayRow--sum {
+  font-size: 18px;
+  font-weight: 600;
+  color: @style-color;
+
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  text-align: center;
+}
+
+.tinkoffPayRow--city {
+  color: #777777;
+}
+
+.tinkoffPayRow--desc {
+  height: 40px;
+  padding-left: 5px;
+
+  border: 1px solid;
+  border-color: @style-color;
+  border-radius: 5px;
+  background-color: transparent;
+
+  outline: none;
+  box-shadow: none;
+}
+
+.tinkoffPayRow--desc:focus {
+  border: 2px solid;
+  border-color: @style-color;
+}
+
+.tinkoffPayRow--tel {
+  height: 40px;
+  padding-left: 5px;
+
+  border: 1px solid;
+  border-color: @style-color;
+  border-radius: 5px;
+  background-color: transparent;
+
+  outline: none;
+  box-shadow: none;
+}
+
+.tinkoffPayRow--tel:focus {
+  border: 2px solid;
+  border-color: @style-color;
+}
+
+
+.collapse .tinkoffPayRow--tel-label {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 295px;
+  line-height: 18px;
+  font-size: 13px;
+  color: #777777;
+}
+
+input.tinkoffPayRow--button-pay {
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+
+  width: 150px;
+
+  font-size: 14px;
+
+  background-color: transparent;
+  color: @style-color;
+  border: 1px solid;
+  border-color: @style-color;
+  border-radius: 15px;
+  transition: all 0.8s;
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+  0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+  &:hover {
+    color: #fff;
+    background-color: @style-color;
+    border-color: @style-color;
+    transition: all 0.8s;
+  }
+
+  &:focus {
+    color: #fff;
+    background-color: @style-color;
+    border-color: @style-color;
+  }
+
+  &:active {
+    color: #fff !important;
+    background-color: @style-color;
+    border-color: @style-color;
+  }
+
+  &:active:hover {
+    color: #fff !important;
+    background-color: @style-color;
+    border-color: @style-color;
+  }
+}

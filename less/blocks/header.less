@@ -1,0 +1,142 @@
+.header {
+
+}
+
+.header__contact-list {
+  background-color: #f7f7f7;
+}
+
+.contact-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+
+}
+
+.header__logo {
+  margin: 10px auto 15px;
+}
+
+.header__logo img {
+  display: inline;
+}
+
+.header__img {
+  display: none;
+}
+
+.header__name {
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 28px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 4px;
+}
+
+.header__name img {
+  margin-right: -5px;
+}
+
+.header__tel {
+  display: none;
+  margin: 0 auto 10px;
+}
+
+.header__tel a {
+  color: #000;
+
+  &:hover {
+    color: @style-color;
+  }
+}
+
+.header__tel svg {
+  display: inline-block;
+  vertical-align: middle;
+
+  margin-right: 10px;
+}
+
+.header__email {
+  display: none;
+  margin: 0 auto 10px;
+}
+
+.header__email svg {
+  display: inline-block;
+  vertical-align: middle;
+
+  margin-right: 10px;
+}
+
+.header__email a {
+  color: #000;
+
+  &:hover {
+    color: @style-color;
+  }
+}
+
+.header__social {
+  display: flex;
+
+  margin: 0 auto 5px;
+}
+
+.header__social svg {
+  fill: @text-color;
+}
+
+.header__social span {
+  margin-right: 20px;
+}
+
+.header__social a:hover {
+  fill: @style-color;
+}
+
+.header__social a {
+  margin-right: 20px;
+}
+
+.header__social a:last-child {
+  margin-right: 0;
+}
+
+.header__callback {
+  margin: 0 auto 5px;
+}
+
+@media (min-width: 1045px) {
+
+  .header__logo,
+  .header__tel,
+  .header__email,
+  .header__social,
+  .header__callback {
+    margin: 0;
+  }
+
+  .header__img {
+    display: inline-block;
+  }
+
+  .header__tel {
+    display: block;
+  }
+
+  .header__email {
+    display: block;
+  }
+}

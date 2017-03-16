@@ -1,0 +1,99 @@
+.brand-aquel {
+
+}
+
+.brand-aquel .container-article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+
+.brand-aquel__card--list {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  background-color: @bg-color-carrots;
+
+  transition: all 0.5s;
+
+  &:hover {
+    box-shadow:  0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    transition: all 0.5s;
+  }
+}
+
+.brand-aquel__card {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.brand-aquel__card img {
+
+}
+
+
+.brand-aquel__title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.brand-aquel__sub-title {
+  font-weight: 600;
+  text-align: center;
+}
+
+.brand-aquel__title--full {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.brand-aquel__content {
+  font-size: 16px;
+}
+
+.brand-aquel__list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.brand-aquel__year {
+  font-weight: 600;
+}
+
+@media (min-width: 880px) {
+
+  .brand-aquel .container-article {
+    width: 80%;
+  }
+
+  .brand-aquel__card--list {
+
+  }
+
+  .brand-aquel__card {
+    width: 45%;
+  }
+
+  .brand-aquel__card--person {
+    width: 40%;
+  }
+
+  .brand-aquel__card--intro {
+    width: 50%;
+  }
+
+  .brand-aquel__card--achievements {
+    width: 95%;
+    background-color: #fff;
+  }
+
+  .brand-aquel__card--achievements img {
+
+  }
+
+}
