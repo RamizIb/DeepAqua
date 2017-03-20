@@ -2,123 +2,178 @@
 
 }
 
-.footer__links {
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  border-bottom: 4px solid @main-color;
+}
+
+.footer__map {
+  width: 50%;
+}
+
+.footer__map img {
+
+}
+
+.footer__form-contact-wrapper {
+  width: 50%;
+
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+
+.footer__form {
+  position: relative;
+
   padding-top: 20px;
   padding-bottom: 20px;
-
-  background-color: @bg-color-grey;
-  text-align: center;
 }
 
-.footer__links li {
-  font-size: 14px;
+.footer__form::after {
+  content: " ";
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  bottom: 0;
+
+  background-color: @main-color;
 }
 
-.footer__links-title {
+.footer__form-title {
+  font-size: 16px;
+  font-weight: 600;
 
+  margin-bottom: 20px;
 }
 
-.footer__links ul {
-  padding: 0;
-  margin: 0;
+.footer__form input {
+  display: block;
+
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+
+  background-color: #f9f9f9;
+}
+
+.footer__contact {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__contact-list {
+  margin-bottom: 0;
+  padding-left: 90px;
+
+  font-weight: 600;
   list-style: none;
 }
 
-.footer__links a {
-  text-decoration: none;
-}
-
-.footer__text {
+.footer__contact-list li {
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
-.footer__text a {
-  text-decoration: none;
+.footer__list-item-email {
+  position: relative;
 }
 
-.footer__copyright {
-  fill: red;
+.footer__list-item-email:before {
+  content: " ";
+  display: block;
+  position: absolute;
 
-  padding-bottom: 20px;
-  text-align: center;
+  width: 50px;
+  height: 50px;
+
+  top: -2px;
+  left: -85px;
+
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+  background-image: url(../img/icon/e-mail.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  box-shadow: 1px 0px 10px 0px #00a3ec;
+  border-radius: 50%;
 }
 
-.footer__social {
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  background-color: @bg-color-grey;
-  text-align: center;
+.footer__list-item-phone {
+  position: relative;
 }
 
-.footer__social-title {
-  margin-bottom: 20px;
+.footer__list-item-phone::before {
+  content: " ";
+  display: block;
+  position: absolute;
+
+  width: 50px;
+  height: 50px;
+
+  top: -2px;
+  left: -85px;
+
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+  background-image: url(../img/icon/phone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  box-shadow: 1px 0px 10px 0px #00a3ec;
+  border-radius: 50%;
 }
 
-.footer__social-bar {
-
+.footer__list-item-address {
+  position: relative;
 }
 
-.social__icon:not(:last-child) {
-  margin-right: 10px;
-}
+.footer__list-item-address::before {
+  content: " ";
+  display: block;
+  position: absolute;
 
-.social__icon {
-  display: inline-block;
-  vertical-align: middle;
-  text-decoration: none;
-  fill: @style-color;
-}
+  width: 50px;
+  height: 50px;
 
-.social__icon:hover,
-.social__icon:active {
-  fill: @style-color-darken;
-  text-decoration: none;
-}
+  top: -2px;
+  left: -85px;
 
-.footer__payment {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 
-  background-color: @bg-color-grey;
-  text-align: center;
-}
+  background-image: url(../img/icon/address-pick.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 
-.footer__payment-title {
-  margin-bottom: 20px;
-}
-
-.footer__payment-icon {
-  display: inline-block;
-  width: 130px;
-}
-
-.footer__payment-partner img {
-  width: 200px;
-  height: auto;
-
-  margin: 0 auto;
-}
-
-.footer__social a,
-.footer__links a,
-.footer__payment a {
-  color: #666;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-@media (min-width: 768px) {
-
-  .footer .container-article {
-    display: flex;
-  }
-
-  .footer__social,
-  .footer__links,
-  .footer__payment {
-    width: 33.33333%;
-  }
+  box-shadow: 1px 0px 10px 0px #00a3ec;
+  border-radius: 50%;
 }

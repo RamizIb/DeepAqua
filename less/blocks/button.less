@@ -259,6 +259,94 @@
   }
 }
 
+.btn-review {
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+
+  width: 350px;
+
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+  border-width: 2px;
+  border-radius: 6px;
+  transition: all 0.8s;
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+  0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+  &:hover {
+    color: @main-color;
+    background-color: #fff;
+    border-color: @main-color;
+    transition: all 0.8s;
+  }
+
+  &:focus {
+    color: #fff;
+    background-color: @style-color;
+    border-color: @style-color;
+  }
+
+  &:active {
+    color: #fff !important;
+    background-color: @style-color;
+    border-color: @style-color;
+  }
+
+  &:active:hover {
+    color: #fff !important;
+    background-color: @style-color;
+    border-color: @style-color;
+  }
+}
+
+.btn-footer__form {
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+
+  width: 300px;
+
+  background-color: @main-color;
+  color: #fff;
+  border-color: @main-color;
+  border-width: 2px;
+  border-radius: 6px;
+  transition: all 0.8s;
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+  0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+  &:hover {
+    color: #fff;
+    background-color: lighten(@main-color, 10%);
+    border-color: @main-color;
+    transition: all 0.8s;
+  }
+
+  &:focus {
+    color: #fff;
+    background-color: @style-color;
+    border-color: @style-color;
+  }
+
+  &:active {
+    color: #fff !important;
+    background-color: @style-color;
+    border-color: @style-color;
+  }
+
+  &:active:hover {
+    color: #fff !important;
+    background-color: @style-color;
+    border-color: @style-color;
+  }
+}
+
 @media (min-width: 768px) {
 
   .btn--introduction-about {

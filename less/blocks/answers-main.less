@@ -1,0 +1,230 @@
+.answers-main {
+  padding-top: 50px;
+
+  background-color: #f9f9f9;
+}
+
+.answers-main__title {
+  position: relative;
+
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+.answers-main__title::before {
+  content: " ";
+  display: block;
+  position: absolute;
+
+  width: 50px;
+  height: 2px;
+
+  top: 48%;
+  left: -80px;
+
+  background-color: @main-color;
+}
+
+.answers-main__title::after {
+  content: " ";
+  display: block;
+  position: absolute;
+
+  width: 50px;
+  height: 2px;
+
+  top: 48%;
+  right: -80px;
+
+  background-color: @main-color;
+}
+
+.answers-main__subtitle {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.answers-main__wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.answer-main__nav {
+  width: 100%;
+}
+
+.answer-main__nav .nav .nav-tabs {
+
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav-tabs > li {
+  width: 100%;
+  border-left: 2px solid @main-color;
+
+  margin-bottom: 10px;
+
+  background-color: #fff;
+}
+
+.nav-tabs > li a {
+  border-radius: 0;
+}
+
+.nav-tabs > a {
+  border: none;
+}
+
+.tab-pane p {
+  margin-top: 20px;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #fff;
+  background-color: @main-color;
+  border: none;
+}
+
+
+.answer-main__tabs {
+  width: 100%;
+}
+
+.answer-main__tabs .tab-content {
+  background-color: #fff;
+}
+
+.tab-pane {
+  display: flex;
+
+  min-height: 380px;
+}
+
+.tab-pane ol,
+.tab-pane ul {
+  width: 100%;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 0;
+}
+
+.tab-content > .active {
+  display: flex;
+}
+
+.tabpanel__how-order {
+  display: none;
+  width: 30%;
+
+  background-color: @main-color;
+  background-image: url(../../img/icon/how-order.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80%;
+}
+
+.tabpanel__how-deliver {
+  display: none;
+  width: 30%;
+
+  background-color: @main-color;
+  background-image: url(../../img/icon/how-delivery.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:90%;
+}
+
+.tabpanel__accept-payment {
+  display: none;
+  width: 30%;
+
+  background-color: @main-color;
+  background-image: url(../../img/icon/how-delivery.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:90%;
+}
+
+.tabpanel__how-return {
+  display: none;
+  width: 30%;
+
+  background-color: @main-color;
+  background-image: url(../../img/icon/how-delivery.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:90%;
+}
+
+.tabpanel__our-guarantee {
+  display: none;
+  width: 30%;
+
+  background-color: @main-color;
+  background-image: url(../../img/icon/how-delivery.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:90%;
+}
+
+.tabpanel__confident-in-filters {
+  display: none;
+  width: 30%;
+
+  background-color: @main-color;
+  background-image: url(../../img/icon/how-delivery.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:90%;
+}
+
+@media (min-width: 600px) {
+
+  .answer-main__nav {
+    width: 30%;
+  }
+
+  .answer-main__tabs {
+    width: 65%;
+  }
+}
+
+@media (min-width: 730px) {
+
+  .tabpanel__how-order,
+  .tabpanel__how-deliver,
+  .tabpanel__accept-payment,
+  .tabpanel__how-return,
+  .tabpanel__our-guarantee,
+  .tabpanel__confident-in-filters {
+    display: block;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .tab-pane ol,
+  .tab-pane ul {
+    width: 70%;
+  }
+}
