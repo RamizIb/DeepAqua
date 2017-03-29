@@ -1,17 +1,67 @@
 .advantages {
   padding-top: 20px;
   padding-bottom: 20px;
+
+  background-color: #f7f7f7;
 }
 
 .advantages .container-article {
-  width: 85%;
+  max-width: 1080px;
 
   padding: 20px;
+  padding-left: 50px;
 
   border-radius: 2px;
   box-shadow:  0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 
-  background-color: @bg-color-aqua-light;
+  background-color: #fff;
+}
+
+.product__description,
+.product__feature,
+.product__advantages,
+.product__delivery {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.product__description::before,
+.product__feature::before,
+.product__advantages::before,
+.product__delivery::before {
+  position: absolute;
+  content: " ";
+  display: block;
+
+  width: 3px;
+  height: 100%;
+
+  left: -20px;
+
+  background-color: @main-color;
+}
+
+.product__content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.product__conten-list {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+
+}
+
+.product__conten-list li {
+  font-size: 18px;
+  color: @main-color;
+}
+
+.product__conten-list span {
+  font-size: 14px;
+  color: #777777;
 }
 
 .nav-tabs {
@@ -52,7 +102,4 @@
 
 @media (min-width: 768px) {
 
-  .advantages .container-article {
-    width: 70%;
-  }
 }

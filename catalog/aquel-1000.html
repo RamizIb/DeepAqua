@@ -232,176 +232,164 @@
         <div class="single-product">
           <div class="container-article">
 
-            <div class="single-product__content-block">
-              <h1 class="single-product__title">Фильтр</h1>
-              <h2 class="single-product__sub-title">AQUEL 1000</h2>
-              <p class="single-product__price">46 490 ₽</p>
-              <p class="single-product__content">Идеально для дома и офиса</p>
-              <p class="single-product__content">Бесплатная доставка, 2-10 дней</p>
-              <p class="single-product__content">Монтаж за наш счет в 31 городе РФ</p>
-            </div>
             <div class="single-product__img-block">
               <img class="single-product__img" src="../img/aquel-1000.png" width="768" height="768" alt="">
             </div>
-            <div class="single-product__button-wrapper">
-              <a href="#collapsePayment" class="btn btn-default btn--buy" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapsePayment">ОФОРМИТЬ</a>
-              <div class="collapse" id="collapsePayment">
-                <div class="well">
 
-                  <form name="TinkoffPayForm" onsubmit="makePayment(
-                    document.TinkoffPayForm.paySum.value.replace(/,/ig,'.') * 100,
-                    document.TinkoffPayForm.payOrder.value,
-                    document.TinkoffPayForm.payDesc.value,
-                    document.TinkoffPayForm.payName.value,
-                    document.TinkoffPayForm.payEmail.value,
-                    document.TinkoffPayForm.payPhone.value); return false;">
-                  <input class="tinkoffPayRow tinkoffPayRow--sum" type="hidden" placeholder="Сумма заказа" name="paySum" value="46490" readonly>
-                    <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="payOrder">
-                    <label class="tinkoffPayRow tinkoffPayRow--city">Ваш город:</label>
-                    <select class="tinkoffPayRow tinkoffPayRow--desc" type="text" name="payDesc">
-                      <option value="Moscow">Москва</option>
-                      <option value="Saint-Petersburg">Санкт-Петербург</option>
-                      <option value="Veliky-Novgorod">Великий Новгород</option>
-                      <option value="Vladimir">Владимир</option>
-                      <option value="Ekaterinburg">Екатеринбург</option>
-                      <option value="Ivanovo">Иваново</option>
-                      <option value="Izhevsk">Ижевск</option>
-                      <option value="Yoshkar-Ola">Йошкар-Ола</option>
-                      <option value="Kazan">Казань</option>
-                      <option value="Kaliningrad">Калининград</option>
-                      <option value="Kaluga">Калуга</option>
-                      <option value="Kirov">Киров</option>
-                      <option value="Kostroma">Кострома</option>
-                      <option value="Krasnodar-region">Краснодарский край</option>
-                      <option value="Makhachkala">Махачкала</option>
-                      <option value="Naberezhnye-Chelny">Набережные Челны</option>
-                      <option value="Nizhniy-Novgorod">Нижний Новгород</option>
-                      <option value="Omsk">Омск</option>
-                      <option value="Perm">Пермь</option>
-                      <option value="Rybinsk">Рыбинск</option>
-                      <option value="Samara">Самара</option>
-                      <option value="Saratov">Саратов</option>
-                      <option value="Stavropol-region">Ставропольский край</option>
-                      <option value="Surgut">Сургут</option>
-                      <option value="Syktyvkar">Сыктывкар</option>
-                      <option value="Tver">Тверь</option>
-                      <option value="Tolyatti">Тольятти</option>
-                      <option value="Tomsk">Томск</option>
-                      <option value="Tula">Тула</option>
-                      <option value="Ufa">Уфа</option>
-                      <option value="Ukhta-(Komi-Republic)">Ухта (Республика Коми)</option>
-                      <option value="Tchaikovsky">Чайковский</option>
-                      <option value="Cheboksary">Чебоксары</option>
-                    </select>
-                  <input class="tinkoffPayRow" type="hidden" placeholder="ФИО плательщика" name="payName">
-                  <label class="tinkoffPayRow tinkoffPayRow--city">E-mail:</label>
-                  <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="E-mail" name="payEmail" required>
-                  <label class="tinkoffPayRow tinkoffPayRow--city">Телефон:</label>
-                  <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="Контактный телефон 7" name="payPhone" pattern="7[0-9]{10}" required>
-                  <label class="tinkoffPayRow tinkoffPayRow--tel-label">*Обязательно <b>укажите телефон</b> вида <b>71234567890</b>, по нему с Вами будет согласована доставка.</label>
-                  <input class="tinkoffPayButton tinkoffPayRow--button-pay" type="submit" value="ОПЛАТИТЬ">
-                  </form>
-                  <img class="well__secure-img" width="90" src="../img/visa-mastercard-logo-small.png" alt="Защищенные платежи">
-                  <span class="well__secure-pay">*Secure Payment</span>
+            <div class="single-product__content-block">
+
+              <div class="single-product__header">
+                <h1 class="single-product__title">ФИЛЬТР</h1>
+                <p class="single-product__price">46 490 ₽</p>
+                <h2 class="single-product__sub-title">AQUEL 1000</h2>
+              </div>
+
+              <ul class="single-product__list">
+                <li class="single-product__list-item-aquel-1000-one">Идеально для дома и офиса</li>
+                <li class="single-product__list-item-aquel-1000-two">Бесплатная доставка, 2-10 дней</li>
+                <li class="single-product__list-item-aquel-1000-three">Монтаж за наш счет в 31 городе РФ</li>
+              </ul>
+
+              <div class="single-product__button-wrapper">
+                <a href="#collapsePayment" class="btn btn-default btn--buy" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapsePayment">ОФОРМИТЬ ЗАКАЗ</a>
+                <div class="collapse" id="collapsePayment">
+                  <div class="well">
+
+                    <form name="TinkoffPayForm" onsubmit="makePayment(
+                      document.TinkoffPayForm.paySum.value.replace(/,/ig,'.') * 100,
+                      document.TinkoffPayForm.payOrder.value,
+                      document.TinkoffPayForm.payDesc.value,
+                      document.TinkoffPayForm.payName.value,
+                      document.TinkoffPayForm.payEmail.value,
+                      document.TinkoffPayForm.payPhone.value); return false;">
+                      <input class="tinkoffPayRow tinkoffPayRow--sum" type="hidden" placeholder="Сумма заказа" name="paySum" value="46490" readonly>
+                      <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="payOrder">
+                      <label class="tinkoffPayRow tinkoffPayRow--city">Ваш город:</label>
+                      <select class="tinkoffPayRow tinkoffPayRow--desc" type="text" name="payDesc">
+                        <option value="Moscow">Москва</option>
+                        <option value="Saint-Petersburg">Санкт-Петербург</option>
+                        <option value="Veliky-Novgorod">Великий Новгород</option>
+                        <option value="Vladimir">Владимир</option>
+                        <option value="Ekaterinburg">Екатеринбург</option>
+                        <option value="Ivanovo">Иваново</option>
+                        <option value="Izhevsk">Ижевск</option>
+                        <option value="Yoshkar-Ola">Йошкар-Ола</option>
+                        <option value="Kazan">Казань</option>
+                        <option value="Kaliningrad">Калининград</option>
+                        <option value="Kaluga">Калуга</option>
+                        <option value="Kirov">Киров</option>
+                        <option value="Kostroma">Кострома</option>
+                        <option value="Krasnodar-region">Краснодарский край</option>
+                        <option value="Makhachkala">Махачкала</option>
+                        <option value="Naberezhnye-Chelny">Набережные Челны</option>
+                        <option value="Nizhniy-Novgorod">Нижний Новгород</option>
+                        <option value="Omsk">Омск</option>
+                        <option value="Perm">Пермь</option>
+                        <option value="Rybinsk">Рыбинск</option>
+                        <option value="Samara">Самара</option>
+                        <option value="Saratov">Саратов</option>
+                        <option value="Stavropol-region">Ставропольский край</option>
+                        <option value="Surgut">Сургут</option>
+                        <option value="Syktyvkar">Сыктывкар</option>
+                        <option value="Tver">Тверь</option>
+                        <option value="Tolyatti">Тольятти</option>
+                        <option value="Tomsk">Томск</option>
+                        <option value="Tula">Тула</option>
+                        <option value="Ufa">Уфа</option>
+                        <option value="Ukhta-(Komi-Republic)">Ухта (Республика Коми)</option>
+                        <option value="Tchaikovsky">Чайковский</option>
+                        <option value="Cheboksary">Чебоксары</option>
+                      </select>
+                      <input class="tinkoffPayRow" type="hidden" placeholder="ФИО плательщика" name="payName">
+                      <label class="tinkoffPayRow tinkoffPayRow--city">E-mail:</label>
+                      <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="E-mail" name="payEmail" required>
+                      <label class="tinkoffPayRow tinkoffPayRow--city">Телефон:</label>
+                      <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="Контактный телефон 7" name="payPhone" pattern="7[0-9]{10}" required>
+                      <label class="tinkoffPayRow tinkoffPayRow--tel-label">*Обязательно <b>укажите телефон</b> вида <b>71234567890</b>, по нему с Вами будет согласована доставка.</label>
+                      <input class="tinkoffPayButton tinkoffPayRow--button-pay" type="submit" value="ОПЛАТИТЬ">
+                    </form>
+                    <img class="well__secure-img" width="90" src="../img/visa-mastercard-logo-small.png" alt="Защищенные платежи">
+                    <span class="well__secure-pay">*Secure Payment</span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </div><!-- /.single-product__content-block -->
 
-          </div>
+          </div><!-- /.container-article -->
         </div><!-- /.single-product -->
 
         <div class="advantages">
           <div class="container-article">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Описание</a></li>
-              <li role="presentation"><a href="#feature" aria-controls="feature" role="tab" data-toggle="tab">Характеристики</a></li>
-              <li role="presentation"><a href="#advantages" aria-controls="advantages" role="tab" data-toggle="tab">Преимущества</a></li>
-              <li role="presentation"><a href="#delivery" aria-controls="delivery" role="tab" data-toggle="tab">Доставка</a></li>
+            <h3 class="product__description">ОПИСАНИЕ</h3>
+            <p class="product__content"><strong>AQUEL 1000</strong> создан с использованием новейших технологий, гарантирует самое высокое качество очистки питьевой воды. Водоочистительное устройство имеет гарантию 5 лет, может быть установлено на столешницу кухни, в офисе или в любом удобном для Вас месте. Сервисное обслуживание раз в 10 месяцев, для контролирования и поддержания технических показателей. AQUEL 1000 произведен в США эксклюзивно по заказу компании AQUEL с патентами на фильтрующие элементы и все модификации системы.</p>
+
+            <h3 class="product__feature">ХАРАКТЕРИСТИКИ</h3>
+              <ul class="product__conten-list">
+                <li><span>Эффективность мембраны 98%</span></li>
+                <li><span>Контроль минерализации</span></li>
+                <li><span>Датчик утечки воды</span></li>
+                <li><span>Ультрафиолетовая лампа 6 Вт</span></li>
+                <li><span>Накопительный бак 5 литров</span></li>
+                <li><span>Электронное оповещение о сервисном обслуживании</span></li>
+                <li><span>Размеры:</span>
+                  <ul>
+                    <li><span>высота: 445 мм.</span></li>
+                    <li><span>ширина: 360 мм.</span></li>
+                    <li><span>глубина: 370 мм.</span></li>
+                  </ul>
+                </li>
+                <li><span>Производство: США</span></li>
+              </ul>
+
+            <h3 class="product__advantages">ПРЕИМУЩЕСТВА</h3>
+            <ul class="product__conten-list">
+              <li><span>Компактный, стильный дизайн</span></li>
+              <li><span>Индикация всего фильтра, контроль срока эксплуатации</span></li>
+              <li><span>Значения качества фильтрации воды</span></li>
+              <li><span>Измерение давления воды, автоматический выбор режима работы</span></li>
+              <li><span>Мощность оборудования  100 литров чистой воды в сутки</span></li>
             </ul>
 
-            <div class="tab-content">
-              <div role="tabpanel" class="tab-pane fade in active" id="description"><p><strong>AQUEL 1000</strong> создан с использованием новейших технологий, гарантирует самое высокое качество очистки питьевой воды. Водоочистительное устройство имеет гарантию 5 лет, может быть установлено на столешницу кухни, в офисе или в любом удобном для Вас месте. Сервисное обслуживание раз в 10 месяцев, для контролирования и поддержания технических показателей. AQUEL 1000 произведен в США эксклюзивно по заказу компании AQUEL с патентами на фильтрующие элементы и все модификации системы.</p></div>
-              <div role="tabpanel" class="tab-pane fade" id="feature">
-                <p>
-                  <ul>
-                    <li>Эффективность мембраны 98%</li>
-                    <li>Контроль минерализации</li>
-                    <li>Датчик утечки воды</li>
-                    <li>Ультрафиолетовая лампа 6 Вт</li>
-                    <li>Накопительный бак 5 литров</li>
-                    <li>Электронное оповещение о сервисном обслуживании</li>
-                    <li>Размеры:
-                      <ul>
-                        <li>высота: 445 мм.</li>
-                        <li>ширина: 360 мм.</li>
-                        <li>глубина: 370 мм.</li>
-                      </ul>
-                    </li>
-                    <li>Производство: США</li>
-                  </ul>
-                </p>
-              </div>
-              <div role="tabpanel" class="tab-pane fade" id="advantages">
-                  <p>
-                    <ul>
-                      <li>Компактный, стильный дизайн</li>
-                      <li>Индикация всего фильтра, контроль срока эксплуатации</li>
-                      <li>Значения качества фильтрации воды</li>
-                      <li>Измерение давления воды, автоматический выбор режима работы</li>
-                      <li>Мощность оборудования  100 литров чистой воды в сутки</li>
-                    </ul>
-                  </p>
+            <h3 class="product__delivery">ДОСТАВКА</h3>
+            <p class="product__content">
+              Доставка Товара до покупателя осуществляется бесплатно. Средний срок доставки 7 дней, максимальный срок доставки 30 дней с момента оплаты.
+              Фильтр <strong>AQUEL 1000</strong> может быть доставлен и смонтирован в следующих городах:
+            </p>
+            <p class="advantages__delivery-content">Великий Новгород, Владимир, Екатеринбург, Иваново, Ижевск, Йошкар-Ола, Казань, Калининград, Калуга, Киров, Кострома, Махачкала, Москва, Нижний.Новгород, Набережные Челны, Омск, Пермь, Рыбинск, Самара, Саратов, Санкт-Петербург, Сургут, Сыктывкар, Тверь, Тольятти, Томск, Тула, Уфа, Ухта (Республика Коми), Чайковский, Чебоксары. А так же, Краснодарский край и Ставропольский край.
+            </p>
+
+
+          </div><!-- /.container-article -->
+        </div><!-- /.advantages -->
+
+        <div class="card-block">
+          <h3 class="card-block__title">Что подойдет именно Вам?</h2>
+
+            <div class="container-article">
+
+              <div class="card">
+                <div class="card__img">
+                  <img src="../img/aquel-200+box-slider.png" alt="">
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">AQUEL 200</h3>
+                  <p class="card__subtitle">Лучший выбор для дома</p>
+                  <a class="card__button" href="aquel-200.html">ПОДРОБНЕЕ</a>
+                </div>
               </div>
 
-              <div role="tabpanel" class="tab-pane fade" id="delivery">
-                <p>Доставка Товара до покупателя осуществляется бесплатно. Средний срок доставки 7 дней, максимальный срок доставки 30 дней с момента оплаты.
-                </p>
-                <p>Фильтр <strong>AQUEL 1000</strong> может быть доставлен и смонтирован в следующих городах:</p>
-                <p class="advantages__delivery-content">Великий Новгород, Владимир, Екатеринбург, Иваново, Ижевск, Йошкар-Ола, Казань, Калининград, Калуга, Киров, Кострома, Махачкала, Москва, Нижний.Новгород, Набережные Челны, Омск, Пермь, Рыбинск, Самара, Саратов, Санкт-Петербург, Сургут, Сыктывкар, Тверь, Тольятти, Томск, Тула, Уфа, Ухта (Республика Коми), Чайковский, Чебоксары. А так же, Краснодарский край и Ставропольский край.</p>
+              <div class="card">
+                <div class="card__img">
+                  <img src="../img/small-aquel-zero-1.png" alt="">
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">AQUEL Zero</h3>
+                  <p class="card__subtitle">Мобилен и универсален</p>
+                  <a class="card__button" href="aquel-zero.html">ПОДРОБНЕЕ</a>
+                </div>
               </div>
 
             </div>
-          </div>
-        </div>
-
-        <div class="card-block">
-          <h2 class="card-block__title">Что подойдет именно Вам?</h2>
-          <div class="divider-main divider-main--card"></div>
-
-          <div class="container-article">
-
-              <div class="card">
-                <a href="aqua-air.html">
-                  <h3 class="card__title">Aqua Air</h3>
-                  <p class="card__content">Подходит для любого помещения</p>
-                  <div class="card__img">
-                    <img src="../img/aqua-air.png" alt="">
-                  </div>
-                </a>
-              </div>
-
-              <div class="card">
-                <a href="aquel-200.html">
-                  <h3 class="card__title">AQUEL 200</h3>
-                  <p class="card__content">Лучший выбор для дома</p>
-                  <div class="card__img">
-                    <img src="../img/small-aquel-200.png" alt="">
-                  </div>
-                </a>
-              </div>
-
-              <div class="card">
-                <a href="aquel-zero.html">
-                  <h3 class="card__title">AQUEL Zero</h3>
-                  <p class="card__content">Мобилен и универсален</p>
-                  <div class="card__img">
-                    <img src="../img/small-aquel-zero-1.png" alt="">
-                  </div>
-                </a>
-              </div>
-
-          </div>
         </div>
 
         <div class="advice advice--single-product">
@@ -419,14 +407,6 @@
           </div>
 
         </div><!-- /.advice -->
-
-        <div class="infobar">
-          <ul class="infobar__list">
-            <li class="infobar__list-item"><a href="../payment-and-shipping.html">Оплата и доставка</a></li>
-            <li class="infobar__list-item"><a href="../catalog.html">Каталог</a></li>
-            <li class="infobar__list-item"><a href="../warranty-and-service.html">Гарантия и обслуживание</a></li>
-          </ul>
-        </div>
 
       </section><!-- /.main -->
 

@@ -4,7 +4,13 @@
 }
 
 .card-block__title {
+  margin-top: 0;
   margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  color: #fff;
+  background-color: @main-color;
   text-align: center;
 }
 
@@ -18,7 +24,6 @@
 
 .card {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 
   margin-bottom: 10px;
@@ -30,21 +35,9 @@
   border-radius: 2px;
 
   transition: all 0.5s;
-
-  background-color: @bg-color-carrots;
-
-  &:hover {
-    transition: all 0.5s;
-    box-shadow:  0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-  }
 }
 
 .card img {
-  transition: all 1s;
-}
-
-.card:hover img {
-  transform: scale(1.08);
   transition: all 1s;
 }
 
@@ -55,31 +48,57 @@
   text-align: center;
 }
 
-.card:hover .card__content {
-  color: @style-color;
-
-  transition: all 0.5s;
-}
-
-.card__content {
-  margin-bottom: 20px;
-  border-radius: 0 0 2px 2px;
-
-  text-align: center;
-
-  transition: all 0.5s;
-}
-
-.card__image {
+.card__img {
+  width: 45%;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-.card__image img {
+.card__img img {
   display: block;
-  margin-bottom: 20px;
   border-radius: 2px 2px 0 0;
   width: 100%;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+  text-align: center;
+}
+
+.card__title {
+  color: @main-color;
+  font-weight: 600;
+}
+
+.card__subtitle {
+  font-weight: 600;
+}
+
+.card__button {
+  display: inline-block;
+  width: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+
+  border-radius: 4px;
+  box-shadow: 1px 0px 10px 0px #00a3ec;
+
+  transition: all 0.8s;
+
+  &:hover {
+    color: #fff;
+    background-color: @main-color;
+
+    box-shadow: none;
+
+    transition: all 0.8s;
+  }
 }
 
 .card__action {
@@ -150,6 +169,6 @@
   }
 
   .card {
-    width: 30%;
+    width: 45%;
   }
 }
