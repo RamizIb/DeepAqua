@@ -3,6 +3,36 @@
   text-align: center;
 }
 
+.back-wrapper {
+  display: none;
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  position: relative;
+
+  width: 140px;
+
+  color: #fff;
+  background-color: @main-color;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  text-align: center;
+  transition: all .6s;
+
+  &:hover {
+    color: #fff;
+    background-color: lighten(@main-color, 10%);
+    transition: all .6s;
+  }
+}
+
 .btn--callback {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -382,5 +412,9 @@
 
   .btn--introduction-about {
     width: 250px;
+  }
+
+  .back-wrapper {
+    display: block;
   }
 }

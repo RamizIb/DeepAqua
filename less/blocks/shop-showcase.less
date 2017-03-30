@@ -4,6 +4,17 @@
   text-align: center;
 }
 
+.shop-showcase__title {
+  width: 100%;
+
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  font-size: 28px;
+  font-weight: 600;
+
+}
+
 .shop-showcase a {
   text-decoration: none;
 }
@@ -18,7 +29,6 @@
 }
 
 .shop-showcase .container-article .shop-showcase__thumb {
-  transform: scale(1);
   transition: all 0.5s;
 }
 
@@ -63,26 +73,27 @@
 
   .shop-showcase {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-
     padding-top: 20px;
   }
 
   .shop-showcase .container-article {
-    width: 48%;
+    width: 32%;
   }
 
   .shop-showcase .container-article a {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
   }
 
   .shop-showcase__desc {
-    width: 35%;
+
   }
 
   .shop-showcase__thumb {
-    width: 55%;
+
   }
 }
