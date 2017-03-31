@@ -260,6 +260,7 @@
 .introduction--about-us {
   height: auto;
   padding-top: 30px;
+  padding-bottom: 10px;
 
   text-align: center;
 }
@@ -332,14 +333,32 @@
 .introduction--blog {
   height: auto;
   padding-top: 30px;
+  padding-bottom: 0;
 }
 
 .introduction--blog .introduction__title {
   margin-bottom: 20px;
 }
 
-.introduction__content .introduction__content--blog {
+.introduction__content--blog {
+  display: block;
 
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+
+  color: #fff;
+  background-color: @main-color;
 }
 
 .introduction--blog .introduction__aquel-title svg {

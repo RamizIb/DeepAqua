@@ -74,7 +74,7 @@
   &:hover {
     color: #fff;
     background-color: lighten(@main-color, 10%);
-    border-color: @main-color;
+    border-color: lighten(@main-color, 10%);
     transition: all 0.8s;
   }
 }
@@ -378,14 +378,14 @@
   &:hover {
     color: #fff;
     background-color: lighten(@main-color, 10%);
-    border-color: @main-color;
+    border-color: lighten(@main-color, 10%);
     transition: all 0.8s;
   }
 
   &:focus {
     color: #fff;
-    background-color: @style-color;
-    border-color: @style-color;
+    background-color: lighten(@main-color, 10%);
+    border-color: lighten(@main-color, 10%);
   }
 
   &:active {
