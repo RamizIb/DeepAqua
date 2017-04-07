@@ -42,6 +42,13 @@
   font-weight: 600;
   color: #000;
   letter-spacing: 4px;
+
+  transition: all 0.5s;
+
+  &:hover {
+    color: @main-color;
+    transition: all 0.5s;
+  }
 }
 
 .header__name img {
@@ -61,10 +68,7 @@
   }
 }
 
-.header__tel svg {
-  display: inline-block;
-  vertical-align: middle;
-
+.header__tel i {
   margin-right: 10px;
 }
 
@@ -73,10 +77,7 @@
   margin: 0 auto 10px;
 }
 
-.header__email svg {
-  display: inline-block;
-  vertical-align: middle;
-
+.header__email i {
   margin-right: 10px;
 }
 
@@ -90,27 +91,27 @@
 
 .header__social {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 
   margin: 0 auto 5px;
-}
-
-.header__social svg {
-  fill: @text-color;
 }
 
 .header__social span {
   margin-right: 20px;
 }
 
-.header__social a {
+.header__social i {
+  transition: all 0.6s;
+}
+
+.header__social i {
   color: @text-color;
 
-  transition: all 0.6s;
+  transition: all 0.5s;
 
-  &:hover svg {
-    fill: @main-color;
-    transition: all 0.6s;
+  &:hover {
+    color: @main-color;
+    transition: all 0.5s;
   }
 }
 
