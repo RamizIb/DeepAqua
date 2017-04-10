@@ -1,3 +1,6 @@
+.about {
+  background-color: #f7f7f7;
+}
 .about .container-article {
   display: -ms-flexbox;
   display: flex;
@@ -6,13 +9,16 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 90%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fff;
 }
 .about__card {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 90%;
+  width: 100%;
   margin-bottom: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -80,28 +86,39 @@
     width: 45%;
   }
   .about__card:first-child {
-    width: 95%;
+    width: 100%;
   }
 }
+.acquired {
+  background-color: #f7f7f7;
+}
 .acquired .container-article {
+  padding-top: 0;
+  padding-bottom: 10px;
   width: 90%;
+  border: 2px solid #00a3ec;
+  border-bottom: none;
+  background-color: #fff;
 }
 .acquired__card {
   margin-bottom: 30px;
-  padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   border-radius: 2px;
-  background-color: #fff1de;
   box-sizing: border-box;
   transition: all 0.5s;
 }
-.acquired__card:hover {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  transition: all 0.5s;
-}
 .acquired__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #00a3ec;
   text-align: center;
 }
 .acquired__card--video {
@@ -119,10 +136,7 @@
 }
 @media (min-width: 768px) {
   .acquired .container-article {
-    width: 75%;
-  }
-  .acquired__card--video {
-    width: 90%;
+    width: 80%;
   }
 }
 .advantages {
@@ -497,7 +511,7 @@ input.advice-form__phone {
   display: none;
   width: 30%;
   background-color: #00a3ec;
-  background-image: url(../../img/icon/how-order.png);
+  background-image: url(../img/icon/how-order.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 80%;
@@ -506,7 +520,7 @@ input.advice-form__phone {
   display: none;
   width: 30%;
   background-color: #00a3ec;
-  background-image: url(../../img/icon/how-delivery.png);
+  background-image: url(../img/icon/how-delivery.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 90%;
@@ -515,7 +529,7 @@ input.advice-form__phone {
   display: none;
   width: 30%;
   background-color: #00a3ec;
-  background-image: url(../../img/icon/how-delivery.png);
+  background-image: url(../img/icon/accept-payment.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 90%;
@@ -524,7 +538,7 @@ input.advice-form__phone {
   display: none;
   width: 30%;
   background-color: #00a3ec;
-  background-image: url(../../img/icon/how-delivery.png);
+  background-image: url(../img/icon/how-return.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 90%;
@@ -533,7 +547,7 @@ input.advice-form__phone {
   display: none;
   width: 30%;
   background-color: #00a3ec;
-  background-image: url(../../img/icon/how-delivery.png);
+  background-image: url(../img/icon/our-guarantee.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 90%;
@@ -542,7 +556,7 @@ input.advice-form__phone {
   display: none;
   width: 30%;
   background-color: #00a3ec;
-  background-image: url(../../img/icon/how-delivery.png);
+  background-image: url(../img/icon/filter-confident.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 90%;
@@ -571,8 +585,14 @@ input.advice-form__phone {
     width: 70%;
   }
 }
+.blog {
+  background-color: #f7f7f7;
+}
 .blog .container-article {
   width: 90%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fff;
 }
 .blog-teaser {
   display: -ms-flexbox;
@@ -690,6 +710,9 @@ input.advice-form__phone {
   left: -15px;
   background-color: #00a3ec;
 }
+.blog-single__content {
+  font-size: 15px;
+}
 .blog-single__card blockquote {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -792,6 +815,9 @@ a:active {
 .active-nav {
   border-bottom: 1px solid #1eb1fc;
 }
+.brand-aquel {
+  background-color: #f7f7f7;
+}
 .brand-aquel .container-article {
   display: -ms-flexbox;
   display: flex;
@@ -802,17 +828,20 @@ a:active {
   -ms-flex-align: center;
       align-items: center;
   width: 90%;
+  background-color: #fff;
+  border: 2px solid #00a3ec;
+  border-bottom: none;
 }
 .brand-aquel__card--list {
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  background-color: #fff1de;
   transition: all 0.5s;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
 }
 .brand-aquel__card--list:hover {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 0px 10px 0px #00a3ec;
   transition: all 0.5s;
 }
 .brand-aquel__card {
@@ -820,31 +849,52 @@ a:active {
   margin-bottom: 30px;
 }
 .brand-aquel__title {
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
+  color: #fff;
+  background-color: #00a3ec;
 }
 .brand-aquel__sub-title {
+  font-size: 17px;
   font-weight: 600;
   text-align: center;
+}
+.brand-aquel__sub-title--bg {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #00a3ec;
 }
 .brand-aquel__title--full {
   width: 100%;
   margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  background-color: #00a3ec;
 }
 .brand-aquel__content {
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 16px;
 }
 .brand-aquel__list {
   padding-left: 0;
   list-style: none;
+  text-align: center;
 }
 .brand-aquel__year {
   font-weight: 600;
 }
 @media (min-width: 880px) {
   .brand-aquel .container-article {
-    width: 80%;
+    max-width: 1100px;
   }
   .brand-aquel__card {
     width: 45%;
@@ -875,22 +925,6 @@ a:active {
   max-width: 1000px;
   margin-bottom: 10px;
 }
-.back-button {
-  display: inline-block;
-  position: relative;
-  width: 140px;
-  color: #fff;
-  background-color: #00a3ec;
-  font-size: 12px;
-  font-weight: 600;
-  text-align: center;
-  transition: all .6s;
-}
-.back-button:hover {
-  color: #fff;
-  background-color: #20baff;
-  transition: all .6s;
-}
 .btn--callback {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -907,6 +941,31 @@ a:active {
   background-color: #20baff;
   border-color: #00a3ec;
   transition: all 0.8s;
+}
+.btn--call-back-nav {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 235px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: #07b2ff;
+  transition: all 0.8s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.btn--call-back-nav:hover {
+  color: #fff;
+  background-color: #3ac2ff;
+  border-color: #00a3ec;
+  transition: all 0.8s;
+}
+.btn--call-back-nav i {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .btn--footer-callback {
   padding-top: 10px;
@@ -1184,6 +1243,11 @@ a:active {
     width: 300px;
   }
 }
+@media (min-width: 620px) {
+  .btn--call-back-nav {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .btn--introduction-about {
     width: 250px;
@@ -1343,6 +1407,10 @@ a:active {
     width: 45%;
   }
 }
+.certificate {
+  padding-bottom: 20px;
+  background-color: #f7f7f7;
+}
 .certificate .container-article {
   display: -ms-flexbox;
   display: flex;
@@ -1352,33 +1420,42 @@ a:active {
       justify-content: space-around;
   -ms-flex-align: center;
       align-items: center;
-  width: 90%;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 95%;
+  border: 2px solid #00a3ec;
+  background-color: #fff;
 }
 .certificate-card {
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  border-radius: 2px;
-  background-color: #fff1de;
-  box-sizing: border-box;
-  transition: all 0.5s;
+  width: 50%;
 }
-.certificate-card:hover {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  transition: all 0.5s;
+.certificate-card--last {
+  width: 100%;
 }
 .certificate__title {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  color: #fff;
+  background-color: #00a3ec;
+  font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
+.certificate__title i {
+  margin-right: 10px;
+}
+.certificate__img img {
+  margin: 0 auto;
+}
 @media (min-width: 768px) {
   .certificate .container-article {
-    width: 85%;
+    max-width: 1100px;
+  }
+  .certificate-card {
+    width: 20%;
   }
 }
 .main-container {
@@ -1407,29 +1484,41 @@ a:active {
   font-size: 16px;
   text-decoration: none;
 }
+.contract-offer {
+  background-color: #f7f7f7;
+}
 .contract-offer .container-article {
   width: 90%;
+  padding-bottom: 0;
 }
 .contract-offer__card {
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  border-radius: 2px;
-  background-color: #fff1de;
+  padding-bottom: 10px;
+  background-color: #fff;
   box-sizing: border-box;
-  transition: all 0.5s;
-}
-.contract-offer__card:hover {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  transition: all 0.5s;
+  border-radius: 2px;
+  border: 2px solid #00a3ec;
+  border-bottom: none;
 }
 .contract-offer__title {
+  margin-top: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #00a3ec;
   text-align: center;
 }
+.contract-offer__title i {
+  margin-right: 10px;
+}
 .contract-offer__sub-title {
+  padding-left: 20px;
   font-size: 20px;
   text-align: left;
+}
+.contract-offer__content {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .contract-offer__list {
   list-style: none;
@@ -1594,9 +1683,6 @@ a:active {
   .feature-item:after {
     display: none;
   }
-}
-.footer {
-  padding-bottom: 35px;
 }
 .footer__wrapper {
   display: -ms-flexbox;
@@ -2006,7 +2092,13 @@ a:active {
   margin-right: 0;
 }
 .header__callback {
+  display: none;
   margin: 0 auto 5px;
+}
+@media (min-width: 620px) {
+  .header__callback {
+    display: block;
+  }
 }
 @media (min-width: 1045px) {
   .header__logo,
@@ -2247,8 +2339,9 @@ a:active {
 .introduction__title {
   margin-bottom: 5px;
   font-size: 32px;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   font-weight: 600;
+  text-align: center;
 }
 .introduction__title img {
   display: inline;
@@ -2399,10 +2492,10 @@ a:active {
   padding-top: 0;
   padding-bottom: 0;
   text-align: center;
+  background-color: #f7f7f7;
 }
 .introduction--tehnology .introduction__title {
-  font-size: 26px;
-  letter-spacing: 1px;
+  font-size: 32px;
 }
 .introduction--tehnology .introduction__aquel-title {
   display: block;
@@ -2417,57 +2510,53 @@ a:active {
   color: #999;
 }
 .introduction--about-us {
-  height: auto;
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   text-align: center;
-}
-.introduction--about-us .introduction__aquel-title svg {
-  fill: #1eb1fc;
+  background-color: #f7f7f7;
 }
 .introduction--payment-and-shipping {
-  height: auto;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
+  background-color: #f7f7f7;
 }
 .introduction--payment-and-shipping .introduction__title {
   margin-bottom: 20px;
-}
-.introduction--payment-and-shipping .introduction__aquel-title svg {
-  margin-top: 10px;
-  fill: #1eb1fc;
 }
 .introduction__content .introduction__content--payment-and-shipping {
   text-align: center;
 }
 .introduction--privacy-police {
-  height: auto;
   padding-top: 30px;
+  padding-bottom: 20px;
+  height: auto;
   text-align: center;
+  background-color: #f7f7f7;
 }
 .introduction--privacy-police .introduction__title {
   margin-bottom: 20px;
   font-size: 30px;
 }
-.introduction--privacy-police .introduction__aquel-title svg {
-  fill: #1eb1fc;
-}
 .introduction--warranty-and-service {
-  height: auto;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
+  background-color: #f7f7f7;
 }
 .introduction--warranty-and-service .introduction__title {
   margin-bottom: 20px;
   font-size: 30px;
 }
-.introduction--warranty-and-service .introduction__aquel-title svg {
-  fill: #1eb1fc;
+.introduction--certificate {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f7f7f7;
 }
 .introduction--blog {
-  height: auto;
   padding-top: 30px;
   padding-bottom: 0;
+  background-color: #f7f7f7;
 }
 .introduction--blog .introduction__title {
   margin-bottom: 20px;
@@ -2486,12 +2575,7 @@ a:active {
   color: #fff;
   background-color: #00a3ec;
 }
-.introduction--blog .introduction__aquel-title svg {
-  margin-bottom: 20px;
-  fill: #1eb1fc;
-}
 .introduction--blog-single {
-  height: auto;
   padding-top: 20px;
   padding-bottom: 5px;
   background-color: #f7f7f7;
@@ -2509,17 +2593,30 @@ a:active {
   background-color: #00a3ec;
 }
 .introduction--acquired {
-  height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #f7f7f7;
+}
+.introduction--acquired .introduction__title {
+  margin-bottom: 20px;
 }
 .introduction--acquired .introduction__aquel-title svg {
   fill: #1eb1fc;
 }
 .introduction--brand-aquel {
-  height: auto;
   padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
+  background-color: #f7f7f7;
+}
+.introduction--brand-aquel .introduction__title img {
+  width: 46px;
+  margin-right: -8px;
+}
+.introduction--contract-offer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #f7f7f7;
 }
 @media (min-width: 620px) {
   .introduction__about {
@@ -2532,39 +2629,8 @@ a:active {
   }
 }
 @media (min-width: 768px) {
-  .introduction--about-us {
-    height: auto;
-  }
-  .introduction--tehnology {
-    height: auto;
-  }
-  .introduction--payment-and-shipping {
-    height: auto;
-  }
-  .introduction--privacy-police {
-    height: auto;
-  }
-  .introduction--warranty-and-service {
-    height: auto;
-  }
-  .introduction--blog {
-    height: auto;
-  }
-  .introduction--blog-single {
-    height: auto;
-  }
-  .introduction--acquired {
-    height: auto;
-  }
-  .introduction--brand-aquel {
-    height: auto;
-  }
-  .introduction--about-us .introduction__aquel-title svg {
-    width: 120px;
-    height: auto;
-  }
   .introduction--privacy-police .introduction__title {
-    font-size: 40px;
+    font-size: 32px;
   }
   .introduction-decoration-about {
     width: 15%;
@@ -2692,6 +2758,9 @@ a:active {
   font-size: 16px;
   text-align: center;
 }
+.payment-and-shipping {
+  background-color: #f7f7f7;
+}
 .payment-and-shipping .container-article {
   display: -ms-flexbox;
   display: flex;
@@ -2699,40 +2768,45 @@ a:active {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 90%;
+  width: 95%;
+  padding-top: 0;
+  border: 2px solid #00a3ec;
+  border-bottom: none;
+  background-color: #fff;
 }
 .payment-and-shipping-card {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 90%;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  border-radius: 2px;
-  background-color: #fff1de;
-  box-sizing: border-box;
-  transition: all 0.5s;
-}
-.payment-and-shipping-card:hover {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  transition: all 0.5s;
+  width: 100%;
 }
 .payment-and-shipping__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  background-color: #00a3ec;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
 }
+.payment-and-shipping__title i {
+  margin-right: 10px;
+}
 .payment-and-shipping__content {
+  padding-left: 20px;
+  padding-right: 10px;
   font-size: 16px;
 }
 @media (min-width: 768px) {
   .payment-and-shipping .container-article {
-    width: 80%;
+    max-width: 1100px;
   }
+}
+.privacy-police {
+  background-color: #f7f7f7;
 }
 .privacy-police .container-article {
   display: -ms-flexbox;
@@ -2742,6 +2816,10 @@ a:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 90%;
+  padding-top: 0;
+  background-color: #fff;
+  border: 2px solid #00a3ec;
+  border-bottom: none;
 }
 .privacy-police-card {
   display: -ms-flexbox;
@@ -2754,21 +2832,21 @@ a:active {
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  border-radius: 2px;
-  background-color: #fff1de;
   box-sizing: border-box;
-  transition: all 0.5s;
-}
-.privacy-police-card:hover {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  transition: all 0.5s;
 }
 .privacy-police__title {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
+  color: #fff;
+  background-color: #00a3ec;
+}
+.privacy-police__title i {
+  margin-right: 10px;
 }
 .privacy-police__content {
   font-size: 16px;
@@ -3724,15 +3802,20 @@ a:active {
     width: 100%;
   }
 }
+.tehnology-review {
+  background-color: #f7f7f7;
+}
 .tehnology-review .container-article {
   width: 90%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fff;
 }
 .tehnology-review-card {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin-bottom: 20px;
   padding-top: 25px;
   padding-right: 25px;
   padding-bottom: 25px;
@@ -3740,13 +3823,9 @@ a:active {
   border-radius: 2px;
   outline: 2px solid #00a3ec;
   box-sizing: border-box;
-  transition: all 0.5s;
-}
-.tehnology-review-card:hover {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  transition: all 0.5s;
 }
 .tehnology-review-card--first {
+  margin-bottom: 25px;
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 0;
@@ -3774,24 +3853,14 @@ a:active {
   font-weight: 600;
   text-align: center;
 }
-.tehnology-review blockquote {
-  margin-bottom: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  outline: 1px solid #1eb1fc;
-  border-color: #1eb1fc;
-  background-color: #f0f8ff;
-  font-weight: bold;
-  font-style: italic;
-}
 .tehnology-review h3 {
+  margin-top: 30px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
 }
 .tehnology-review__list {
-  font-size: 18px;
-  color: #606060;
+  font-size: 16px;
 }
 .tehnology-review__list li {
   margin: 0;
@@ -3801,9 +3870,85 @@ a:active {
 .tehnology-review__list {
   margin-bottom: 30px;
 }
+.tehnology-review__tabs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.tehnology-review__tabs li a {
+  font-size: 13px;
+}
+.tehnology-review__tabs li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 50%;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  outline: 1px solid #ececec;
+}
+.tehnology-review__tabs li.active {
+  background-color: #fff;
+  box-shadow: 1px 0px 10px 0px #00a3ec;
+}
+.tehnology-review__tabs li.active a,
+.tehnology-review__tabs li.active a:hover,
+.tehnology-review__tabs li.active a:focus {
+  color: #666;
+  background-color: transparent;
+  cursor: pointer;
+}
+.tehnology-tab-content .active {
+  display: block;
+}
+.tehnology-tab-pane ol,
+.tehnology-tab-pane ul {
+  padding: 0;
+  padding-left: 20px;
+  width: 100%;
+}
+.tehnology-tab__title {
+  position: relative;
+  padding-left: 20px;
+}
+.tehnology-tab__title::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 2px;
+  left: 0;
+  background-color: #00a3ec;
+}
+.tab-pane p {
+  margin-top: 10px;
+}
+.tehnology-review__tab {
+  font-size: 16px;
+  color: #777777;
+}
+.tehnology-review__tab--center {
+  text-align: center;
+}
 @media (min-width: 768px) {
   .tehnology-review .container-article {
-    width: 75%;
+    width: 80%;
+    max-width: 1100px;
+  }
+  .tehnology-review__tabs li {
+    width: 25%;
   }
 }
 .tinkoffPayRow {
@@ -3947,6 +4092,9 @@ input.tinkoffPayRow--button-pay:active:hover {
   background-color: #1eb1fc;
   border-color: #1eb1fc;
 }
+.warranty-and-service {
+  background-color: #f7f7f7;
+}
 .warranty-and-service .container-article {
   display: -ms-flexbox;
   display: flex;
@@ -3954,7 +4102,12 @@ input.tinkoffPayRow--button-pay:active:hover {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 90%;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 95%;
+  background-color: #fff;
+  border: 2px solid #00a3ec;
+  border-bottom: none;
 }
 .warranty-and-service-card {
   display: -ms-flexbox;
@@ -3964,25 +4117,32 @@ input.tinkoffPayRow--button-pay:active:hover {
   -ms-flex-pack: justify;
       justify-content: space-between;
   width: 100%;
-  margin-bottom: 10px;
   padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 2px;
-  transition: all 0.5s;
-  background-color: #fff1de;
-}
-.warranty-and-service-card:hover {
-  transition: all 0.5s;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .warranty-and-service__title {
+  margin-top: 0;
   margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  background-color: #00a3ec;
+  font-size: 18px;
+  font-weight: 600;
   text-align: center;
+}
+.warranty-and-service__title i {
+  margin-right: 10px;
+}
+.warranty-and-service__content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.warranty-and-service__list {
+  padding-right: 20px;
 }
 @media (min-width: 768px) {
   .warranty-and-service .container-article {
-    width: 80%;
+    max-width: 1100px;
   }
 }
 .carousel {

@@ -52,7 +52,7 @@ gulp.task("copy", function() {
     "catalog/**",
     "blog/**/**",
     "video/**",
-    "img/**",
+    "img/**/**",
     "js/**",
     ".htaccess",
     "robots.txt",
