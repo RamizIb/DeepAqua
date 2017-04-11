@@ -47,7 +47,7 @@ gulp.task("clean", function() {
 
 gulp.task("copy", function() {
   return gulp.src([
-    "css/bootstrap.min.css",
+    "css/**",
     "fonts/**/**",
     "catalog/**",
     "blog/**/**",

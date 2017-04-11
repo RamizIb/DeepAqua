@@ -9,7 +9,7 @@ if (isset($name) && isset($phone)){
 
   $address = "aquel-shop@yandex.ru";
   $mes = "(Форма на странице товара - консультация.\nИмя: $name \nТелефон: $phone";
-  $send = mail ($address,"Content-type:text/plain; charset = UTF-8\r\n");
+  $send = mail ($address,$mes,"Content-type:text/plain; charset = UTF-8\r\n");
   if ($send == 'true')
     {echo "Сообщение отправлено успешно, через 3 секунды Вы вернетесь на сайт";}
   else {echo "Ошибка, сообщение не отправлено!";}
