@@ -1135,7 +1135,6 @@ a:active {
   padding-right: 25px;
   padding-bottom: 15px;
   padding-left: 25px;
-  width: 60%;
   background-color: #00a3ec;
   color: #fff;
   border-color: #00a3ec;
@@ -1262,6 +1261,9 @@ a:active {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .btn--buy {
+    width: 60%;
+  }
 }
 .card-block .divider-main--card {
   margin: 0 auto;
@@ -1341,6 +1343,7 @@ a:active {
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
+  font-weight: 600;
   border-radius: 4px;
   box-shadow: 1px 0px 10px 0px #00a3ec;
   transition: all 0.8s;
@@ -2341,7 +2344,6 @@ a:active {
   font-size: 32px;
   letter-spacing: 1px;
   font-weight: 600;
-  text-align: center;
 }
 .introduction__title img {
   display: inline;
@@ -2645,6 +2647,58 @@ a:active {
 .main--blog-post {
   background-color: #f7f7f7;
 }
+.modal-header--payment {
+  padding-top: 20px;
+  border-color: #00a3ec;
+}
+.modal-title--payment {
+  text-align: center;
+  font-weight: 600;
+}
+.modal-body--payment {
+  padding-top: 30px;
+}
+.nav-tabs--payment {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.nav-tabs--payment li {
+  width: 50%;
+  border: none;
+}
+.nav-tabs--payment li a {
+  border: 2px solid #00a3ec;
+  border-radius: 4px;
+  font-size: 10px;
+  text-align: center;
+}
+.nav-tabs--payment li.active a {
+  border: 2px solid #00a3ec;
+  border-radius: 4px;
+  text-align: center;
+}
+.nav-tabs--payment li.active a:hover {
+  border: 2px solid #00a3ec;
+  border-radius: 4px;
+  text-align: center;
+}
+.nav-tabs--payment li a:hover {
+  border: 2px solid #00a3ec;
+  border-radius: 4px;
+}
+.nav-tabs--payment li.active a:focus {
+  border: 2px solid #00a3ec;
+  border-radius: 4px;
+}
+@media (min-width: 380px) {
+  .nav-tabs--payment li a {
+    font-size: 14px;
+  }
+}
 .navbar-wrapper {
   background-color: #00a3ec;
 }
@@ -2804,6 +2858,38 @@ a:active {
   .payment-and-shipping .container-article {
     max-width: 1100px;
   }
+}
+.payment-successful-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f7f7f7;
+}
+.payment-successful {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border: 2px solid #00a3ec;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.payment-successful__title {
+  font-size: 32px;
+}
+.payment-successful__subtitle {
+  font-size: 16px;
 }
 .privacy-police {
   background-color: #f7f7f7;
@@ -3537,6 +3623,7 @@ a:active {
       align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-top: 40px;
   max-width: 1200px;
 }
 .single-product__content-block {
@@ -3954,42 +4041,6 @@ a:active {
 .tinkoffPayRow {
   display: block;
 }
-.collapse input,
-.collapse select,
-.collapse label {
-  margin-bottom: 15px;
-  width: 100%;
-}
-.collapsing {
-  transition-duration: 0.25s;
-}
-.well {
-  position: relative;
-  max-width: 500px;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  border: none;
-  border-color: transparent;
-  background-color: transparent;
-  box-shadow: none;
-  transition: all 2s;
-}
-.well:hover {
-  background-color: #eef8fc;
-  transition: all 2s;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
-}
-.well:hover .well__secure-pay {
-  opacity: 0.8;
-  transition: all 2s;
-}
-.well:hover .well__secure-img {
-  opacity: 0.8;
-  transition: all 2s;
-}
 .well__secure-img {
   position: absolute;
   left: 10px;
@@ -4005,6 +4056,42 @@ a:active {
   color: #777777;
   opacity: 0;
   transition: all 2s;
+}
+.tinkoffPayRow--email-label {
+  color: #777777;
+}
+.tinkoffPayRow--email-input {
+  height: 40px;
+  padding-left: 5px;
+  border: 1px solid #00a3ec;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  color: #777777;
+}
+.tinkoffPayRow--email-input:focus {
+  border: 2px solid;
+  border-color: #1eb1fc;
+}
+.tinkoffPayRow--tel-label {
+  margin: 0;
+  color: #777777;
+}
+.tinkoffPayRow--tel-input {
+  height: 40px;
+  padding-left: 5px;
+  border: 1px solid;
+  border-color: #00a3ec;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  color: #777777;
+}
+.tinkoffPayRow--tel-input:focus {
+  border: 2px solid;
+  border-color: #1eb1fc;
 }
 .tinkoffPayRow--sum {
   font-size: 18px;
@@ -4022,7 +4109,7 @@ a:active {
   height: 40px;
   padding-left: 5px;
   border: 1px solid;
-  border-color: #1eb1fc;
+  border-color: #00a3ec;
   border-radius: 5px;
   background-color: transparent;
   outline: none;
@@ -4030,29 +4117,7 @@ a:active {
 }
 .tinkoffPayRow--desc:focus {
   border: 2px solid;
-  border-color: #1eb1fc;
-}
-.tinkoffPayRow--tel {
-  height: 40px;
-  padding-left: 5px;
-  border: 1px solid;
-  border-color: #1eb1fc;
-  border-radius: 5px;
-  background-color: transparent;
-  outline: none;
-  box-shadow: none;
-}
-.tinkoffPayRow--tel:focus {
-  border: 2px solid;
-  border-color: #1eb1fc;
-}
-.collapse .tinkoffPayRow--tel-label {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  width: 295px;
-  line-height: 18px;
-  font-size: 13px;
-  color: #777777;
+  border-color: #00a3ec;
 }
 input.tinkoffPayRow--button-pay {
   margin: 0 auto;
@@ -4061,13 +4126,13 @@ input.tinkoffPayRow--button-pay {
   padding-right: 25px;
   padding-bottom: 10px;
   padding-left: 25px;
-  width: 150px;
+  width: 200px;
   font-size: 14px;
   background-color: transparent;
   color: #1eb1fc;
   border: 1px solid;
   border-color: #1eb1fc;
-  border-radius: 15px;
+  border-radius: 8px;
   transition: all 0.8s;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
@@ -4091,6 +4156,92 @@ input.tinkoffPayRow--button-pay:active:hover {
   color: #fff !important;
   background-color: #1eb1fc;
   border-color: #1eb1fc;
+}
+.payment-online-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.payment-online-form input,
+.payment-online-form select {
+  margin-bottom: 10px;
+}
+.payment-offline-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.payment-offline-form input {
+  margin-bottom: 10px;
+}
+.payment-offline__city-label:focus {
+  border: 2px solid;
+  border-color: #1eb1fc;
+}
+.payment-offline__city-select {
+  height: 40px;
+  padding-left: 5px;
+  border: 1px solid;
+  border-color: #1eb1fc;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+.payment-offline__city-select:focus {
+  border: 2px solid;
+  border-color: #1eb1fc;
+}
+.payment-offline__label-tel {
+  color: #777777;
+}
+.payment-offline__input-tel {
+  height: 40px;
+  padding-left: 5px;
+  border: 1px solid;
+  border-color: #00a3ec;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  color: #777777;
+}
+.payment-offline__input-tel:focus {
+  border: 2px solid;
+  border-color: #1eb1fc;
+}
+.payment-offline__content,
+.payment-online__content {
+  text-align: center;
+}
+.payment-offline__btn {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  width: 200px;
+  font-size: 14px;
+  background-color: transparent;
+  color: #1eb1fc;
+  border: 1px solid;
+  border-color: #1eb1fc;
+  border-radius: 8px;
+  transition: all 0.8s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.payment-offline__btn:hover {
+  color: #fff;
+  background-color: #1eb1fc;
+  border-color: #1eb1fc;
+  transition: all 0.8s;
 }
 .warranty-and-service {
   background-color: #f7f7f7;

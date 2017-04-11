@@ -2,53 +2,6 @@
   display: block;
 }
 
-.collapse input,
-.collapse select,
-.collapse label {
-  margin-bottom: 15px;
-  width: 100%;
-}
-
-.collapsing {
-  transition-duration: 0.25s;
-}
-
-.well {
-  position: relative;
-  max-width: 500px;
-  margin: 0 auto;
-
-  padding-top: 20px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-
-  border: none;
-  border-color: transparent;
-  background-color: transparent;
-
-  box-shadow: none;
-
-  transition: all 2s;
-}
-
-.well:hover {
-  background-color: #eef8fc;
-
-  transition: all 2s;
-  box-shadow:  0 2px 2px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.12);
-}
-
-.well:hover .well__secure-pay {
-  opacity: 0.8;
-  transition: all 2s;
-}
-
-.well:hover .well__secure-img {
-  opacity: 0.8;
-  transition: all 2s;
-}
-
 .well__secure-img {
   position: absolute;
 
@@ -72,7 +25,51 @@
   transition: all 2s;
 }
 
+.tinkoffPayRow--email-label {
+  color: #777777;
+}
 
+.tinkoffPayRow--email-input {
+  height: 40px;
+  padding-left: 5px;
+
+  border: 1px solid @main-color;
+  border-radius: 5px;
+  background-color: transparent;
+
+  outline: none;
+  box-shadow: none;
+  color: #777777;
+
+  &:focus {
+    border: 2px solid;
+    border-color: @style-color;
+  }
+}
+
+.tinkoffPayRow--tel-label {
+  margin: 0;
+  color: #777777;
+}
+
+.tinkoffPayRow--tel-input {
+  height: 40px;
+  padding-left: 5px;
+
+  border: 1px solid;
+  border-color: @main-color;
+  border-radius: 5px;
+  background-color: transparent;
+
+  outline: none;
+  box-shadow: none;
+  color: #777777;
+
+  &:focus {
+    border: 2px solid;
+    border-color: @style-color;
+  }
+}
 
 .tinkoffPayRow--sum {
   font-size: 18px;
@@ -94,7 +91,7 @@
   padding-left: 5px;
 
   border: 1px solid;
-  border-color: @style-color;
+  border-color: @main-color;
   border-radius: 5px;
   background-color: transparent;
 
@@ -104,35 +101,7 @@
 
 .tinkoffPayRow--desc:focus {
   border: 2px solid;
-  border-color: @style-color;
-}
-
-.tinkoffPayRow--tel {
-  height: 40px;
-  padding-left: 5px;
-
-  border: 1px solid;
-  border-color: @style-color;
-  border-radius: 5px;
-  background-color: transparent;
-
-  outline: none;
-  box-shadow: none;
-}
-
-.tinkoffPayRow--tel:focus {
-  border: 2px solid;
-  border-color: @style-color;
-}
-
-
-.collapse .tinkoffPayRow--tel-label {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  width: 295px;
-  line-height: 18px;
-  font-size: 13px;
-  color: #777777;
+  border-color: @main-color;
 }
 
 input.tinkoffPayRow--button-pay {
@@ -144,7 +113,7 @@ input.tinkoffPayRow--button-pay {
   padding-bottom: 10px;
   padding-left: 25px;
 
-  width: 150px;
+  width: 200px;
 
   font-size: 14px;
 
@@ -152,7 +121,7 @@ input.tinkoffPayRow--button-pay {
   color: @style-color;
   border: 1px solid;
   border-color: @style-color;
-  border-radius: 15px;
+  border-radius: 8px;
   transition: all 0.8s;
 
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
@@ -181,5 +150,114 @@ input.tinkoffPayRow--button-pay {
     color: #fff !important;
     background-color: @style-color;
     border-color: @style-color;
+  }
+}
+
+.payment-online-form {
+  display: flex;
+  flex-direction: column;
+
+  width: 90%;
+  margin: 0 auto;
+
+  input, select {
+    margin-bottom: 10px;
+  }
+}
+
+.payment-offline-form {
+  display: flex;
+  flex-direction: column;
+
+  width: 90%;
+  margin: 0 auto;
+
+  input {
+    margin-bottom: 10px;
+  }
+}
+
+.payment-offline__city-label {
+
+  &:focus {
+    border: 2px solid;
+    border-color: @style-color;
+  }
+}
+
+.payment-offline__city-select {
+  height: 40px;
+  padding-left: 5px;
+
+  border: 1px solid;
+  border-color: @style-color;
+  border-radius: 5px;
+  background-color: transparent;
+
+  outline: none;
+  box-shadow: none;
+
+  &:focus {
+    border: 2px solid;
+    border-color: @style-color;
+  }
+}
+
+.payment-offline__label-tel {
+  color: #777777;
+}
+
+.payment-offline__input-tel {
+  height: 40px;
+  padding-left: 5px;
+
+  border: 1px solid;
+  border-color: @main-color;
+  border-radius: 5px;
+  background-color: transparent;
+
+  outline: none;
+  box-shadow: none;
+  color: #777777;
+
+  &:focus {
+    border: 2px solid;
+    border-color: @style-color;
+  }
+}
+
+.payment-offline__content,
+.payment-online__content {
+  text-align: center;
+}
+
+.payment-offline__btn {
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+
+  width: 200px;
+
+  font-size: 14px;
+
+  background-color: transparent;
+  color: @style-color;
+  border: 1px solid;
+  border-color: @style-color;
+  border-radius: 8px;
+  transition: all 0.8s;
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+  0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+  &:hover {
+    color: #fff;
+    background-color: @style-color;
+    border-color: @style-color;
+    transition: all 0.8s;
   }
 }

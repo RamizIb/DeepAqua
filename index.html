@@ -51,7 +51,7 @@
             </div>
 
             <div class="header__callback">
-              <a class="btn btn-default btn--callback" href="#" role="button">ОБРАТНЫЙ ЗВОНОК</a>
+              <a class="btn btn-default btn--callback" href="#callbackwidget" role="button">ОБРАТНЫЙ ЗВОНОК</a>
             </div>
 
           </div><!-- /.contact-list-wrapper -->
@@ -309,9 +309,9 @@
               <div class="advice-form__wrapper">
                 <p class="advice-form__subtitle">ОСТАЛИСЬ ВОПРОСЫ?</p>
                 <h3 class="advice-form__title">ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА!</h3>
-                <form action="" class="advice-form" method="post">
-                  <input type="text" name="form-name" class="advice-form__name" placeholder="Имя" required="required">
-                  <input type="tel" name="form-phone" class="advice-form__phone" placeholder="Телефон" required="required">
+                <form action="send-main-form.php" class="advice-form" method="post">
+                  <input type="text" name="main-form-name" class="advice-form__name" placeholder="Имя" required>
+                  <input type="tel" name="main-form-phone" class="advice-form__phone" placeholder="Телефон" required>
                   <button class="advice-form__button">ОТПРАВИТЬ</button>
                 </form>
               </div>
@@ -477,7 +477,7 @@
 
           <p class="work-process__subtitle">НА ЛЮБОМ ЭТАПЕ МОЖНО СВЯЗАТЬСЯ С НАМИ ДЛЯ БЕСПЛАТНОЙ КОНСУЛЬТАЦИИ</p>
           <div class="work-process__consultation">
-            <a class="btn btn-default btn--callback" href="#" role="button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+            <a class="btn btn-default btn--callback" href="#callbackwidget" role="button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
           </div>
         </div>
 
@@ -583,8 +583,8 @@
           <div class="footer__form-contact-wrapper">
             <div class="footer__form">
               <h6 class="footer__form-title">Узнавайте о новинках и скидках</h6>
-              <form action="" method="post">
-                <input type="email" name="email" placeholder="Укажите Ваш e-mail">
+              <form action="send-footer-form.php" class="footer-form" method="post">
+                <input type="email" name="footer-form-email" placeholder="Укажите Ваш e-mail">
                 <button type="submit" class="btn btn-default btn-footer__form">ОТПРАВИТЬ</button>
               </form>
             </div>
@@ -622,7 +622,7 @@
           </div>
 
           <div class="footer__callback">
-            <a class="btn btn-default btn--footer-callback" href="#" role="button">ОБРАТНЫЙ ЗВОНОК</a>
+            <a class="btn btn-default btn--footer-callback" href="#callbackwidget" role="button">ОБРАТНЫЙ ЗВОНОК</a>
           </div>
 
         </div><!-- /.footer__links-wrapper -->

@@ -10,7 +10,7 @@
         <script type="text/javascript">
             function makePayment(amount, orderId, description, name, email, phone) {
                 var params = {
-                    TerminalKey: "1486204979296",
+                    TerminalKey: "1486204979296DEMO",
                     Amount: amount,
                     OrderId: orderId,
                     Description: description,
@@ -68,7 +68,7 @@
             </div>
 
             <div class="header__callback">
-              <a class="btn btn-default btn--callback" href="#" role="button">ОБРАТНЫЙ ЗВОНОК</a>
+              <a class="btn btn-default btn--callback" href="#callbackwidget" role="button">ОБРАТНЫЙ ЗВОНОК</a>
             </div>
 
           </div><!-- /.contact-list-wrapper -->
@@ -122,14 +122,13 @@
 
         <div class="single-product">
           <div class="container-article">
-            <div class="back-wrapper">
-              <a href="../catalog.html" class="back-button">КАТАЛОГ</a>
-            </div>
 
             <div class="single-product__img-block">
               <img class="single-product__img" src="../img/aquel-zero-1.png" alt="">
             </div>
+
             <div class="single-product__content-block">
+
               <div class="single-product__header">
                 <h1 class="single-product__title">ФИЛЬТР</h1>
                 <p class="single-product__price">44 990 ₽</p>
@@ -141,38 +140,108 @@
                 <li class="single-product__list-item-aquel-zero-two">Бесплатная доставка, 2-10 дней</li>
                 <li class="single-product__list-item-aquel-zero-three">Не требует монтажа</li>
               </ul>
+
               <div class="single-product__button-wrapper">
+                <a href="#" class="btn btn-default btn--buy" type="button" data-toggle="modal" data-target="#collapsePayment">ОФОРМИТЬ ЗАКАЗ</a>
               </div>
-              <a href="#collapsePayment" class="btn btn-default btn--buy" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapsePayment">ОФОРМИТЬ</a>
-              <div class="collapse" id="collapsePayment">
-                <div class="well">
 
-                  <form name="TinkoffPayForm" onsubmit="makePayment(
-                    document.TinkoffPayForm.paySum.value.replace(/,/ig,'.') * 100,
-                    document.TinkoffPayForm.payOrder.value,
-                    document.TinkoffPayForm.payDesc.value,
-                    document.TinkoffPayForm.payName.value,
-                    document.TinkoffPayForm.payEmail.value,
-                    document.TinkoffPayForm.payPhone.value); return false;">
-                    <input class="tinkoffPayRow tinkoffPayRow--sum" type="hidden" placeholder="Сумма заказа" name="paySum" value="44990" readonly>
-                    <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="payOrder">
-                    <label class="tinkoffPayRow tinkoffPayRow--city">Ваш город:</label>
-                    <input class="tinkoffPayRow tinkoffPayRow--desc" type="text" placeholder="Город" name="payDesc">
-                    <input class="tinkoffPayRow" type="hidden" placeholder="ФИО плательщика" name="payName">
-                    <label class="tinkoffPayRow tinkoffPayRow--city">E-mail:</label>
-                    <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="E-mail" name="payEmail" required>
-                    <label class="tinkoffPayRow tinkoffPayRow--city">Телефон:</label>
-                    <input class="tinkoffPayRow tinkoffPayRow--tel" type="text" placeholder="Контактный телефон +7" name="payPhone" pattern="7[0-9]{10}" required>
-                    <label class="tinkoffPayRow tinkoffPayRow--tel-label">*Обязательно <b>укажите телефон</b> вида <b>71234567890</b>, по нему с Вами будет согласована доставка.</label>
-                    <input class="tinkoffPayButton tinkoffPayRow--button-pay" type="submit" value="ОПЛАТИТЬ">
-                  </form>
-                  <img class="well__secure-img" width="90" src="../img/visa-mastercard-logo-small.png" alt="Защищенные платежи">
-                  <span class="well__secure-pay">*Secure Payment</span>
-                </div>
-              </div>
-            </div>
+              <!-- Modal -->
+              <div class="modal fade modal-payment" id="collapsePayment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 
-          </div>
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header modal-header--payment">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title modal-title--payment" id="myModalLabel">Выберите способ оплаты:</h4>
+                    </div>
+                    <div class="modal-body modal-body--payment">
+
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs nav-tabs--payment" role="tablist">
+                        <li role="presentation" class="active"><a href="#payment-online" aria-controls="payment-online" role="tab" data-toggle="tab">На сайте</a></li>
+                        <li role="presentation"><a href="#payment-offline" aria-controls="payment-offline" role="tab" data-toggle="tab">При получении</a></li>
+                      </ul>
+
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+
+                        <div role="tabpanel" class="tab-pane active" id="payment-online">
+                          <form class="payment-online-form" name="TinkoffPayForm" onsubmit="makePayment(
+                            document.TinkoffPayForm.paySum.value.replace(/,/ig,'.') * 100,
+                            document.TinkoffPayForm.payOrder.value,
+                            document.TinkoffPayForm.payDesc.value,
+                            document.TinkoffPayForm.payName.value,
+                            document.TinkoffPayForm.payEmail.value,
+                            document.TinkoffPayForm.payPhone.value); return false;">
+                            <input class="tinkoffPayRow tinkoffPayRow--sum" type="hidden" placeholder="Сумма заказа" name="paySum" value="44990" readonly>
+                            <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="payOrder">
+                            <label class="tinkoffPayRow tinkoffPayRow--city">Ваш город:</label>
+                            <select class="tinkoffPayRow tinkoffPayRow--desc" type="text" name="payDesc">
+                              <option value="Moscow">Москва</option>
+                              <option value="Saint-Petersburg">Санкт-Петербург</option>
+                              <option value="Veliky-Novgorod">Великий Новгород</option>
+                              <option value="Vladimir">Владимир</option>
+                              <option value="Ekaterinburg">Екатеринбург</option>
+                              <option value="Ivanovo">Иваново</option>
+                              <option value="Izhevsk">Ижевск</option>
+                              <option value="Yoshkar-Ola">Йошкар-Ола</option>
+                              <option value="Kazan">Казань</option>
+                              <option value="Kaliningrad">Калининград</option>
+                              <option value="Kaluga">Калуга</option>
+                              <option value="Kirov">Киров</option>
+                              <option value="Kostroma">Кострома</option>
+                              <option value="Krasnodar-region">Краснодарский край</option>
+                              <option value="Makhachkala">Махачкала</option>
+                              <option value="Naberezhnye-Chelny">Набережные Челны</option>
+                              <option value="Nizhniy-Novgorod">Нижний Новгород</option>
+                              <option value="Omsk">Омск</option>
+                              <option value="Perm">Пермь</option>
+                              <option value="Rybinsk">Рыбинск</option>
+                              <option value="Samara">Самара</option>
+                              <option value="Saratov">Саратов</option>
+                              <option value="Stavropol-region">Ставропольский край</option>
+                              <option value="Surgut">Сургут</option>
+                              <option value="Syktyvkar">Сыктывкар</option>
+                              <option value="Tver">Тверь</option>
+                              <option value="Tolyatti">Тольятти</option>
+                              <option value="Tomsk">Томск</option>
+                              <option value="Tula">Тула</option>
+                              <option value="Ufa">Уфа</option>
+                              <option value="Ukhta-(Komi-Republic)">Ухта (Республика Коми)</option>
+                              <option value="Tchaikovsky">Чайковский</option>
+                              <option value="Cheboksary">Чебоксары</option>
+                            </select>
+                            <input class="tinkoffPayRow" type="hidden" placeholder="ФИО плательщика" name="payName">
+                            <label class="tinkoffPayRow tinkoffPayRow--email-label">Ваш E-mail:</label>
+                            <input class="tinkoffPayRow tinkoffPayRow--email-input" type="text" placeholder="E-mail" name="payEmail" required>
+                            <label class="tinkoffPayRow tinkoffPayRow--tel-label">Ваш телефон:</label>
+                            <input class="tinkoffPayRow tinkoffPayRow--tel-input" type="text" placeholder="7 (950) 123 45 67" name="payPhone" pattern="7[0-9]{10}" required>
+                            <p class="payment-online__content">*Обязательно укажите телефон вида <b>7 (123) 456 78 90</b>, по нему с Вами будет согласована доставка.</p>
+                            <input class="tinkoffPayButton tinkoffPayRow--button-pay" type="submit" value="ОПЛАТИТЬ">
+                          </form>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="payment-offline">
+                          <form action="../send-offline-buy.php" method="post" class="payment-offline-form">
+                            <label class="payment-offline__city-label">Ваш город:</label>
+                            <input class="payment-offline__city-select" type="text" name="city-select" required>
+                            <label class="payment-offline__label-tel" for="customer-phone" >Ваш телефон:</label>
+                            <input class="payment-offline__input-tel" type="text" name="offlain-tel" id="customer-phone" placeholder="7 (950) 123 45 67" pattern="7[0-9]{10}" required>
+                            <p class="payment-offline__content">Укажите телефон вида <b>7 (123) 456 78 90</b>, по нему с Вами свяжется наш менеджер и уточнит адрес и время доставки удобное для Вас. Спасибо!</p>
+                            <p class="payment-offline__content">Обращаем Ваше внимание, что доставка без оплаты Фильтра AQEUL ZERO возможна только в <a href="../about.html" target="_blank">городах</a> присутствия компании!</p>
+                            <button class="payment-offline__btn">ЗАКАЗАТЬ</button>
+                          </form>
+                        </div>
+
+                      </div><!-- /.tab-content -->
+
+                    </div><!-- /.Modal-body -->
+                  </div><!-- /.Modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.Modal -->
+
+            </div><!-- /.single-product__content-block -->
+          </div><!-- /.container-article -->
         </div><!-- /.single-product -->
 
         <div class="advantages">
@@ -256,9 +325,9 @@
               <div class="advice-form__wrapper">
                 <p class="advice-form__subtitle">ОСТАЛИСЬ ВОПРОСЫ?</p>
                 <h3 class="advice-form__title">ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА!</h3>
-                <form action="" class="advice-form" method="post">
-                  <input type="text" name="form-name" class="advice-form__name" placeholder="Имя" required="required">
-                  <input type="tel" name="form-phone" class="advice-form__phone" placeholder="Телефон" required="required">
+                <form action="../send-product-form.php" class="advice-form" method="post">
+                  <input type="text" name="product-form-name" class="advice-form__name" placeholder="Имя" required>
+                  <input type="tel" name="product-form-phone" class="advice-form__phone" placeholder="Телефон" required>
                   <button class="advice-form__button">ОТПРАВИТЬ</button>
                 </form>
               </div>
@@ -285,8 +354,8 @@
           <div class="footer__form-contact-wrapper">
             <div class="footer__form">
               <h6 class="footer__form-title">Узнавайте о новинках и скидках</h6>
-              <form action="" method="post">
-                <input type="email" name="email" placeholder="Укажите Ваш e-mail">
+              <form action="../send-footer-form.php" class="footer-form" method="post">
+                <input type="email" name="footer-form-email" placeholder="Укажите Ваш e-mail">
                 <button type="submit" class="btn btn-default btn-footer__form">ОТПРАВИТЬ</button>
               </form>
             </div>
@@ -324,7 +393,7 @@
           </div>
 
           <div class="footer__callback">
-            <a class="btn btn-default btn--footer-callback" href="#" role="button">ОБРАТНЫЙ ЗВОНОК</a>
+            <a class="btn btn-default btn--footer-callback" href="#callbackwidget" role="button">ОБРАТНЫЙ ЗВОНОК</a>
           </div>
 
         </div><!-- /.footer__links-wrapper -->

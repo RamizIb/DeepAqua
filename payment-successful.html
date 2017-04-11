@@ -55,7 +55,7 @@
             </div>
 
             <div class="header__callback">
-              <a class="btn btn-default btn--callback" href="#" role="button">ОБРАТНЫЙ ЗВОНОК</a>
+              <a class="btn btn-default btn--callback" href="#callbackwidget" role="button">ОБРАТНЫЙ ЗВОНОК</a>
             </div>
 
           </div><!-- /.contact-list-wrapper -->
@@ -107,14 +107,13 @@
 
       <section class="main">
 
-        <div class="welcome-to-shop">
-          <h1 class="welcome-to-shop__title animation-fadeIn">Поздравляем с покупкой!</h1>
-          <p class="welcome-to-shop__subtitle animation-fadeIn">Оплата прошла успешно.</p>
-          <p class="welcome-to-shop__subtitle welcome-to-shop__subtitle--success animation-fadeIn">В ближайшее время с Вами свяжется менеджер для уточнения <b>адреса и времени</b> доставки.</p>
-          <p class="welcome-to-shop__subtitle welcome-to-shop__subtitle--success animation-fadeIn">Если Вы указали <b>неправильный</b> номер телефона (или e-mail) для связи, убедительная просьба связаться с нами по телефону: <a href="tel:+7 904 045 93 93">+7 904 045 93 93</a> или написать нам в <a href="#showchat">онлайн</a> чат.</p>
-          <p class="welcome-to-shop__subtitle welcome-to-shop__subtitle--success animation-fadeIn">Спасибо за покупку!</p>
-          <div class="button-wrapper">
-            <a class="btn btn-default btn--welcome-to-shop animation-fadeIn" href="brand-aquel.html" role="button">БРЕНД АКВЕЛ</a>
+        <div class="payment-successful-wrapper">
+          <div class="payment-successful animation-fadeIn">
+            <h1 class="payment-successful__title">Поздравляем с покупкой!</h1>
+            <p class="payment-successful__subtitle">Оплата прошла успешно.</p>
+            <p class="payment-successful__subtitle">В ближайшее время с Вами свяжется менеджер для уточнения <b>адреса и времени</b> доставки.</p>
+            <p class="payment-successful__subtitle">Если Вы указали <b>неправильный</b> номер телефона (или e-mail) для связи, убедительная просьба связаться с нами по телефону: <a href="tel:+7 904 045 93 93">+7 904 045 93 93</a> или написать нам в <a href="#showchat">онлайн</a> чат.</p>
+            <p class="payment-successful__subtitle"><b>Спасибо за покупку!</b></p>
           </div>
         </div>
 
@@ -129,8 +128,8 @@
           <div class="footer__form-contact-wrapper">
             <div class="footer__form">
               <h6 class="footer__form-title">Узнавайте о новинках и скидках</h6>
-              <form action="" method="post">
-                <input type="email" name="email" placeholder="Укажите Ваш e-mail">
+              <form action="send-footer-form.php" class="footer-form" method="post">
+                <input type="email" name="footer-form-email" placeholder="Укажите Ваш e-mail">
                 <button type="submit" class="btn btn-default btn-footer__form">ОТПРАВИТЬ</button>
               </form>
             </div>
@@ -168,7 +167,7 @@
           </div>
 
           <div class="footer__callback">
-            <a class="btn btn-default btn--footer-callback" href="#" role="button">ОБРАТНЫЙ ЗВОНОК</a>
+            <a class="btn btn-default btn--footer-callback" href="#callbackwidget" role="button">ОБРАТНЫЙ ЗВОНОК</a>
           </div>
 
         </div><!-- /.footer__links-wrapper -->
