@@ -47,7 +47,7 @@ gulp.task("clean", function() {
 
 gulp.task("copy", function() {
   return gulp.src([
-    "css/bootstrap.css",
+    "css/bootstrap.min.css",
     "fonts/**/**",
     "catalog/**",
     "blog/**/**",
@@ -56,6 +56,8 @@ gulp.task("copy", function() {
     "js/**",
     ".htaccess",
     "robots.txt",
+    "*.php",
+    "*.xml",
     "*.html"
     ], {
       base: "."
