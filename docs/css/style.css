@@ -2039,9 +2039,20 @@ a:active {
 .header__name img {
   margin-right: -5px;
 }
+.header__tel-moscow {
+  display: none;
+}
+.header__tel-moscow a {
+  color: #000;
+}
+.header__tel-moscow a:hover {
+  color: #1eb1fc;
+}
+.header__tel-moscow i {
+  margin-right: 10px;
+}
 .header__tel {
   display: none;
-  margin: 0 auto 10px;
 }
 .header__tel a {
   color: #000;
@@ -2097,6 +2108,11 @@ a:active {
 .header__callback {
   display: none;
   margin: 0 auto 5px;
+}
+@media (min-width: 560px) {
+  .header__tel-moscow {
+    display: block;
+  }
 }
 @media (min-width: 620px) {
   .header__callback {
@@ -3883,16 +3899,20 @@ a:active {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  -ms-flex-align: stretch;
-      align-items: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
   margin-bottom: 10px;
+  padding-left: 0;
+  list-style: none;
   text-align: center;
   background-color: #f9f9f9;
 }
 .tehnology-review__tabs li a {
+  margin: 0;
+  padding: 10px 15px;
   font-size: 13px;
+  text-decoration: none;
 }
 .tehnology-review__tabs li {
   display: -ms-flexbox;
@@ -4374,6 +4394,7 @@ input.tinkoffPayRow--button-pay:active:hover {
   position: absolute;
   width: 100%;
   height: 2px;
+  left: 0;
   bottom: 0;
   background-color: #00a3ec;
 }
@@ -4447,7 +4468,7 @@ input.tinkoffPayRow--button-pay:active:hover {
 .work-process__consultation .btn--callback {
   display: block;
   width: 100%;
-  max-width: 350px;
+  max-width: 310px;
   margin: 0 auto;
   text-align: center;
 }

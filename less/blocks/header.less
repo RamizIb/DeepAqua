@@ -51,9 +51,24 @@
   margin-right: -5px;
 }
 
+.header__tel-moscow {
+  display: none;
+
+  a {
+    color: #000;
+  }
+
+  a:hover {
+    color: @style-color;
+  }
+
+  i {
+    margin-right: 10px;
+  }
+}
+
 .header__tel {
   display: none;
-  margin: 0 auto 10px;
 }
 
 .header__tel a {
@@ -125,6 +140,13 @@
 .header__callback {
   display: none;
   margin: 0 auto 5px;
+}
+
+@media (min-width: 560px) {
+
+  .header__tel-moscow {
+    display: block;
+  }
 }
 
 @media (min-width: 620px) {
