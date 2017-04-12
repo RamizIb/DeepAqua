@@ -17,7 +17,7 @@
 
 .answers-main__title::before {
   content: " ";
-  display: block;
+  display: none;
   position: absolute;
 
   width: 50px;
@@ -31,7 +31,7 @@
 
 .answers-main__title::after {
   content: " ";
-  display: block;
+  display: none;
   position: absolute;
 
   width: 50px;
@@ -67,10 +67,6 @@
 
 .answer-main__nav {
   width: 100%;
-}
-
-.answer-main__nav .nav .nav-tabs {
-
 }
 
 .nav-tabs {
@@ -209,6 +205,11 @@
 }
 
 @media (min-width: 600px) {
+
+  .answers-main__title::before,
+  .answers-main__title::after {
+    display: block;
+  }
 
   .answer-main__nav {
     width: 30%;

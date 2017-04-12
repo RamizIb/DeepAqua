@@ -395,9 +395,6 @@ input.advice-form__phone {
 .block-shadows {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-.fadein-post {
-  /* post checker */
-}
 .answers-main {
   padding-top: 50px;
   background-color: #f9f9f9;
@@ -412,7 +409,7 @@ input.advice-form__phone {
 }
 .answers-main__title::before {
   content: " ";
-  display: block;
+  display: none;
   position: absolute;
   width: 50px;
   height: 2px;
@@ -422,7 +419,7 @@ input.advice-form__phone {
 }
 .answers-main__title::after {
   content: " ";
-  display: block;
+  display: none;
   position: absolute;
   width: 50px;
   height: 2px;
@@ -562,6 +559,10 @@ input.advice-form__phone {
   background-size: 90%;
 }
 @media (min-width: 600px) {
+  .answers-main__title::before,
+  .answers-main__title::after {
+    display: block;
+  }
   .answer-main__nav {
     width: 30%;
   }
@@ -742,17 +743,17 @@ input.advice-form__phone {
 }
 @font-face {
   font-family: "ProximaNova";
-  src: url("../../fonts/ProximaNova-Reg.otf");
+  src: url("../fonts/ProximaNova-Reg.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: "ProximaNova";
-  src: url("../../fonts/ProximaNova-Light.otf");
+  src: url("../fonts/ProximaNova-Light.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: "ProximaNova";
-  src: url("../../fonts/ProximaNova-Bold.otf");
+  src: url("../fonts/ProximaNova-Bold.otf");
   font-weight: bold;
 }
 html {
@@ -1986,8 +1987,7 @@ a:active {
     width: 50%;
   }
   .footer__form input {
-    max-width: 600px;
-    min-width: 300px;
+    max-width: 300px;
   }
 }
 @media (min-width: 1160px) {
@@ -2119,53 +2119,6 @@ a:active {
   }
   .header__email {
     display: block;
-  }
-}
-.infobar {
-  padding-top: 25px;
-}
-.infobar a {
-  color: #777777;
-}
-.infobar__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-.infobar__list-item {
-  margin-bottom: 20px;
-  padding: 20px;
-  font-size: 18px;
-  background-color: #e9f7f8;
-  transition: all 0.5s;
-  overflow: hidden;
-  border-radius: 15px;
-}
-.infobar__list-item:hover {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  transition: all 0.5s;
-}
-.infobar__list-item:last-child {
-  margin-bottom: 0;
-}
-.infobar__list-item a {
-  transition: all 0.5s;
-}
-.infobar__list-item a {
-  display: block;
-  text-decoration: none;
-}
-@media (min-width: 768px) {
-  .infobar__list {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-  }
-  .infobar__list-item {
-    margin-bottom: 0;
-    width: 32%;
   }
 }
 .infographics {
@@ -2424,7 +2377,7 @@ a:active {
   width: 45%;
   padding-top: 100px;
   padding-bottom: 50px;
-  background-image: url(../../img/slider-lead-bg.png);
+  background-image: url(../img/slider-lead-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3011,7 +2964,7 @@ a:active {
   top: 0;
   left: -40px;
   background-color: #fff;
-  background-image: url(../../img/icon/like.png);
+  background-image: url(../img/icon/like.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px;
@@ -3027,10 +2980,10 @@ a:active {
   top: 0;
   left: -40px;
   background-color: #fff;
-  background-image: url(../../img/icon/good-price.png);
+  background-image: url(../img/icon/easy-use.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60px;
+  background-size: 43px;
   box-shadow: 1px 0px 10px 0px #00a3ec;
   border-radius: 50%;
 }
@@ -3043,7 +2996,7 @@ a:active {
   top: 0;
   left: -40px;
   background-color: #fff;
-  background-image: url(../../img/icon/easy-shopping.png);
+  background-image: url(../img/icon/easy-shopping.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px;
@@ -3138,7 +3091,7 @@ a:active {
   top: 0;
   left: -40px;
   background-color: #fff;
-  background-image: url(../../img/icon/like.png);
+  background-image: url(../img/icon/like.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px;
@@ -3154,7 +3107,7 @@ a:active {
   top: 0;
   left: -40px;
   background-color: #fff;
-  background-image: url(../../img/icon/good-price.png);
+  background-image: url(../img/icon/good-price.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px;
@@ -3170,7 +3123,7 @@ a:active {
   top: 0;
   left: -40px;
   background-color: #fff;
-  background-image: url(../../img/icon/easy-shopping.png);
+  background-image: url(../img/icon/easy-shopping.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px;
@@ -3265,7 +3218,7 @@ a:active {
   top: 0;
   left: -40px;
   background-color: #fff;
-  background-image: url(../../img/icon/like.png);
+  background-image: url(../img/icon/like.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px;
@@ -3281,10 +3234,10 @@ a:active {
   top: 0;
   left: -40px;
   background-color: #fff;
-  background-image: url(../../img/icon/good-price.png);
+  background-image: url(../img/icon/padlock.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60px;
+  background-size: 45px;
   box-shadow: 1px 0px 10px 0px #00a3ec;
   border-radius: 50%;
 }
@@ -3297,7 +3250,7 @@ a:active {
   top: 0;
   left: -40px;
   background-color: #fff;
-  background-image: url(../../img/icon/easy-shopping.png);
+  background-image: url(../img/icon/easy-shopping.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px;
@@ -3351,11 +3304,12 @@ a:active {
   background-color: #00a3ec;
 }
 .promo-video__title {
-  width: 300px;
+  max-width: 300px;
   margin-bottom: 30px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  text-align: center;
 }
 .promo-video__subtitle {
   font-weight: 600;
@@ -3412,31 +3366,47 @@ a:active {
   width: 100%;
 }
 .fancybox-slide--iframe .fancybox-content {
-  width: 95%;
-  height: 200px;
+  min-height: 150px;
+  max-height: 180px;
 }
 @media (min-width: 450px) {
   .fancybox-slide--iframe .fancybox-content {
-    width: 95%;
-    height: 300px;
+    min-height: 210px;
+  }
+  .promo-video__title {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+@media (min-width: 550px) {
+  .fancybox-slide--iframe .fancybox-content {
+    min-height: 255px;
+  }
+}
+@media (min-width: 650px) {
+  .fancybox-slide--iframe .fancybox-content {
+    min-height: 301px;
   }
 }
 @media (min-width: 768px) {
   .fancybox-slide--iframe .fancybox-content {
-    width: 95%;
-    height: 400px;
+    min-height: 354px;
   }
 }
 @media (min-width: 940px) {
   .fancybox-slide--iframe .fancybox-content {
-    width: 800px;
-    height: 500px;
+    min-height: 415px;
   }
   .promo-video__content-wrapper {
     width: 30%;
   }
   .promo__video {
     width: 45%;
+  }
+}
+@media (min-width: 1050px) {
+  .fancybox-slide--iframe .fancybox-content {
+    min-height: 485px;
   }
 }
 .shop-showcase {
@@ -3561,55 +3531,6 @@ a:active {
     width: 30%;
   }
 }
-/* Section product
-
-<div class="showcase">
-
-  <div class="container-article">
-
-    <h2 class="showcase__title">Фильтрующие системы</h2>
-    <p class="showcase__sub-title">Познакомьтесь с технологиями Aquel</p>
-
-    <div class="showcase__item-one">
-      <div class="showcase__item-thumbnail hover">
-        <img src="img/small-aquel-1000.png" width=""  height="" alt="">
-      </div>
-      <div class="showcase__item-footer">
-        <div class="showcase__item-details">
-          <h3 class="showcase__item-title">Aquel 1000</h>
-          <span class="showcase__item-price glyphicon glyphicon-rub">44980</span>
-        </div>
-        <a class="btn btn-default btn--buy" href="#" role="button">КУПИТЬ</a>
-      </div>
-    </div>
-
-    <div class="showcase__item-two">
-      <div class="showcase__item-thumbnail hover">
-        <img src="img/small-aquel-zero.png" width="" height="" alt="">
-      </div>
-      <div class="showcase__item-footer">
-        <div class="showcase__item-details">
-          <h3 class="showcase__item-title">Aquel Zero</h>
-          <span class="showcase__item-price glyphicon glyphicon-rub">44980</span>
-        </div>
-        <a class="btn btn-default btn--buy" href="#" role="button">КУПИТЬ</a>
-      </div>
-    </div>
-
-    <div class="showcase__item-three">
-      <div class="showcase__item-thumbnail hover">
-        <img src="img/small-aquel-200.png" width="" height="" alt="">
-      </div>
-      <div class="showcase__item-footer">
-        <div class="showcase__item-details">
-          <h3 class="showcase__item-title">Aquel 200</h>
-          <span class="showcase__item-price glyphicon glyphicon-rub">44980</span>
-        </div>
-        <a class="btn btn-default btn--buy" href="#" role="button">КУПИТЬ</a>
-      </div>
-    </div>
-  </div>
-</div><!-- /.showcase --> */
 .single-product {
   background-color: #f7f7f7;
   overflow: hidden;
@@ -3696,7 +3617,7 @@ a:active {
   top: -10px;
   left: -50px;
   background-color: #fff;
-  background-image: url(../../img/icon/like.png);
+  background-image: url(../img/icon/like.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px;
@@ -3715,10 +3636,10 @@ a:active {
   top: -10px;
   left: -50px;
   background-color: #fff;
-  background-image: url(../../img/icon/like.png);
+  background-image: url(../img/icon/carts.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60px;
+  background-size: 38px;
   box-shadow: 1px 0px 10px 0px #00a3ec;
   border-radius: 50%;
 }
@@ -3734,10 +3655,10 @@ a:active {
   top: -10px;
   left: -50px;
   background-color: #fff;
-  background-image: url(../../img/icon/like.png);
+  background-image: url(../img/icon/wrench.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60px;
+  background-size: 43px;
   box-shadow: 1px 0px 10px 0px #00a3ec;
   border-radius: 50%;
 }
@@ -3768,7 +3689,7 @@ a:active {
   top: -10px;
   left: -50px;
   background-color: #fff;
-  background-image: url(../../img/icon/like.png);
+  background-image: url(../img/icon/like.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px;
@@ -3784,10 +3705,10 @@ a:active {
   top: -10px;
   left: -50px;
   background-color: #fff;
-  background-image: url(../../img/icon/like.png);
+  background-image: url(../img/icon/carts.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60px;
+  background-size: 38px;
   box-shadow: 1px 0px 10px 0px #00a3ec;
   border-radius: 50%;
 }
@@ -3800,10 +3721,10 @@ a:active {
   top: -10px;
   left: -50px;
   background-color: #fff;
-  background-image: url(../../img/icon/like.png);
+  background-image: url(../img/icon/wrench.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60px;
+  background-size: 43px;
   box-shadow: 1px 0px 10px 0px #00a3ec;
   border-radius: 50%;
 }
@@ -3827,7 +3748,7 @@ a:active {
   top: -10px;
   left: -50px;
   background-color: #fff;
-  background-image: url(../../img/icon/like.png);
+  background-image: url(../img/icon/like.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px;
@@ -3843,10 +3764,10 @@ a:active {
   top: -10px;
   left: -50px;
   background-color: #fff;
-  background-image: url(../../img/icon/like.png);
+  background-image: url(../img/icon/carts.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60px;
+  background-size: 38px;
   box-shadow: 1px 0px 10px 0px #00a3ec;
   border-radius: 50%;
 }
@@ -3859,10 +3780,10 @@ a:active {
   top: -10px;
   left: -50px;
   background-color: #fff;
-  background-image: url(../../img/icon/like.png);
+  background-image: url(../img/icon/not-wrench.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60px;
+  background-size: 43px;
   box-shadow: 1px 0px 10px 0px #00a3ec;
   border-radius: 50%;
 }
@@ -4040,22 +3961,6 @@ a:active {
 }
 .tinkoffPayRow {
   display: block;
-}
-.well__secure-img {
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  opacity: 0;
-  transition: all 2s;
-}
-.well__secure-pay {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  font-size: 13px;
-  color: #777777;
-  opacity: 0;
-  transition: all 2s;
 }
 .tinkoffPayRow--email-label {
   color: #777777;
@@ -4363,9 +4268,13 @@ input.tinkoffPayRow--button-pay:active:hover {
   }
   .carousel-indicators {
     display: block;
+    margin-left: 0;
+    width: 100px;
+    left: initial;
+    right: 15%;
   }
   .carousel-inner {
-    height: auto;
+    height: 350px;
   }
 }
 .welcome-to-shop {
@@ -4537,7 +4446,8 @@ input.tinkoffPayRow--button-pay:active:hover {
 }
 .work-process__consultation .btn--callback {
   display: block;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   margin: 0 auto;
   text-align: center;
 }

@@ -10,7 +10,7 @@
         <script type="text/javascript">
             function makePayment(amount, orderId, description, name, email, phone) {
                 var params = {
-                    TerminalKey: "1486204979296DEMO",
+                    TerminalKey: "1486204979296",
                     Amount: amount,
                     OrderId: orderId,
                     Description: description,
@@ -224,11 +224,44 @@
                         <div role="tabpanel" class="tab-pane" id="payment-offline">
                           <form action="../send-offline-buy.php" method="post" class="payment-offline-form">
                             <label class="payment-offline__city-label">Ваш город:</label>
-                            <input class="payment-offline__city-select" type="text" name="city-select" required>
+                            <select class="payment-offline__city-select" type="text" name="city-select">
+                              <option value="Moscow">Москва</option>
+                              <option value="Saint-Petersburg">Санкт-Петербург</option>
+                              <option value="Veliky-Novgorod">Великий Новгород</option>
+                              <option value="Vladimir">Владимир</option>
+                              <option value="Ekaterinburg">Екатеринбург</option>
+                              <option value="Ivanovo">Иваново</option>
+                              <option value="Izhevsk">Ижевск</option>
+                              <option value="Yoshkar-Ola">Йошкар-Ола</option>
+                              <option value="Kazan">Казань</option>
+                              <option value="Kaliningrad">Калининград</option>
+                              <option value="Kaluga">Калуга</option>
+                              <option value="Kirov">Киров</option>
+                              <option value="Kostroma">Кострома</option>
+                              <option value="Krasnodar-region">Краснодарский край</option>
+                              <option value="Makhachkala">Махачкала</option>
+                              <option value="Naberezhnye-Chelny">Набережные Челны</option>
+                              <option value="Nizhniy-Novgorod">Нижний Новгород</option>
+                              <option value="Omsk">Омск</option>
+                              <option value="Perm">Пермь</option>
+                              <option value="Rybinsk">Рыбинск</option>
+                              <option value="Samara">Самара</option>
+                              <option value="Saratov">Саратов</option>
+                              <option value="Stavropol-region">Ставропольский край</option>
+                              <option value="Surgut">Сургут</option>
+                              <option value="Syktyvkar">Сыктывкар</option>
+                              <option value="Tver">Тверь</option>
+                              <option value="Tolyatti">Тольятти</option>
+                              <option value="Tomsk">Томск</option>
+                              <option value="Tula">Тула</option>
+                              <option value="Ufa">Уфа</option>
+                              <option value="Ukhta-(Komi-Republic)">Ухта (Республика Коми)</option>
+                              <option value="Tchaikovsky">Чайковский</option>
+                              <option value="Cheboksary">Чебоксары</option>
+                            </select>
                             <label class="payment-offline__label-tel" for="customer-phone" >Ваш телефон:</label>
                             <input class="payment-offline__input-tel" type="text" name="offlain-tel" id="customer-phone" placeholder="7 (950) 123 45 67" pattern="7[0-9]{10}" required>
                             <p class="payment-offline__content">Укажите телефон вида <b>7 (123) 456 78 90</b>, по нему с Вами свяжется наш менеджер и уточнит адрес и время доставки удобное для Вас. Спасибо!</p>
-                            <p class="payment-offline__content">Обращаем Ваше внимание, что доставка без оплаты Фильтра AQEUL ZERO возможна только в <a href="../about.html" target="_blank">городах</a> присутствия компании!</p>
                             <button class="payment-offline__btn">ЗАКАЗАТЬ</button>
                           </form>
                         </div>
@@ -247,7 +280,7 @@
         <div class="advantages">
           <div class="container-article">
             <h3 class="product__description">ОПИСАНИЕ</h3>
-            <p class="product__content"><strong>AQUEL Zero</strong> это революционно новая технология компактной фильтрации без необходимости подключения к водопроводу. Идеально подходит для офиса, семьи и индивидуального использования. Модель проста в обслуживании - одна панель управления всеми функциями, световая индикация состояния системы. Простая замена фильтрующих картриджей - "повернул, вынул, подключил новый",  справится даже подросток. AQUEL Zero может быть установлен в любом удобном месте, занимает мало места. Для использования достаточно подключить электропитание и залить 4 литра любой воды и через 10 минут Вы получите совершенно чистую, минерализованную воду, объемом 2 литра!</p>
+            <p class="product__content"><strong>AQUEL Zero</strong> это революционно новая технология компактной фильтрации без необходимости подключения к водопроводу. Идеально подходит для офиса, семьи и индивидуального использования. Модель проста в обслуживании - одна панель управления всеми функциями, световая индикация состояния системы. Простая замена фильтрующих картриджей - "повернул, вынул, подключил новый",  справится даже подросток. AQUEL Zero может быть установлен в любом удобном месте, занимает мало места. Для использования достаточно подключить электропитание и залить 4 литра любой воды и через 15 минут Вы получите совершенно чистую, минерализованную воду, объемом 2 литра!</p>
 
             <h3 class="product__feature">ХАРАКТЕРИСТИКИ</h3>
             <ul class="product__conten-list">
@@ -280,8 +313,10 @@
             <h3 class="product__delivery">ДОСТАВКА</h3>
             <p class="product__content">
               Доставка Товара до покупателя осуществляется бесплатно. Средний срок доставки 7 дней, максимальный срок доставки 30 дней с момента оплаты.
+              Фильтр <strong>AQUEL ZERO</strong> может быть доставлен следующие города:
             </p>
-            <p class="product__content">Фильтр <strong>AQUEL Zero</strong> может быть доставлен в любой город Российской Федерации и стран СНГ.</p>
+            <p class="product__content">Великий Новгород, Владимир, Екатеринбург, Иваново, Ижевск, Йошкар-Ола, Казань, Калининград, Калуга, Киров, Кострома, Махачкала, Москва, Нижний.Новгород, Набережные Челны, Омск, Пермь, Рыбинск, Самара, Саратов, Санкт-Петербург, Сургут, Сыктывкар, Тверь, Тольятти, Томск, Тула, Уфа, Ухта (Республика Коми), Чайковский, Чебоксары. А так же, Краснодарский край и Ставропольский край.
+            </p>
 
           </div><!-- /.container-article -->
         </div><!-- /.advantages -->
