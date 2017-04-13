@@ -1699,6 +1699,7 @@ a:active {
 }
 .footer__map {
   display: none;
+  overflow: hidden;
 }
 .footer__form-contact-wrapper {
   width: 100%;
@@ -4254,6 +4255,7 @@ input.tinkoffPayRow--button-pay:active:hover {
 .carousel-control .glyphicon-menu-right,
 .carousel-control .glyphicon-menu-left {
   top: 50%;
+  bottom: 50%;
 }
 .glyphicon.glyphicon-menu-left,
 .glyphicon.glyphicon-menu-right {
