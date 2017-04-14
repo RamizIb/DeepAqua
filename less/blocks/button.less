@@ -17,8 +17,8 @@
 }
 
 .btn--callback {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   width: 235px;
 
@@ -41,13 +41,11 @@
 
 .btn--call-back-nav {
   display: inline-block;
-  vertical-align: middle;
 
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 10px;
-
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
   width: 200px;
 
@@ -55,7 +53,8 @@
   font-size: 14px;
 
   border-radius: 6px;
-  background-color: lighten(@main-color, 5%);
+
+  background-color: @main-color;
   transition: all 0.8s;
 
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
@@ -63,7 +62,14 @@
 
   &:hover {
     color: #fff;
-    background-color: lighten(@main-color, 15%);
+    background-color: lighten(@main-color, 5%);
+    border-color: @main-color;
+    transition: all 0.8s;
+  }
+
+  &:active {
+    color: #fff;
+    background-color: lighten(@main-color, 5%);
     border-color: @main-color;
     transition: all 0.8s;
   }
@@ -447,11 +453,6 @@
 
   .btn-review {
     width: 350px;
-  }
-
-  .btn--callback {
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 
   .btn--buy {

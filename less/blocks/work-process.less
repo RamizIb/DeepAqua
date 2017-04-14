@@ -16,7 +16,13 @@
 }
 
 .work-process__description {
+  margin: 0 auto;
+
   padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 25px;
+
+  max-width: 900px;
   font-size: 15px;
   text-align: center;
 }
@@ -139,10 +145,12 @@
 }
 
 .work-process__subtitle {
-  max-width: 350px;
+  max-width: 310px;
   margin: 0 auto;
 
   padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 10px;
   padding-bottom: 40px;
 
   font-weight: 600;
@@ -155,13 +163,17 @@
 .work-process__consultation .btn--callback {
   display: block;
   width: 100%;
-  max-width: 310px;
+  max-width: 260px;
 
   margin: 0 auto;
   text-align: center;
 }
 
 @media (min-width: 700px) {
+
+  .work-process__consultation .btn--callback {
+    max-width: 320px;
+  }
 
   .work-process__item-arrow {
     display: block;

@@ -404,6 +404,7 @@ input.advice-form__phone {
   max-width: 300px;
   margin: 0 auto;
   margin-bottom: 20px;
+  font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
@@ -430,6 +431,8 @@ input.advice-form__phone {
 .answers-main__subtitle {
   max-width: 900px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 25px;
   font-size: 15px;
   text-align: center;
 }
@@ -581,6 +584,9 @@ input.advice-form__phone {
   }
 }
 @media (min-width: 800px) {
+  .answers-main__title {
+    font-size: 18px;
+  }
   .tab-pane ol,
   .tab-pane ul {
     width: 70%;
@@ -927,8 +933,8 @@ a:active {
   margin-bottom: 10px;
 }
 .btn--callback {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 235px;
   background-color: #00a3ec;
   color: #fff;
@@ -945,22 +951,27 @@ a:active {
 }
 .btn--call-back-nav {
   display: inline-block;
-  vertical-align: middle;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 10px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 200px;
   color: #fff;
   font-size: 14px;
   border-radius: 6px;
-  background-color: #07b2ff;
+  background-color: #00a3ec;
   transition: all 0.8s;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .btn--call-back-nav:hover {
   color: #fff;
-  background-color: #3ac2ff;
+  background-color: #07b2ff;
+  border-color: #00a3ec;
+  transition: all 0.8s;
+}
+.btn--call-back-nav:active {
+  color: #fff;
+  background-color: #07b2ff;
   border-color: #00a3ec;
   transition: all 0.8s;
 }
@@ -1257,10 +1268,6 @@ a:active {
   }
   .btn-review {
     width: 350px;
-  }
-  .btn--callback {
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
   .btn--buy {
     width: 60%;
@@ -2276,8 +2283,6 @@ a:active {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  height: auto;
-  max-height: 1000px;
   padding-top: 20px;
   padding-bottom: 50px;
   background-color: #fff;
@@ -2410,7 +2415,7 @@ a:active {
 }
 .introduction__lead-title {
   max-width: 350px;
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 10px;
   padding-left: 50px;
   font-weight: 900;
@@ -2593,6 +2598,9 @@ a:active {
 @media (min-width: 620px) {
   .introduction__about {
     width: 40%;
+  }
+  .introduction__lead-title {
+    margin-top: 0;
   }
 }
 @media (min-width: 680px) {
@@ -4360,7 +4368,11 @@ input.tinkoffPayRow--button-pay:active:hover {
   text-align: center;
 }
 .work-process__description {
+  margin: 0 auto;
   padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 25px;
+  max-width: 900px;
   font-size: 15px;
   text-align: center;
 }
@@ -4458,9 +4470,11 @@ input.tinkoffPayRow--button-pay:active:hover {
   left: 35%;
 }
 .work-process__subtitle {
-  max-width: 350px;
+  max-width: 310px;
   margin: 0 auto;
   padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 10px;
   padding-bottom: 40px;
   font-weight: 600;
   line-height: 20px;
@@ -4470,11 +4484,14 @@ input.tinkoffPayRow--button-pay:active:hover {
 .work-process__consultation .btn--callback {
   display: block;
   width: 100%;
-  max-width: 310px;
+  max-width: 260px;
   margin: 0 auto;
   text-align: center;
 }
 @media (min-width: 700px) {
+  .work-process__consultation .btn--callback {
+    max-width: 320px;
+  }
   .work-process__item-arrow {
     display: block;
   }
