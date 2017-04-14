@@ -1181,7 +1181,7 @@ a:active {
   padding-right: 25px;
   padding-bottom: 10px;
   padding-left: 25px;
-  width: 60%;
+  width: 190px;
   background-color: transparent;
   color: #fff;
   border-color: #fff;
@@ -1545,6 +1545,7 @@ a:active {
 .customer-review {
   padding-top: 40px;
   padding-right: 25px;
+  padding-bottom: 25px;
   padding-left: 25px;
   background-color: #00a3ec;
 }
@@ -1576,7 +1577,7 @@ a:active {
 .customer-review .carousel-inner {
   display: block;
   max-width: 800px;
-  min-height: 300px;
+  height: 200px;
   overflow: visible;
 }
 .customer-review .item {
