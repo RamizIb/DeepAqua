@@ -9,8 +9,8 @@
 
   background-image: url(../img/slider-bg.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-
 }
 
 .welcome-to-shop__title {
@@ -32,6 +32,18 @@
   text-align: center;
 }
 
+.item-200 {
+  background-image: none;
+}
+
+.item-1000 {
+  background-image: none;
+}
+
+.item-zero {
+  background-image: none;
+}
+
 .item__title {
   font-size: 36px;
   font-weight: 600;
@@ -51,5 +63,29 @@
 
   .welcome-to-shop__subtitle--success {
     width: 60%;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .item-200 {
+    background-image: url(../img/item-200-bg-05.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 35%;
+  }
+
+  .item-1000 {
+    background-image: url(../img/item-1000-bg-05.png);
+    background-repeat: no-repeat;
+    background-position: right center;;
+    background-size: 35%;
+  }
+
+  .item-zero {
+    background-image: url(../img/item-zero-bg-05.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 35%;
   }
 }
