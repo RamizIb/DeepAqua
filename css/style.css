@@ -385,6 +385,23 @@ input.advice-form__phone {
   transition: box-shadow 0.25s;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.welcome-to-shop {
+  animation: animated_bg 30s infinite;
+}
+@keyframes animated_bg {
+  33% {
+    background-image: url(../img/slider-bg/slider-bg-5.jpg);
+  }
+  50% {
+    background-image: url(../img/slider-bg/slider-bg-6.jpg);
+  }
+  66% {
+    background-image: url(../img/slider-bg/slider-bg-1.jpg);
+  }
+  100% {
+    background-image: url(../img/slider-bg/slider-bg-7.jpg);
+  }
+}
 /* Required */
 .block-hidden {
   opacity: 0;
@@ -1914,6 +1931,7 @@ a:active {
   padding-right: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
+  font-size: 14px;
   color: #606060;
   background-color: #fff;
   border-radius: 6px;
@@ -1968,6 +1986,16 @@ a:active {
   display: inline-block;
   vertical-align: middle;
   line-height: 0;
+}
+.footer__copyright-public {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #777777;
+  background-color: #f7f7f7;
+  text-align: center;
 }
 @media (min-width: 550px) {
   .footer__map {
@@ -2708,7 +2736,7 @@ a:active {
   margin-right: 0;
 }
 .navbar-default .navbar-nav a {
-  font-size: 14px;
+  font-size: 15px;
 }
 .navbar-default .navbar-nav > li > a {
   position: relative;
@@ -2731,6 +2759,8 @@ a:active {
 .navbar-default .navbar-nav .dropdown a {
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 15px;
+  border-radius: 3px;
   font-weight: 600;
   color: #606060;
   background-color: #fff;
@@ -2740,7 +2770,7 @@ a:active {
   background-color: #fff;
 }
 .navbar-default .navbar-nav .dropdown .caret {
-  margin-left: 57px;
+  margin-left: 65px;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -4241,7 +4271,7 @@ input.tinkoffPayRow--button-pay:active:hover {
   width: 100%;
   border-top: 2px solid #00a3ec;
   border-bottom: 2px solid #00a3ec;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .carousel-inner {
   max-width: 1200px;
@@ -4319,10 +4349,11 @@ input.tinkoffPayRow--button-pay:active:hover {
       align-items: center;
   height: 600px;
   margin: 0 auto;
-  background-image: url(../img/slider-bg.jpg);
+  background-image: url(../img/slider-bg/slider-bg-7.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  transition: all 0.5s;
 }
 .welcome-to-shop__title {
   font-size: 36px;

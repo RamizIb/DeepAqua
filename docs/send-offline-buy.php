@@ -7,7 +7,7 @@ if (isset($_POST['city-select'])) {$city = $_POST['city-select']; if ($city == '
 
 if (isset($tel) && isset($city)){
 
-  $address = "aquel-shop@yandex.ru";
+  $address = "aquel-shop@yandex.ru, kudryashki85@yandex.ru";
   $mes = "Покупка с оплатой при получении";
   $send = mail ($address,$mes,"Хочет купить:\nТелефон: $tel \nГород: $city","Content-type:text/plain; charset = UTF-8\r\n");
   if ($send == 'true')
