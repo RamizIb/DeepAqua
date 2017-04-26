@@ -932,6 +932,9 @@ a:active {
   max-width: 1000px;
   margin-bottom: 10px;
 }
+.jivo-btn {
+  cursor: pointer;
+}
 .btn--callback {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2428,17 +2431,19 @@ a:active {
 .introduction__lead-title {
   max-width: 350px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding-left: 50px;
+  font-size: 26px;
   font-weight: 900;
 }
 .introduction__lead-list {
   margin-bottom: 20px;
   padding-left: 50px;
-  font-size: 16px;
+  font-size: 20px;
   list-style: none;
 }
 .introduction__lead-list li {
+  margin-bottom: 5px;
   font-weight: 600;
 }
 .introduction__btn-wrapper {
@@ -2610,9 +2615,6 @@ a:active {
 @media (min-width: 620px) {
   .introduction__about {
     width: 40%;
-  }
-  .introduction__lead-title {
-    margin-top: 0;
   }
 }
 @media (min-width: 680px) {
