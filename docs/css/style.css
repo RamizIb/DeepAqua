@@ -1083,17 +1083,19 @@ a:active {
   margin-top: 20px;
   padding: 15px;
   border-color: #00a3ec;
-  color: #00a3ec;
+  color: #fff;
   font-size: 16px;
   font-weight: 600;
+  background-color: #00a3ec;
   transition: all 0.8s;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .btn--product:hover {
   color: #fff;
-  background-color: #00a3ec;
+  background-color: #20baff;
   border-color: #00a3ec;
   transition: all 0.8s;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.16), 0 4px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .btn--product:focus {
   color: #fff;
@@ -4535,6 +4537,9 @@ input.tinkoffPayRow--button-pay:active:hover {
   width: 100%;
   max-width: 260px;
   margin: 0 auto;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 16px;
   text-align: center;
 }
 @media (min-width: 700px) {

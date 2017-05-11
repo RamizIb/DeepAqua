@@ -215,10 +215,12 @@
   padding: 15px;
 
   border-color: @main-color;
-  color: @main-color;
+  color: #fff;
 
   font-size: 16px;
   font-weight: 600;
+
+  background-color: @main-color;
 
   transition: all 0.8s;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
@@ -226,9 +228,12 @@
 
   &:hover {
     color: #fff;
-    background-color: @main-color;
+    background-color: lighten(@main-color, 10%);
     border-color: @main-color;
     transition: all 0.8s;
+
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.16),
+                0 4px 10px 0 rgba(0, 0, 0, 0.12);
   }
 
   &:focus {
