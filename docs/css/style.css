@@ -4182,7 +4182,8 @@ input.tinkoffPayRow--button-pay:active:hover {
   padding-bottom: 10px;
   padding-left: 25px;
   width: 200px;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 15px;
   background-color: transparent;
   color: #1eb1fc;
   border: 1px solid;
